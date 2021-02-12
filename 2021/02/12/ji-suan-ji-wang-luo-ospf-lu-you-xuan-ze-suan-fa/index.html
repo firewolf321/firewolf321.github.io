@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python基础语法3, 冲天槊的个人博客">
+    <meta name="keywords" content="计算机网络OSPF路由选择算法, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python基础语法3 | 冲天槊的个人博客</title>
+    <title>计算机网络OSPF路由选择算法 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/30.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python基础语法3</h1>
+                    <h1 class="description center-align post-title">计算机网络OSPF路由选择算法</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                <span class="chip bg-color">上机</span>
                             </a>
                         
-                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                <span class="chip bg-color">语法</span>
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                Python基础语法
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                计算机网络
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-02-12
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    864
+                    991
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -487,180 +487,85 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>参考教材：Python程序设计基础与应用(机械工业出版社/董付国)</p>
-<p>​    由于时间紧迫，故只整理语法，没有写实例，在学习或复习过程中每个语法点都应搭配合适的例子进行练习。</p>
-<p>由于在编程过程中频繁引用random库，故整理random库的一些常用方法。</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>seek()</td>
-<td>种子，默认种子是系统时钟</td>
-</tr>
-<tr>
-<td>random()</td>
-<td>生成0到1的随机小数</td>
-</tr>
-<tr>
-<td>uniform(a,b)</td>
-<td>生成a到b的随机小数</td>
-</tr>
-<tr>
-<td>randint(a,b)</td>
-<td>生成一个a到b的随机整数</td>
-</tr>
-<tr>
-<td>randrange(a,b,c)</td>
-<td>生成一个a到b，以c递增的数</td>
-</tr>
-<tr>
-<td>choice(<list>)</td>
-<td>随机返回一个列表里面的元素</td>
-</tr>
-<tr>
-<td>shuffle(<list>)</td>
-<td>将列表的元素随机打乱</td>
-</tr>
-<tr>
-<td>sample(<list>,k)</td>
-<td>从列表中随机抽取k个元素</td>
-</tr>
-</tbody></table>
-<h1 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h1><p>1.定义函数的语法</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> 函数名<span class="token punctuation">(</span><span class="token punctuation">[</span>参数列表<span class="token punctuation">]</span><span class="token punctuation">)</span>：
-    <span class="token triple-quoted-string string">'''注释'''</span>
-    函数体<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>2.lambda表达式</p>
-<p>​    lambda表达式时一种匿名函数，没有函数名字的、临时使用的小函数。lambda表达式只可以包含一个表达式，不允许包含复杂语句和结构，但在表达式中可以调用其他函数，该表达式的计算结果相当于函数的返回值。</p>
-<p>3.变量作用域</p>
-<p>​    定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。</p>
-<p>​    局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。调用函数时，所有在函数内声明的变量名称都将被加入到作用域中。</p>
-<p>​    当内部作用域想修改外部作用域的变量时，要用到global关键字。</p>
-<h1 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h1><p>1.类的定义</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">ClassName</span><span class="token punctuation">:</span>
-    <span class="token operator">&lt;</span>statement<span class="token number">-1</span><span class="token operator">></span>
-    <span class="token punctuation">.</span>
-    <span class="token punctuation">.</span>
-    <span class="token punctuation">.</span>
-    <span class="token operator">&lt;</span>statement<span class="token operator">-</span>N<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>2.私有成员与公有成员</p>
-<p>​    如果成员名以两个下划线开头但是不以两个下划线结束则表示是私有成员。私有成员在类的外部不能直接访问，一般是在类的内部进行访问和操作，或者在类的外部通过调用对象的公有成员方法来访问，而公有成员是可以公开使用的，既可以在类的内部进行访问，也可以在外部程序中使用。</p>
-<p>_xxx:一个下划线开头，保护成员。</p>
-<p>__xxx:以两个下划线开头但不以两个下划线结束，表示私有成员，一般只有类对象自己能访问。</p>
-<p>__xxx__：前后各两个下划线，系统定义的特殊成员。</p>
-<p>3.Python类的特殊方法</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>__init__()</td>
-<td>构造方法，创建对象时自动调用</td>
-</tr>
-<tr>
-<td>__del__()</td>
-<td>析构方法，释放对象时自动调用</td>
-</tr>
-<tr>
-<td>__add__()</td>
-<td>+</td>
-</tr>
-<tr>
-<td>__sub__()</td>
-<td>-</td>
-</tr>
-<tr>
-<td>__mul__()</td>
-<td>*</td>
-</tr>
-<tr>
-<td>__truediv__()</td>
-<td>/</td>
-</tr>
-<tr>
-<td>__floordiv__()</td>
-<td>//</td>
-</tr>
-<tr>
-<td>__mod__()</td>
-<td>%</td>
-</tr>
-<tr>
-<td>__pow__()</td>
-<td>**</td>
-</tr>
-<tr>
-<td>__eq__()、__ne__()、<br />__lt__()、__le__()、<br />__gt__()、__ge__()</td>
-<td>==、!=、<br />&lt;、&lt;=、<br />&gt;、&gt;=</td>
-</tr>
-<tr>
-<td>__lshift__()、__rshift__()</td>
-<td>&lt;&lt;、&gt;&gt;</td>
-</tr>
-<tr>
-<td>__and__()、__or__、<br />__invert__()、__xor__()</td>
-<td>&amp; 、|、<br />~、^</td>
-</tr>
-<tr>
-<td>__iadd__()、__isub__()</td>
-<td>+=、-=,很多其他运算符也有与之对应的复合赋值运算符</td>
-</tr>
-<tr>
-<td>__pos__()</td>
-<td>一元运算符+，正号</td>
-</tr>
-<tr>
-<td>__neg__()</td>
-<td>一元运算符-，负号</td>
-</tr>
-<tr>
-<td>__contain__()</td>
-<td>与成员测试运算符in对应</td>
-</tr>
-<tr>
-<td>__radd__()、__rsub__</td>
-<td>反射加法</td>
-</tr>
-<tr>
-<td>__abs__()</td>
-<td>与内置函数abs()对应</td>
-</tr>
-<tr>
-<td>__divmod__()</td>
-<td>与内置函数divmod()对应</td>
-</tr>
-<tr>
-<td>__len__()</td>
-<td>与内置函数len()对应</td>
-</tr>
-<tr>
-<td>__reversed__()</td>
-<td>与内置函数reversed()对应</td>
-</tr>
-<tr>
-<td>__round__()</td>
-<td>与内置函数round()对应</td>
-</tr>
-<tr>
-<td>__str__()</td>
-<td>与内置函数str()对应，要求该方法必须返回str类型的数据</td>
-</tr>
-<tr>
-<td>__getitem__()</td>
-<td>按照索引获取值</td>
-</tr>
-<tr>
-<td>__setiem__()</td>
-<td>按照索引赋值</td>
-</tr>
-</tbody></table>
+                <p>OSFP原理：a.每台路由器学习激活的直接相连的网络。</p>
+<p>b.每台路由器和直接相连的路由器互交，发送Hello报文，建立邻居关系。</p>
+<p>c.每台路由器构建包含直接相连的链路状态的LSA（Link-State Advertisement，链路状态通告）。链路状态通告(LSA)中记录了所有相关的路由器，包括邻路由器的标识、链路类型、带宽等。</p>
+<p>d.每台路由器泛洪链路状态通告（LSA）给所有的邻路由器，并且自己也在本地储存邻路由发过来的LSA，然后再将收到的LSA泛洪给自己的所有邻居，直到在同一区域中的所有路由器收到了所有的LSA。每台路由器在本地数据库中保存所有收到的LSA副本，这个数据库被称作”链路状态数据库（LSDB，Link-State Database）”</p>
+<p>e.每台路由器基于本地的”链路状态数据库(LSDB)”执行”最短路径优先（SPF）”算法，并以本路由器为根，生成一个SPF树，基于这个SPF树计算去往每个网络的最短路径，也就得到了最终的路由表。</p>
+<p><img src="/images/compuer_net/image-20210211132835616.png" alt=""></p>
+<p>代码：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span>packets<span class="token punctuation">,</span> node_route<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># Dijkstra算法</span>
+    table <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 节点node_route的路由表</span>
+    <span class="token keyword">for</span> key <span class="token keyword">in</span> packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 初始化table</span>
+        <span class="token keyword">if</span> packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">!=</span> float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            row <span class="token operator">=</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">]</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            row <span class="token operator">=</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'无'</span><span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">]</span>
+        table<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+    count <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> count <span class="token operator">&lt;</span> len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        temp <span class="token operator">=</span> <span class="token number">0</span>  <span class="token comment" spellcheck="true"># temp用于保存当前table中距离最小的下标</span>
+        min <span class="token operator">=</span> float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># min用于记录当前的距离最小值</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">False</span> <span class="token operator">and</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> min<span class="token punctuation">:</span>
+                min <span class="token operator">=</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+                temp <span class="token operator">=</span> i
+        table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>  <span class="token comment" spellcheck="true"># 把temp对应的节点加入到已经找到的最短路径的集合中</span>
+        count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">False</span> <span class="token operator">and</span> packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">!=</span> float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>
+                    table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment" spellcheck="true"># 如果新得到的边可能影响其它未访问的节点，那就更新它的最短距离和下一跳路由器</span>
+                table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+    table<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> table
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    packets <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true"># 所有的链路状态分组</span>
+    nodes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 所有的节点</span>
+    node <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> node <span class="token operator">!=</span> <span class="token string">'#'</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> node <span class="token operator">not</span> <span class="token keyword">in</span> nodes<span class="token punctuation">:</span>
+            nodes<span class="token punctuation">.</span>append<span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的链路状态分组已存在！'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+            node <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+            <span class="token keyword">continue</span>
+        per <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+        <span class="token keyword">while</span> row <span class="token operator">!=</span> <span class="token string">'*'</span><span class="token punctuation">:</span>
+            row <span class="token operator">=</span> row<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 以空格分割输入的字符串</span>
+            row <span class="token operator">=</span> <span class="token punctuation">[</span>int<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">if</span> x<span class="token punctuation">.</span>isdigit<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">True</span> <span class="token keyword">else</span> x <span class="token keyword">for</span> x <span class="token keyword">in</span> row<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 把度量置为整型</span>
+            <span class="token keyword">if</span> row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 检查输入是否合理</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'输入违规！'</span><span class="token punctuation">)</span>
+                row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                <span class="token keyword">continue</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">in</span> per<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 避免重复</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的链路状态分组中已有此项！'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                <span class="token keyword">continue</span>
+            per<span class="token punctuation">[</span>row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 向节点node的链路状态分组中添加表项</span>
+            row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+        packets<span class="token punctuation">[</span>node<span class="token punctuation">]</span> <span class="token operator">=</span> per  <span class="token comment" spellcheck="true"># 向所有的链路状态分组中添加节点node的链路状态分组</span>
+        node <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 将与每一节点未直接相邻的节点的度量置为无穷大（自身除外）</span>
+    <span class="token keyword">for</span> key <span class="token keyword">in</span> packets<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> nodes<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">!=</span> key <span class="token operator">and</span> <span class="token punctuation">(</span>i <span class="token operator">not</span> <span class="token keyword">in</span> packets<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                packets<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        node_route <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入你想查看路由表的节点：'</span><span class="token punctuation">)</span>
+        table <span class="token operator">=</span> dijkstra<span class="token punctuation">(</span>packets<span class="token punctuation">,</span> node_route<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的路由表如下:'</span> <span class="token operator">%</span> node_route<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'目的网络  距离  下一跳路由器'</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> row <span class="token keyword">in</span> table<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'   '</span> <span class="token operator">+</span> row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">'      '</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'       '</span> <span class="token operator">+</span> row<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -686,7 +591,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-3/">https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-3/</a>
+                    <a href="https://firewolf321.github.io/2021/02/12/ji-suan-ji-wang-luo-ospf-lu-you-xuan-ze-suan-fa/">https://firewolf321.github.io/2021/02/12/ji-suan-ji-wang-luo-ospf-lu-you-xuan-ze-suan-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -724,12 +629,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                    <span class="chip bg-color">上机</span>
                                 </a>
                             
-                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                    <span class="chip bg-color">语法</span>
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
                                 </a>
                             
                         </div>
@@ -900,7 +805,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-02-12T09-40-01',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -921,56 +826,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-di-er-ci-shang-ji-shi-xi/">
+                <a href="/2021/02/12/ji-suan-ji-wang-luo-ospf-lu-you-xuan-ze-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.png" class="responsive-img" alt="Python第二次上机实习">
+                        <img src="/medias/featureimages/16.png" class="responsive-img" alt="计算机网络OSPF路由选择算法">
                         
-                        <span class="card-title">Python第二次上机实习</span>
+                        <span class="card-title">计算机网络OSPF路由选择算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.用户任意输入某年某月某日，判断这一天是这一年的第几天？
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
-# 先让用户分别输入年月日
-year = int(input("年："))
-mouth 
+                            OSFP原理：a.每台路由器学习激活的直接相连的网络。
+b.每台路由器和直接相连的路由器互交，发送Hello报文，建立邻居关系。
+c.每台路由器构建包含直接相连的链路状态的LSA（Link-State Advertisement，链路状态通
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/" class="post-category">
-                                    Python上机实习
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">上机实习</span>
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
                     </a>
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
@@ -984,32 +887,34 @@ mouth
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-di-yi-ci-shang-ji-shi-xi/">
+                <a href="/2021/02/11/ji-suan-ji-wang-luo-shi-yan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.png" class="responsive-img" alt="Python第一次上机实习">
+                        <img src="/medias/featureimages/50.png" class="responsive-img" alt="计算机网络实验">
                         
-                        <span class="card-title">Python第一次上机实习</span>
+                        <span class="card-title">计算机网络实验</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.用户输入a、b两个列表，计算两个列表对应元素的乘积的累加和。如果列表长度不一致，则以较短的列表为主，忽略较长列表的其他元素。如列表a=[1,2,3]，列表b=[4,5,6,7]，则对应元素乘积的累加和为14+25+3*6=32。
-#!/
+                            问题及回答记录
+
+
+问题及回答记录 (self-test Q&amp;A related to your experience reports, and no less  than 5 questions or contents of Q&
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/" class="post-category">
-                                    Python上机实习
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
@@ -1019,12 +924,12 @@ mouth
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">上机实习</span>
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
                     </a>
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
