@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python编程序设计基础与应用答案3, 冲天槊的个人博客">
+    <meta name="keywords" content="计算机网络RIP路由选择算法, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python编程序设计基础与应用答案3 | 冲天槊的个人博客</title>
+    <title>计算机网络RIP路由选择算法 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/57.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python编程序设计基础与应用答案3</h1>
+                    <h1 class="description center-align post-title">计算机网络RIP路由选择算法</h1>
                 </div>
             </div>
         </div>
@@ -424,29 +424,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
-                            </a>
-                        
-                            <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                <span class="chip bg-color">习题答案</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AD%94%E6%A1%88/" class="post-category">
-                                Python程序设计基础与应用答案
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -455,7 +438,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-02-15
                 </div>
                 
 
@@ -464,14 +447,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    770
+                    985
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -487,142 +470,143 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。</p>
-<p>​        参考教材：Python程序设计基础与应用(机械工业出版社/董付国)</p>
-<p>5-1 编写函数，接收圆的半径作为参数，返回圆的面积。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">import</span> math
-<span class="token keyword">def</span> <span class="token function">areas</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 接收圆的半径r，返回圆的面积</span>
-    area <span class="token operator">=</span> math<span class="token punctuation">.</span>pi <span class="token operator">*</span> r <span class="token operator">*</span> r
-    <span class="token keyword">print</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span>
-
-areas<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-2 编写函数，实现辗转相除法，接受两个整数，返回这两个整数的最大公约数</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">demo</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 筛选出a与b的较大数与较小数</span>
-    m <span class="token operator">=</span> max<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
-    n <span class="token operator">=</span> min<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
-    r <span class="token operator">=</span> m <span class="token operator">%</span> n
-    <span class="token comment" spellcheck="true"># 用辗转相除法求最大公约数</span>
-    <span class="token keyword">while</span> r <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>
-        m <span class="token operator">=</span> n
-        n <span class="token operator">=</span> r
-        r <span class="token operator">=</span> m <span class="token operator">%</span> n
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"{0}与{1}的最大公约数为{2}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-demo<span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-3 编写函数，接收参数a和n，计算并返回形式如a+aa+aaa+aaaa+···+aaa···aaa的表达式前项的值，其中a为小于10的自然数。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">demo</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 计算a+aa+aaa+...+aaa...aaa的前n项值(其中a小于10）</span>
-    <span class="token keyword">if</span> a <span class="token operator">></span> <span class="token number">10</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"请输入小于10的自然数"</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token comment" spellcheck="true"># 计算前n项值</span>
-        result <span class="token operator">=</span> <span class="token number">0</span>
-        b <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            b <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token operator">*</span><span class="token number">10</span>
-            result <span class="token operator">+=</span> b
-    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-
-demo<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-4 编写函数，接受一个字符串，判断该字符串是否为回文。所谓回文是指，从前向后读和从后向前读是一样的。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">demo</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    length <span class="token operator">=</span> len<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 倒序进行对比</span>
-    <span class="token keyword">if</span> a <span class="token operator">==</span> a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"这是回文。"</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"这不是回文。"</span><span class="token punctuation">)</span>
-
-demo<span class="token punctuation">(</span><span class="token string">"computer"</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">(</span><span class="token string">"abcba"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-5 编写函数，模拟标准库itertools中的cycle（）函数的功能。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">cycle</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 生成器依次生成每个字母</span>
-    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-        <span class="token keyword">for</span> item <span class="token keyword">in</span> a<span class="token punctuation">:</span>
-            <span class="token keyword">yield</span> item
+                <p>RIP原理</p>
+<p>RPI协议是一种内部网关协议（IGP），是一种动态路由选择协议，用于自治系统（AS）内的路由信息的传递。RIP协议基于距离矢量算法（DistanceVectorAlgorithms），使用“跳数”来衡量到达目标地址的路由距离。这种协议的路由器只关心自己周围的世界，只与自己相邻的路由器交换信息，范围限制在15跳(15度)之内。获取新的路由信息时：</p>
+<p>a. 对本路由表中已有的路由项，当发送报文的网关相同时，不论跳数增大还是减少，都更新该路由表项的跳数。</p>
+<p>b. 对本路由表中已有的路由项，当发送报文的网关不同时，只有在跳数减少时才更新该路由表项。</p>
+<p>c. 对本路由表中不存在的路由项，在度量小于不可达的跳数时，在路由表中增加该路由项目。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Net</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>DesNet <span class="token operator">=</span> DesNet  <span class="token comment" spellcheck="true"># 目的网络</span>
+        self<span class="token punctuation">.</span>Dis <span class="token operator">=</span> Dis  <span class="token comment" spellcheck="true"># 距离</span>
+        self<span class="token punctuation">.</span>NextHoop <span class="token operator">=</span> NextHoop  <span class="token comment" spellcheck="true"># 下一跳</span>
+        self<span class="token punctuation">.</span>next <span class="token operator">=</span> None
 
 
-b <span class="token operator">=</span> cycle<span class="token punctuation">(</span><span class="token string">"computer"</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 这里重复16次，即打印2次computer</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-6 编写函数，模拟标准库itertools中count（）函数的功能。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">count</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 编写自定义的count（）函数</span>
-    b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> a<span class="token punctuation">:</span>
-        <span class="token keyword">if</span> i <span class="token operator">not</span> <span class="token keyword">in</span> b<span class="token punctuation">:</span>
-            b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">class</span> <span class="token class-name">Link</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 构造函数</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>head <span class="token operator">=</span> Net<span class="token punctuation">(</span>None<span class="token punctuation">,</span> None<span class="token punctuation">,</span> None<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 头节点为空</span>
+        self<span class="token punctuation">.</span>tail <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+        self<span class="token punctuation">.</span>size <span class="token operator">=</span> <span class="token number">1</span>
+
+    <span class="token comment" spellcheck="true"># 添加节点</span>
+    <span class="token keyword">def</span> <span class="token function">add</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        net <span class="token operator">=</span> Net<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 创建新节点</span>
+        self<span class="token punctuation">.</span>tail<span class="token punctuation">.</span>next <span class="token operator">=</span> net  <span class="token comment" spellcheck="true"># 尾节点的下一个节点为新节点</span>
+        self<span class="token punctuation">.</span>tail <span class="token operator">=</span> net  <span class="token comment" spellcheck="true"># 尾节点为新节点</span>
+        self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">+</span> <span class="token number">1</span>
+
+    <span class="token comment" spellcheck="true"># 插入节点（此节点作为第index个节点）</span>
+    <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
         <span class="token keyword">else</span><span class="token punctuation">:</span>
-            b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> b<span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'的个数为：'</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            insert_net <span class="token operator">=</span> Net<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next  <span class="token comment" spellcheck="true"># 推进到要插入的位置</span>
+            insert_net<span class="token punctuation">.</span>next <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>next <span class="token operator">=</span> insert_net
+            self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">+</span> <span class="token number">1</span>
 
-list_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
-count<span class="token punctuation">(</span>list_1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-7 编写函数，模拟内置函数reversed()的功能。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">count</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 编写自定义的count（）函数</span>
-    b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> a<span class="token punctuation">:</span>
-        <span class="token keyword">if</span> i <span class="token operator">not</span> <span class="token keyword">in</span> b<span class="token punctuation">:</span>
-            b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token comment" spellcheck="true"># 删除节点（索引为index）</span>
+    <span class="token keyword">def</span> <span class="token function">delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
         <span class="token keyword">else</span><span class="token punctuation">:</span>
-            b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> b<span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'的个数为：'</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            temp <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">.</span>next
+            self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">-</span> <span class="token number">1</span>
 
-list_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
-count<span class="token punctuation">(</span>list_1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-8 编写函数，模拟内置函数all()的功能</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">all</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 模拟函数all（）</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> a<span class="token punctuation">:</span>
-        <span class="token keyword">if</span> <span class="token operator">not</span> i<span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token boolean">False</span>
-    <span class="token keyword">return</span> <span class="token boolean">True</span>
+    <span class="token comment" spellcheck="true"># 改变指定节点的数据</span>
+    <span class="token keyword">def</span> <span class="token function">change</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 推进到要改变节点的位置</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>DesNet <span class="token operator">=</span> DesNet
+            net<span class="token punctuation">.</span>Dis <span class="token operator">=</span> Dis
+            net<span class="token punctuation">.</span>NextHoop <span class="token operator">=</span> NextHoop
 
-<span class="token comment" spellcheck="true"># 举两个例子测试</span>
-example_1 <span class="token operator">=</span> all<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>example_1<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 返回节点的数据</span>
+    <span class="token keyword">def</span> <span class="token function">getData</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 判断是否超过链表的长度</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>net<span class="token punctuation">.</span>DesNet<span class="token punctuation">,</span> net<span class="token punctuation">.</span>Dis<span class="token punctuation">,</span> net<span class="token punctuation">.</span>NextHoop<span class="token punctuation">]</span>
 
-example_2 <span class="token operator">=</span> all<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>example_2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5-9 编写函数，模拟内置函数any（）的功能。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">def</span> <span class="token function">any</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 模拟函数any（）</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> a<span class="token punctuation">:</span>
-        <span class="token keyword">if</span> i<span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token boolean">True</span>
-    <span class="token keyword">return</span> <span class="token boolean">False</span>
+    <span class="token comment" spellcheck="true"># 返回节点的长度</span>
+    <span class="token keyword">def</span> <span class="token function">getSize</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>size
 
-<span class="token comment" spellcheck="true"># 举两个例子测试</span>
-example_1 <span class="token operator">=</span> any<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>example_1<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">length</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 获取这个链表的长度</span>
+        count <span class="token operator">=</span> <span class="token number">0</span>
+        cur <span class="token operator">=</span> self<span class="token punctuation">.</span>_head
+        <span class="token keyword">while</span> cur <span class="token operator">!=</span> None<span class="token punctuation">:</span>
+            count <span class="token operator">+=</span> <span class="token number">1</span>
+            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next
+        <span class="token keyword">return</span> count
 
-example_2 <span class="token operator">=</span> any<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>example_2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    table <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 初始路由表</span>
+    NewTable <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 来自某个路由器的路由表</span>
+    FinalTable <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 最终形成的路由表</span>
+    temptable1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    temptable2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    a <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'请输入初始路由表行数：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入整个路由表：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        table<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+        FinalTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'路由表初始化完成'</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'新路由表来自的路由器：'</span><span class="token punctuation">)</span>
+    c <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'新路由表的行数：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入新路由表的信息：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        DesNet<span class="token punctuation">,</span> Dis <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        Dis <span class="token operator">=</span> int<span class="token punctuation">(</span>Dis<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+        NewTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+        count <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+            temptable1 <span class="token operator">=</span> NewTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+            temptable2 <span class="token operator">=</span> FinalTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>j<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> temptable2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络相同</span>
+                <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> temptable2<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络和下一跳均相同</span>
+                    FinalTable<span class="token punctuation">.</span>change<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> j<span class="token punctuation">)</span>
+                <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">!=</span> temptable2<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络一致，下一跳不同</span>
+                    <span class="token keyword">if</span> int<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> int<span class="token punctuation">(</span>temptable2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        FinalTable<span class="token punctuation">.</span>change<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> j<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">continue</span>
+            <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> temptable2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">if</span> int<span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token operator">==</span> int<span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span>
+            FinalTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'新的路由表为：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'目的网络    距离    下一跳路由器'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>FinalTable<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+        data <span class="token operator">=</span> FinalTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'        '</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'         '</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -648,7 +632,7 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-cheng-xu-she-ji-ji-chu-yu-ying-yong-da-an-3/">https://firewolf321.github.io/2020/07/12/python-cheng-xu-she-ji-ji-chu-yu-ying-yong-da-an-3/</a>
+                    <a href="https://firewolf321.github.io/2021/02/15/ji-suan-ji-wang-luo-rip-lu-you-xuan-ze-suan-fa/">https://firewolf321.github.io/2021/02/15/ji-suan-ji-wang-luo-rip-lu-you-xuan-ze-suan-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -685,15 +669,7 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
-                                </a>
-                            
-                                <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                    <span class="chip bg-color">习题答案</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -862,7 +838,7 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-02-15T17-12-15',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -883,56 +859,40 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-cheng-xu-she-ji-ji-chu-yu-ying-yong-da-an-4/">
+                <a href="/2021/02/15/ji-suan-ji-wang-luo-rip-lu-you-xuan-ze-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/58.png" class="responsive-img" alt="Python编程序设计基础与应用答案4">
+                        <img src="/medias/featureimages/27.png" class="responsive-img" alt="计算机网络RIP路由选择算法">
                         
-                        <span class="card-title">Python编程序设计基础与应用答案4</span>
+                        <span class="card-title">计算机网络RIP路由选择算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。
-​        参考教材：Python程序设计基础与应用(机械工业出版社/董付国)
-第六章6-2拓展本章的例6-4，为向量类增加计算内积的功能。
-#!/usr/bin/e
+                            RIP原理
+RPI协议是一种内部网关协议（IGP），是一种动态路由选择协议，用于自治系统（AS）内的路由信息的传递。RIP协议基于距离矢量算法（DistanceVectorAlgorithms），使用“跳数”来衡量到达目标地址的路由距离。这
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-15
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python程序设计基础与应用答案
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            陈细利
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -943,33 +903,33 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-cheng-xu-she-ji-ji-chu-yu-ying-yong-da-an-2/">
+                <a href="/2021/02/12/ji-suan-ji-wang-luo-ospf-lu-you-xuan-ze-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/56.png" class="responsive-img" alt="Python编程序设计基础与应用答案2">
+                        <img src="/medias/featureimages/16.png" class="responsive-img" alt="计算机网络OSPF路由选择算法">
                         
-                        <span class="card-title">Python编程序设计基础与应用答案2</span>
+                        <span class="card-title">计算机网络OSPF路由选择算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。
-​        参考教材：Python程序设计基础与应用(机械工业出版社/董付国)
-4-5编写程序，实现抓狐狸游戏。假设墙上有5个洞（编号分别为0、1、2、3、4），其中
+                            OSFP原理：a.每台路由器学习激活的直接相连的网络。
+b.每台路由器和直接相连的路由器互交，发送Hello报文，建立邻居关系。
+c.每台路由器构建包含直接相连的链路状态的LSA（Link-State Advertisement，链路状态通
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python程序设计基础与应用答案
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
@@ -979,12 +939,16 @@ example_2 <span class="token operator">=</span> any<span class="token punctuatio
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
