@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python基础语法1, 冲天槊的个人博客">
+    <meta name="keywords" content="计算机网络TCP套接字编程, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python基础语法1 | 冲天槊的个人博客</title>
+    <title>计算机网络TCP套接字编程 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/28.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/49.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python基础语法1</h1>
+                    <h1 class="description center-align post-title">计算机网络TCP套接字编程</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                <span class="chip bg-color">上机</span>
                             </a>
                         
-                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                <span class="chip bg-color">语法</span>
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
+                            </a>
+                        
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -442,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                Python基础语法
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                计算机网络
                             </a>
                         
                     </div>
@@ -455,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-02-16
                 </div>
                 
 
@@ -464,14 +468,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.5k
+                    429
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    1 分
                 </div>
                 
 
@@ -487,457 +491,58 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>参考教材：Python程序设计基础与应用(机械工业出版社/董付国)</p>
-<p>​        本复习资料中语法出现顺序与参考教材保持一致，为巩固记忆，全程手打，没有复制粘贴。（因此可能会出现错别字请见谅）</p>
-<p>由于内容过多，将逐步发布。</p>
-<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><p>1.标准库与拓展库中对象的导入与使用(按照标准库，拓展库和自定义库的顺序依次导入)</p>
-<table>
-<thead>
-<tr>
-<th># import 模块名 [as 别名]</th>
-<th align="left">导入后用“模块名.对象名”，或者”别名.对象名”进行访问</th>
-</tr>
-</thead>
-<tbody><tr>
-<td># from 模块名 import 对象名[as 别名]</td>
-<td align="left">不需要使用模块名作为前缀，可以直接访问被指定的对象</td>
-</tr>
-<tr>
-<td># from 模块名 import *</td>
-<td align="left">直接使用模块中的所有对象而不需要再使用模块名作为前缀</td>
-</tr>
-</tbody></table>
-<ol start="2">
-<li>__name__：识别程序的使用方式，如果作为模块被导入，属性值被设置为模块名；如果作为程序直接运行，则其属性值被设置为字符串”__main__”。</li>
-</ol>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><p>1.Python内置对象</p>
-<table>
-<thead>
-<tr>
-<th>对象类型</th>
-<th>类型名称</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>数字</td>
-<td>int<br />float<br />complex</td>
-<td align="left">int为整数类型<br />float为浮点数类型<br />complex为复数类型<br />数字大小无限制，有二进制（0b开头）；八进制（0o开头）；十六进制（0x开头）。</td>
-</tr>
-<tr>
-<td>字符串</td>
-<td>str</td>
-<td align="left">使用单引号，双引号，三引号作为定界符，不同定界符之间可以相互嵌套；使用字母r（R）引导的表示原始字符串</td>
-</tr>
-<tr>
-<td>字节串</td>
-<td>bytes</td>
-<td align="left">以字母b引导</td>
-</tr>
-<tr>
-<td>列表</td>
-<td>list</td>
-<td align="left">所有元素放在一对中括号中，元素之间使用逗号分隔，其中的元素可以是任意类型。</td>
-</tr>
-<tr>
-<td>元组</td>
-<td>tuple</td>
-<td align="left">所有元素放在一对小括号中，元素之间使用逗号分隔，如果元组中只有一个元素，后面的逗号不能省略。</td>
-</tr>
-<tr>
-<td>字典</td>
-<td>dict</td>
-<td align="left">所有元素放在一对大括号中，元素之间使用逗号分隔，元素以键值对的形式存在，其中键不可以重复，并且键必须不可变。</td>
-</tr>
-<tr>
-<td>集合</td>
-<td>set</td>
-<td align="left">所有元素放在一对大括号中，元素之间使用逗号分隔，元素不允许重复且必须为不可变类型，不支持使用下标随机访问。</td>
-</tr>
-<tr>
-<td>布尔型</td>
-<td>bool</td>
-<td align="left">有True与False，为逻辑值。</td>
-</tr>
-<tr>
-<td>空类型</td>
-<td>NoneType</td>
-<td align="left">为None，为空值。</td>
-</tr>
-</tbody></table>
-<p>2.python运算符</p>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>+</td>
-<td>算术加法，列表，元组，字符串合并与连接，正号</td>
-</tr>
-<tr>
-<td>-</td>
-<td>算术减法，集合差集，相反数</td>
-</tr>
-<tr>
-<td>*</td>
-<td>算术乘法，序列重复</td>
-</tr>
-<tr>
-<td>/</td>
-<td>真除法</td>
-</tr>
-<tr>
-<td>//</td>
-<td>求整商，但如果操作数中有实数，则结果为实数形式的整数</td>
-</tr>
-<tr>
-<td>%</td>
-<td>求余数，字符串格式化</td>
-</tr>
-<tr>
-<td>**</td>
-<td>幂运算</td>
-</tr>
-<tr>
-<td>&lt;、 &lt;=、&gt;、&gt;=、==、!=</td>
-<td>（值）的大小比较，集合的包含关系比较</td>
-</tr>
-<tr>
-<td>or</td>
-<td>逻辑或</td>
-</tr>
-<tr>
-<td>and</td>
-<td>逻辑与</td>
-</tr>
-<tr>
-<td>not</td>
-<td>逻辑非</td>
-</tr>
-<tr>
-<td>in</td>
-<td>成员测试</td>
-</tr>
-<tr>
-<td>is</td>
-<td>对象实体同一性测试，即测试是否为同一对象或内存地址是否相同</td>
-</tr>
-<tr>
-<td>|、^、 &amp;、 &lt;&lt;、&gt;&gt;、~</td>
-<td>位或，位异或，位与，左移位，右移位，位求反</td>
-</tr>
-<tr>
-<td>&amp;、|、 ^</td>
-<td>集合交集，并集，对称差集</td>
-</tr>
-</tbody></table>
-<p>（还有赋值运算符（=、 +=、-=、<em>=、/=、//=、*</em>=、|=、^=等运算符，但是Python不支持++和- -运算符）</p>
-<p>3.Python常用的内置函数</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>返回数字x的绝对值或复数x的模块</td>
-</tr>
-<tr>
-<td>all(iterable)</td>
-<td>如果对于可迭代对象iterable中所有元素都等价于True，则返回True。对于空的可迭代对象也要返回True</td>
-</tr>
-<tr>
-<td>any(iterable)</td>
-<td>只要可迭代对象iterable中存在等价于True的元素，则返回True。对于空的可迭代对象，则返回False</td>
-</tr>
-<tr>
-<td>bin(x)</td>
-<td>把整数x转换为二进制串表示形式</td>
-</tr>
-<tr>
-<td>complex(real,[imag])</td>
-<td>返回复数</td>
-</tr>
-<tr>
-<td>chr(x)</td>
-<td>返回Unicode编码为x的字符</td>
-</tr>
-<tr>
-<td>dir(obj)</td>
-<td>返回指定对象或模块obj的成员列表，如果不带参数则返回当前作用域内的所有标识符</td>
-</tr>
-<tr>
-<td>divmod(x,y)</td>
-<td>返回包含整商和余数的元组（（x-x%y）/y，x%y）</td>
-</tr>
-<tr>
-<td>enumerate(iterable[, start])</td>
-<td>返回包含元素形式为（0，iterable[0]),(1, iterable[1]),(2,iterable[2])等的迭代器对象，start表示索引的起始值。</td>
-</tr>
-<tr>
-<td>eval(s[,globals[,locals]])</td>
-<td>计算并返回字符串s中表达式的值</td>
-</tr>
-<tr>
-<td>filter(func, seq)</td>
-<td>返回filter对象，其中包含序列seq中使得单参数func返回值为True的那些元素，如果函数func为None则返回包含seq中等价于True的元素filter对象</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>把整数或字符串x转换为浮点数并返回</td>
-</tr>
-<tr>
-<td>globals()</td>
-<td>返回包含当前作用域内全局变量及其值的字典</td>
-</tr>
-<tr>
-<td>help(obj)</td>
-<td>返回对象obj的帮助信息</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>把整数x转换为十六进制串</td>
-</tr>
-<tr>
-<td>id(obj)</td>
-<td>返回对象obj的表示（内存地址）</td>
-</tr>
-<tr>
-<td>input([提示])</td>
-<td>显示提示，接收键盘输入的内容，返回字符串</td>
-</tr>
-<tr>
-<td>int(x,[,d])</td>
-<td>返回实数（float)、分数（Fraction)、或高精度实数（Decimal）x的整数部分，或把d进制的字符串x转换为十进制并返回，d默认为十进制。</td>
-</tr>
-<tr>
-<td>isinstance(obj,class-or-type-or-tuple)</td>
-<td>测试对象obj是否属于指定类型（如果有多个类型需要放到元组中）的实例</td>
-</tr>
-<tr>
-<td>len(obj)</td>
-<td>返回对象obj包含的元素个数，适用于列表、元组、集合、字典、字符串以及range对象，不适合用于具有惰性求值特点的生成器对象和map、zip迭代对象</td>
-</tr>
-<tr>
-<td>list([x])、set([x])<br />tuple([x])、dict([x])</td>
-<td>把对象x转化为列表、集合、元组或字典并返回，或生成空列表、空集合、空元组、空字典</td>
-</tr>
-<tr>
-<td>locals()</td>
-<td>返回包含当前作用域内局部变量及值的字典</td>
-</tr>
-<tr>
-<td>map(func, *iterables)</td>
-<td>返回包含若干函数值的map对象，函数func的参数分别来自于iterables指定的一个或多个迭代对象</td>
-</tr>
-<tr>
-<td>max(<strong><em>)、min(</em></strong>)</td>
-<td>返回多个值中或者包含有限个元素的可迭代对象中所有元素的最大值、最小值，要求所有元素之间可比较大小，允许指定排序规则，参数为可迭代对象时还允许指定对象为空时返回的默认值</td>
-</tr>
-<tr>
-<td>next(iterator[,default])</td>
-<td>返回可迭代对象x中的下一个元素，允许指定迭代结束之后继续迭代时返回的默认值</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>把整数x转换为八进制串</td>
-</tr>
-<tr>
-<td>open(name[,mode])</td>
-<td>以指定模式mode打开文件name并返回文件对象</td>
-</tr>
-<tr>
-<td>ord(x)</td>
-<td>返回1个字符x的Unicode编码</td>
-</tr>
-<tr>
-<td>print(value, <em>*</em>, sep= ‘ ’，end = ‘\n’, file = sys.stdout, flush = False)</td>
-<td>输出基本函数</td>
-</tr>
-<tr>
-<td>range([start,] end [,step])</td>
-<td>返回range对象，其中包含左闭右开区间[start，end]内以step为步长的整数</td>
-</tr>
-<tr>
-<td>reduce(func, seq[, initial])</td>
-<td>将双参数的函数func以迭代的方式从左到右依次应用到序列seq中每个元素，并把中间计算结果作为下一次计算的操作数之一，最终返回单个值作为结果</td>
-</tr>
-<tr>
-<td>reversed(seq)</td>
-<td>返回seq（可以是列表、元组、字符串、range以及其他可迭代对象）中所有元素逆序后的迭代器对象，但不适用于具有惰性求值特点的生成器对象和map、zip等可迭代对象</td>
-</tr>
-<tr>
-<td>round(x[,小数位数])</td>
-<td>对x进行四舍五入，若不指定小数位数，则返回整数</td>
-</tr>
-<tr>
-<td>sorted(iterable, key=None, reverse=False)</td>
-<td>返回排序后的列表，其中iterable表示要排序的序列或迭代对象，key用来指定排序规则或依据，reverse用来指定升序或降序</td>
-</tr>
-<tr>
-<td>str(obj)</td>
-<td>把对象obj直接转换为字符串</td>
-</tr>
-<tr>
-<td>sum(x, start=0)</td>
-<td>返回序列x中所有元素之和，要求序列x中所有元素支持加法运算</td>
-</tr>
-<tr>
-<td>type(obj)</td>
-<td>返回对象obj的类型</td>
-</tr>
-<tr>
-<td>zip(seq1 [, seq2[<em>*</em>]])</td>
-<td>返回zip对象，其中元素为(seq1[i], seq2[i],<em>*</em>)形式的元组最终结果中包含的元素个数取决于所有参数序列或可迭代对象中最短的那个</td>
-</tr>
-</tbody></table>
-<p>4.Python关键词(不能用做变量名，函数名，类名)</p>
-<table>
-<thead>
-<tr>
-<th>关键字</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>False</td>
-<td>常量，逻辑假</td>
-</tr>
-<tr>
-<td>None</td>
-<td>常量，空值</td>
-</tr>
-<tr>
-<td>True</td>
-<td>常量，逻辑真</td>
-</tr>
-<tr>
-<td>and</td>
-<td>逻辑与运算</td>
-</tr>
-<tr>
-<td>as</td>
-<td>在import或except语句中给对象起别名</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>断言，用来确认某个条件必须满足，可用来帮助调试程序</td>
-</tr>
-<tr>
-<td>break</td>
-<td>在用循环中，提前结束break所在层次的循环</td>
-</tr>
-<tr>
-<td>class</td>
-<td>用来定义类</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>在用循环中，提前结束本次循环</td>
-</tr>
-<tr>
-<td>def</td>
-<td>用来定义函数</td>
-</tr>
-<tr>
-<td>del</td>
-<td>用来删除对象或成员对象</td>
-</tr>
-<tr>
-<td>elif</td>
-<td>用在选择结构中，表示else if的意思</td>
-</tr>
-<tr>
-<td>else</td>
-<td>用在选择结构、循环结构和异常处理结构中</td>
-</tr>
-<tr>
-<td>except</td>
-<td>用在异常处理结构中，用来捕获特定类型的异常</td>
-</tr>
-<tr>
-<td>finally</td>
-<td>用在异常处理结构中，用来表示不论是否发生异常都会执行的代码</td>
-</tr>
-<tr>
-<td>for</td>
-<td>构造for循环，用来迭代序列或迭代对象中的所有元素</td>
-</tr>
-<tr>
-<td>from</td>
-<td>明确指出从哪个模块中导入什么对象，例如from math import sin</td>
-</tr>
-<tr>
-<td>global</td>
-<td>定义或声明全局变量</td>
-</tr>
-<tr>
-<td>if</td>
-<td>用在选择结构中</td>
-</tr>
-<tr>
-<td>import</td>
-<td>用来导入模块或模块中的对象</td>
-</tr>
-<tr>
-<td>in</td>
-<td>成员测试</td>
-</tr>
-<tr>
-<td>is</td>
-<td>同一性测试</td>
-</tr>
-<tr>
-<td>lambda</td>
-<td>用来定义lambda表达式，类似于函数</td>
-</tr>
-<tr>
-<td>nonlocal</td>
-<td>用来声明nonlocal变量</td>
-</tr>
-<tr>
-<td>not</td>
-<td>逻辑非运算</td>
-</tr>
-<tr>
-<td>or</td>
-<td>逻辑或运算</td>
-</tr>
-<tr>
-<td>pass</td>
-<td>空语句，执行该语句时什么都不做，常用作占位符</td>
-</tr>
-<tr>
-<td>raise</td>
-<td>用来显式抛出异常</td>
-</tr>
-<tr>
-<td>return</td>
-<td>在函数中用来返回值，如果没有指定返回值，表示返回空值None</td>
-</tr>
-<tr>
-<td>try</td>
-<td>在异常处理结构中用来限定可能会引发异常的代码块</td>
-</tr>
-<tr>
-<td>while</td>
-<td>用来构造while循环结构，只要条件表达式等价于True就重复执行限定的代码块</td>
-</tr>
-<tr>
-<td>with</td>
-<td>上下文管理，具有自动管理资源的功能</td>
-</tr>
-<tr>
-<td>yield</td>
-<td>在生成器函数中用来返回值</td>
-</tr>
-</tbody></table>
-<p>title: Python基础语法1<br>categories: Python基础语法</p>
+                <p>TCP是一个面向连接的协议，意味着客户和服务器开始发送数据之前，它们先要握手和创建一个TCP连接。TCP连接的一端与客户套接字相联系，另一端与服务器套接字相联系。当创建该TCP连接时，我们将其与客户套接字地址（IP地址和端口号）和服务器套接字地址（IP地址和端口号）关联起来。使用创建的TCP连接，当一侧要向另一侧发送数据时，它只需经过其套接字将数据丢进TCP连接。这与UDP不同，UDP服务器在将分组丢进套接字之前必须为其附上一个目的地地址。</p>
+<p>客户端：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> socket
+<span class="token keyword">import</span> sys
+IP <span class="token operator">=</span> <span class="token string">'119.45.115.128'</span>  <span class="token comment" spellcheck="true"># 填写服务器端的IP地址</span>
+port <span class="token operator">=</span> <span class="token number">1200</span>  <span class="token comment" spellcheck="true"># 端口号必须一致</span>
+s <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_STREAM<span class="token punctuation">)</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    s<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">(</span>IP<span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'服务器没有找到或未打开！'</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        trigger <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入待发送的数据：(exit-退出)"</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> trigger <span class="token operator">==</span> <span class="token string">'exit'</span><span class="token punctuation">:</span>
+            <span class="token keyword">break</span>
+        s<span class="token punctuation">.</span>sendall<span class="token punctuation">(</span>trigger<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        data <span class="token operator">=</span> s<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>
+        data <span class="token operator">=</span> data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'从服务器接收到的结果为：'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+
+s<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>服务端：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> socket
+
+host <span class="token operator">=</span> <span class="token string">"192.168.0.104"</span>  <span class="token comment" spellcheck="true"># 服务器端可以写"localhost"，可以为空字符串""，也为本机IP地址</span>
+port <span class="token operator">=</span> <span class="token number">1200</span>  <span class="token comment" spellcheck="true"># 端口号</span>
+s <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_STREAM<span class="token punctuation">)</span>
+s<span class="token punctuation">.</span>bind<span class="token punctuation">(</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">)</span>
+s<span class="token punctuation">.</span>listen<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'服务器已经启动'</span><span class="token punctuation">)</span>
+conn<span class="token punctuation">,</span> addr <span class="token operator">=</span> s<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> addr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'已经建立连接'</span><span class="token punctuation">)</span>
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        data <span class="token operator">=</span> conn<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>
+        data <span class="token operator">=</span> data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token operator">not</span> data<span class="token punctuation">:</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'从客户端接收到信息为：'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        send <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'给客户端接的回复信息为：'</span><span class="token punctuation">)</span>
+        conn<span class="token punctuation">.</span>sendall<span class="token punctuation">(</span>send<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+
+conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+s<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -963,7 +568,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-1/">https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-1/</a>
+                    <a href="https://firewolf321.github.io/2021/02/16/ji-suan-ji-wang-luo-tcp-tao-jie-zi-bian-cheng/">https://firewolf321.github.io/2021/02/16/ji-suan-ji-wang-luo-tcp-tao-jie-zi-bian-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1001,12 +606,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                    <span class="chip bg-color">上机</span>
                                 </a>
                             
-                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                    <span class="chip bg-color">语法</span>
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
+                                </a>
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -1177,7 +786,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-02-16T18-47-01',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1198,52 +807,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-cheng-xu-she-ji-ji-chu-yu-ying-yong-da-an-1/">
+                <a href="/2021/02/16/ji-suan-ji-wang-luo-tcp-tao-jie-zi-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/55.png" class="responsive-img" alt="Python编程序设计基础与应用答案1">
+                        <img src="/medias/featureimages/49.png" class="responsive-img" alt="计算机网络TCP套接字编程">
                         
-                        <span class="card-title">Python编程序设计基础与应用答案1</span>
+                        <span class="card-title">计算机网络TCP套接字编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。
-​        参考教材：Python程序设计基础与应用(机械工业出版社/董付国)
-3-13编写程序，让用户在键盘上输入一个自然数n，然后在区间【1，5n】上随机生成n个
+                            TCP是一个面向连接的协议，意味着客户和服务器开始发送数据之前，它们先要握手和创建一个TCP连接。TCP连接的一端与客户套接字相联系，另一端与服务器套接字相联系。当创建该TCP连接时，我们将其与客户套接字地址（IP地址和端口号）和服务器套接
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python程序设计基础与应用答案
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -1257,32 +870,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-di-yi-ci-shang-ji-shi-xi/">
+                <a href="/2021/02/14/ji-suan-ji-wang-luo-rip-lu-you-xuan-ze-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.png" class="responsive-img" alt="Python第一次上机实习">
+                        <img src="/medias/featureimages/27.png" class="responsive-img" alt="计算机网络RIP路由选择算法">
                         
-                        <span class="card-title">Python第一次上机实习</span>
+                        <span class="card-title">计算机网络RIP路由选择算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.用户输入a、b两个列表，计算两个列表对应元素的乘积的累加和。如果列表长度不一致，则以较短的列表为主，忽略较长列表的其他元素。如列表a=[1,2,3]，列表b=[4,5,6,7]，则对应元素乘积的累加和为14+25+3*6=32。
-#!/
+                            RIP原理
+RPI协议是一种内部网关协议（IGP），是一种动态路由选择协议，用于自治系统（AS）内的路由信息的传递。RIP协议基于距离矢量算法（DistanceVectorAlgorithms），使用“跳数”来衡量到达目标地址的路由距离。这
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/" class="post-category">
-                                    Python上机实习
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
@@ -1292,12 +905,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">上机实习</span>
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
                     </a>
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
