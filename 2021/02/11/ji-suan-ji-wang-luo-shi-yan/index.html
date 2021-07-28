@@ -1,0 +1,1947 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="计算机网络实验, 冲天槊的个人博客">
+    <meta name="description" content="记录学习编程过程">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>计算机网络实验 | 冲天槊的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">冲天槊的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">冲天槊的个人博客</div>
+        <div class="logo-desc">
+            
+            记录学习编程过程
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/50.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">计算机网络实验</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                <span class="chip bg-color">上机</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                计算机网络
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-02-11
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    13.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    51 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="问题及回答记录"><a href="#问题及回答记录" class="headerlink" title="问题及回答记录"></a>问题及回答记录</h1><table>
+<thead>
+<tr>
+<th>问题及回答记录 (self-test Q&amp;A related to your experience reports, and no less  than 5 questions or contents of Q&amp;A nearly full of the sheet as well as  handwriting required)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 输入net view 192.168.0.1查看共享资源时为什么显示了错误代码53？<img src="/images/compuer_net/1.png" alt=""></td>
+</tr>
+<tr>
+<td>回答：通过查询，错误代码53的原因主要有5个，分别时：  ①IP地址错误；  ②目的标未开机或者下了网络，拔了局域网线，也有可能是关了服务器；  ③目标LanManServer服务未启动；  ④目标有防火墙（端口过滤）；  ⑤由于netbios over tcp/ip和dns造成的；  ⑥端口没有开放；</td>
+</tr>
+<tr>
+<td>2.为什么输入指令net view查看局域网内的主机名时显示系统错误6118，工作组服务器列表无法使用？应当如何解决？<img src="/images/compuer_net/2.png" alt=""></td>
+</tr>
+<tr>
+<td>回答：原因：在家庭或办公室网络的网络连接上启用防火墙，就有可能会发生这种现象。默认情况下，防火墙会关闭用于文件和打印共享的端口，以防止 Internet 计算机连接到计算机上的文件和打印共享。  解决方案：关闭电脑的防火墙，进入services.msc启动Computer Browser即可。</td>
+</tr>
+<tr>
+<td>3.在TCP的流量控制分析中，慢启动本应该从1开始，但是为什么抓的包中显示慢启动过程中不是从1开始，而是从46开始的，是不是技术更新了？  <img src="/images/compuer_net/3.png" alt=""></td>
+</tr>
+<tr>
+<td>回答：通过反复测试发现，并不是技术更新了，而是在抓包过程中，计算机的网络除了用于上传文件，其他的应用进程可能也在使用网络，但是whireshark统计的是整个网卡的I/O流，因此抓包时的流量除了我们需要的上传文件，还有其他进程，比如QQ微信也在使用网络，所以慢启动看起看并没有从1开始。实际上传输文件的这些网络活动中仍然是慢启动，是从1开始的。</td>
+</tr>
+<tr>
+<td>4.在使用TCP和UDP中，使用的都是IP地址，根据IP地址找到对应的MAC会浪费时间，为什么不直接使用硬件地址MAC进行通信，而要使用抽象的IP地址并调用ARP来寻址？</td>
+</tr>
+<tr>
+<td>回答：由于全世界存在着各式各样的网络，它们使用不同的硬件地址，要使这些异构的网络进行通信就必须进行非常复杂的，硬件地址转换工作，因此由用户或主机来完成这项工作几乎是不可能的，统一IP地址就把这个问题解决了。</td>
+</tr>
+<tr>
+<td>5. 在RIP 协议中，如果原来路由表和新路由表目的网络和下一跳路由相同，但是更新了跳数有可能比原来更大，为什么要直接更新，原来跳数更少不是更快吗？</td>
+</tr>
+<tr>
+<td>回答：原来路由表和新路由表目的网络和下一跳都相同，说明路由转发的路径方向是没有改变的，改变的是这条链路上路由的路由器数量，但是这条链路上的路由数不断更新，所以此时不应该选择最小的跳数而应该选择最新的跳数，确保路由信息是最新的信息。</td>
+</tr>
+<tr>
+<td>6. RIP协议是如何避免环路？</td>
+</tr>
+<tr>
+<td>回答：一般来说，避免环路的方法主要有6种：   1.定义最大值；   2.水平分割技术；   3.路由中毒；   4.反向路由中毒；   5.控制更新时间；   6.触发更新  1.定义最大值：  距离矢量路由算法可以通过IP头中的生存时间（TTL）来 纠错，但路由环路问题可能首先要求无穷计数。为了避免这个延时问题，距离矢量协议定义了一个最大值，这个数字是指最大的度量值（如rip协议最大值为16），比如跳数。也就是说，路由更新信息可以向不可到达的网络的路由中的路由器发送15次，一旦达到最大值16，就视为网络不可到达，存在故障，将不再接受来自访问该网络的任何路由更新信息。  2.水平分割：  一种消除路由环路并加快网络收敛的方法是通过叫做“水平分割”的技术实现的。其规则就是不向原始路由更新的方向再次发送路由更新信息（个人理解为单向更新，单向反馈）。比如有三台路由器ABC，B向C学习到访问网络10.4.0.0的路径以后，不再向C声明自己可以通过C访问10.4.0.0网络的路径信息，A向B学习到访问10.4.0.0网络路径信息后，也不再向B声明，而一旦网络10.4.0.0发生故障无法访问，C会向A和B发送该网络不可达到的路由更新信息，但不会再学习A和B发送的能够到达10.4.0.0的错误信息。  3.路由中毒（也称为路由毒化）：  定义最大值在一定程度上解决了路由环路问题，但并不彻底，可以看到，在达到最大值之前，路由环路还是存在的。为此，路由中毒就可以彻底解决这个问题。其原理是这样的：假设有三台路由器ABC，当网络10.4.0.0出现故障无法访问的时候，路由器C便向邻居路由发送相关路由更新信息，并将其度量值标为无穷大，告诉它们网络10.4.0.0不可到达，路由器B收到毒化消息后将该链路路由表项标记为无穷大，表示该路径已经失效，并向邻居A路由器通告，依次毒化各个路由器，告诉邻居10.4.0.0这个网络已经失效，不再接收更新信息，从而避免了路由环路。  4.反向中毒（也称为毒化逆转）：  结合上面的例子，当路由器B看到到达网络10.4.0.0的度量值为无穷大的时候，就发送一个叫做毒化逆转的更新信息给C路由器，说明10.4.0.0这个网络不可达到，这是超越水平分割的一个特列，这样保证所有的路由器都接受到了毒化的路由信息。  5.控制更新时间（即抑制计时器）：  抑制计时器用于阻止定期更新的消息在不恰当的时间内重置一个已经坏掉的路由。抑制计时器告诉路由器把可能影响路由的任何改变暂时保持一段时间，抑制时间通常比更新信息发送到整个网络的时间要长。当路由器从邻居接收到以前能够访问的网络现在不能访问的更新后，就将该路由标记为不可访问，并启动一个抑制计时器，如果再次收到从邻居发送来的更新信息，包含一个比原来路径具有更好度量值的路由，就标记为可以访问，并取消抑制计时器。如果在抑制计时器超时之前从不同邻居收到的更新信息包含的度量值比以前的更差，更新将被忽略，这样可以有更多的时间让更新信息传遍整个网络。  6.触发更新：  正常情况下，路由器会定期将路由表发送给邻居路由器。而触发更新就是立刻发送路由更新信息，以响应某些变化。检测到网络故障的路由器会立即发送一个更新信息给邻居路由器，并依次产生触发更新通知它们的邻居路由器，使整个网络上的路由器在最短的时间内收到更新信息，从而快速了解整个网络的变化。但这样也是有问题存在，有可能包含更新信息的数据包被某些网络中的链路丢失或损坏，其他路由器没能及时收到触发更新，因此就产生了结合抑制的触发更新，抑制规则要求一旦路由无效，在抑制时间内，到达同一目的地有同样或更差度量值的路由将会被忽略，这样触发更新将有时间传遍整个网络，从而避免了已经损坏的路由重新插入到已经收到触发更新的邻居中，也就解决了路由环路的问题。  新信息，包含一个比原来路径具有更好度量值的路由，就标记为可以访问，并取消抑制计时器。如果在抑制计时器超时之前从不同邻居收到的更新信息包含的度量值比以前的更差，更新将被忽略，这样可以有更多的时间让更新信息传遍整个网络。</td>
+</tr>
+<tr>
+<td>7.UDP协议比TCP协议更快，并且UDP还不需要三次握手，但是为什么大多数应用软件仍然采用的是TCP协议？</td>
+</tr>
+<tr>
+<td>回答：其实两种协议并没有好坏之分，应用程序采用哪种协议需要具体问题具体分析，要根据用途来选择具体的协议，或者说两种协议都用。通过计算机网络的学习知道UDP的特点是无连接的，有单播、多播、广播的功能，是面向报文的，不可靠的，头部的开销小。TCP的特点是面向连接的，只支持单播传输，面向字节流，是可靠传输，有拥塞控制功能，提供全双工通信。因此在开发一个应用程序时，需要先设想好该程序有哪些特点，再根据程序特点选择具体的协议。</td>
+</tr>
+<tr>
+<td>8. OSPF与RIP两者有什么区别？</td>
+</tr>
+<tr>
+<td>回答：RIP协议是一种传统的路由协议，适合比较小型的网络，但是当前Internet网络的迅速发展和急剧膨胀使RIP协议无法适应今天的网络。OSPF协议则是在Internet网络急剧膨胀的时候制定出来的，它克服了RIP协议的许多缺陷。RIP是距离矢量路由协议；OSPF是链路状态路由协议。</td>
+</tr>
+</tbody></table>
+<h1 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h1><h2 id="一、常用的网络命令分析"><a href="#一、常用的网络命令分析" class="headerlink" title="一、常用的网络命令分析"></a>一、常用的网络命令分析</h2><h3 id="1-查询DNS、IP，mac地址及DHCP服务的情况"><a href="#1-查询DNS、IP，mac地址及DHCP服务的情况" class="headerlink" title="1. 查询DNS、IP，mac地址及DHCP服务的情况"></a>1. 查询DNS、IP，mac地址及DHCP服务的情况</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令ipconfig/all，回车后获取该主机所有的网络相关信息。</p>
+<p><img src="/images/compuer_net/DNS1.png" alt="">)<img src="/images/compuer_net/DNS2.png" alt=""></p>
+<p>（2）分析：</p>
+<p>①从图中可以看出这台笔记本启用的是网络是无线局域网适配器 Wi-Fi；</p>
+<p><img src="/images/compuer_net/image-20210211124357596.png" alt=""></p>
+<p>②DNS服务器的地址为192.168.99.1；</p>
+<p>③主机的IPv6地址为fe80::f180:3236:7a46:dcb%12，IPv4地址为192.168.99.163；</p>
+<p>④MAC地址即物理地址为3C-6A-A7-F4-C0-3B；</p>
+<p>⑤DHCP的服务已经启用，DHCP的服务器为192.168.99.1，DHCPv6 IAID为205286055，DHCPv6客户端DUID为00-01-00-01-23-6D-93-FC-E4-B9-7A-52-BA-01；</p>
+<h3 id="2-查看ARP表：MAC地址与IP地址的映射表"><a href="#2-查看ARP表：MAC地址与IP地址的映射表" class="headerlink" title="2.查看ARP表：MAC地址与IP地址的映射表"></a>2.查看ARP表：MAC地址与IP地址的映射表</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令arp -a，回车后查看主机的ARP表。</p>
+<p><img src="/images/compuer_net/image-20210211124445362.png" alt=""></p>
+<p>（2）分析：</p>
+<p>①：一共有3个接口，分别为192.168.94.1 — 0x8、192.168.154.1 — 0x9和192.168.0.104 — 0xc；</p>
+<p>②通过查看3个接口的MAC地址与IP地址的映射表，可以看到每个接口的第一个为动态类型，后面的都为静态类型。从表中可以直接看到ARP表的具体信息，每个MAC地址对应一个IP地址。</p>
+<h3 id="3-查看共享资源"><a href="#3-查看共享资源" class="headerlink" title="3. 查看共享资源"></a>3. 查看共享资源</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令net view 192.168.0.104，回车后查看ip地址为192.168.0.104网络共享资源。</p>
+<p><img src="/images/compuer_net/image-20210211124528621.png" alt=""></p>
+<p>（2）分析：</p>
+<p>通过图中可以看到该ip地址的主机没有上传网络共享资源。</p>
+<h3 id="4-查看局域网内的主机名"><a href="#4-查看局域网内的主机名" class="headerlink" title="4. 查看局域网内的主机名"></a>4. 查看局域网内的主机名</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令net view，回车后查看局域网内的所有主机名。</p>
+<p><img src="/images/compuer_net/image-20210211124603214.png" alt=""></p>
+<p>（2）分析：</p>
+<p>通过图中可以看到局域网内的主机名只有一个，为“<a href="file://DESKTOP-VOHRGHO">\\DESKTOP-VOHRGHO</a>”。</p>
+<h3 id="5-查看用户列表"><a href="#5-查看用户列表" class="headerlink" title="5. 查看用户列表"></a>5. 查看用户列表</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令net user，回车后查看局域网内的用户列表。</p>
+<p><img src="/images/compuer_net/image-20210211124633533.png" alt=""></p>
+<p>（2）分析：</p>
+<p>通过图中可以看到局域网内的用户列表只有一个，为“掩于岁月”。</p>
+<h3 id="6-路由跟踪命令"><a href="#6-路由跟踪命令" class="headerlink" title="6. 路由跟踪命令"></a>6. 路由跟踪命令</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令tracert <a href="http://www.baidu.com，跟踪百度的路由信息。" target="_blank" rel="noopener">www.baidu.com，跟踪百度的路由信息。</a></p>
+<p><img src="/images/compuer_net/image-20210211124709886.png" alt=""></p>
+<p>（2）分析：</p>
+<p>通过图中可以一共跟踪了13个<a href="http://www.a.shifen.com" target="_blank" rel="noopener">www.a.shifen.com</a> [14.215.177.38] 的路由，其中有4个超时了，剩下的9的都显示了路由跟踪的具体信息。延迟最低为1ms，最高为39ms。</p>
+<h3 id="7-查看共享资源"><a href="#7-查看共享资源" class="headerlink" title="7. 查看共享资源"></a>7. 查看共享资源</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令net share，查看网络的共享资源。</p>
+<p><img src="/images/compuer_net/image-20210211124814816.png" alt=""></p>
+<p>（2）分析：</p>
+<p>通过图中可以看出本主机并没有网络共享资源。</p>
+<h3 id="8-netstat的相关操作"><a href="#8-netstat的相关操作" class="headerlink" title="8. netstat的相关操作"></a>8. netstat的相关操作</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中依次输入命令netstat -a（-b、-e、-f、-n、-o、-p proto、-q、-r、-s、-p、-t、-x、-y、interval），查看每个指令的具体功能；</p>
+<p>（2）分析：</p>
+<p>1.输入netstat -a后，显示了所有连接和侦听端口，可以看到每个活动连接的信息一共有协议、本地地址、外部地址和状态四个方面的内容。所有活动连接的协议一共有TCP和UDP两种，状态有LISTENING、ESTABLISHED、CLOSE_WAIT、SYN_SENT这几种。</p>
+<p><img src="/images/compuer_net/image-20210211124931468.png" alt=""></p>
+<p><img src="/images/compuer_net/image-20210211124942536.png" alt=""></p>
+<p>2.输入netstat -b后，显示了在创建每个连接或侦听端口时涉及的可执行程序，执行命令后可以看出有哪些应用在使用网络并处于什么状态，例如程序NVIDIA Share.exe就处于ESTABLISHED的状态，说明该进程的连接已经建立。</p>
+<p><img src="/images/compuer_net/image-20210211125004040.png" alt=""></p>
+<p>3.输入netstat -e后，显示以太网统计信息，可以看出以太网接受了366845520个字节、399582个单播数据包和1476个非单播数据包。发送了128446546个字节，346964个单播数据包和4257个非单播数据包，但是有一个发送出现了错误。</p>
+<p><img src="/images/compuer_net/image-20210211125024054.png" alt=""></p>
+<p>4.输入netstat -f后，执行后可以看到外部地址的完全限定域名。</p>
+<p><img src="/images/compuer_net/image-20210211125044853.png" alt=""></p>
+<p>5.输入netstat -n后，执行后可以看到以数字形式显示地址和端口号。</p>
+<p><img src="/images/compuer_net/image-20210211125111855.png" alt=""></p>
+<p>6.输入netstat -o后，执行命令后显示拥有的与每个连接关联的进程 ID，可以看到每个活动连接使用的协议、本地地址、外部地址、状态和PID的信息。</p>
+<p><img src="/images/compuer_net/image-20210211125129695.png" alt=""></p>
+<p>7.输入netstat <code>-p TCP``（TCP可以换为其他协议）</code>后，执行命令后显示UDP协议的连接。</p>
+<p><img src="/images/compuer_net/image-20210211125148277.png" alt=""></p>
+<p>8.输入netstat -q后，执行命令后显示所有连接、侦听端口和绑定的非侦听 TCP 端口。</p>
+<p><img src="/images/compuer_net/image-20210211125256503.png" alt=""></p>
+<p>9.输入netstat -r，执行命令后显示该路由器的路由表。</p>
+<p><img src="/images/compuer_net/image-20210211125314854.png" alt=""></p>
+<p>10.输入netstat -s，执行命令后显示每个协议的统计信息。</p>
+<p><img src="/images/compuer_net/image-20210211125333382.png" alt="">)<img src="/images/compuer_net/image-20210211125340736.png" alt=""></p>
+<p>11.输入netstat -t，执行命令后显示当前连接卸载状态。</p>
+<p><img src="/images/compuer_net/image-20210211125444463.png" alt=""></p>
+<p>12.输入netstat - x，执行命令后显示 NetworkDirect 连接、侦听器和共享终结点,但是本台主机为空。</p>
+<p><img src="/images/compuer_net/image-20210211125500439.png" alt=""></p>
+<p>13.输入netstat -y，执行命令后显示所有连接的 TCP 连接模板。</p>
+<p><img src="/images/compuer_net/image-20210211125518361.png" alt=""></p>
+<p>14.输入netstat interval，执行命令后重新显示选定的统计信息。</p>
+<p><img src="/images/compuer_net/image-20210211125535384.png" alt=""></p>
+<h3 id="9-route的相关操作"><a href="#9-route的相关操作" class="headerlink" title="9. route的相关操作"></a>9. route的相关操作</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中依次输入命令route print（add、change、delete），查看每个指令的具体功能；</p>
+<p>（2）分析:</p>
+<p>①输入route print后，显示当前路由器中路由表的信息。</p>
+<p><img src="/images/compuer_net/image-20210211125608623.png" alt="">)<img src="/images/compuer_net/image-20210211125615063.png" alt=""></p>
+<p>②输入route add后，将新的路由项目添加给路由表。</p>
+<p>③输入route change后，修改数据报的传输路由。</p>
+<p>③输入route delete后将某条路由表项从路由表中删除。输入指令后系统给出了操作示例。</p>
+<p><img src="/images/compuer_net/image-20210211125700727.png" alt=""></p>
+<h3 id="10-nslookup"><a href="#10-nslookup" class="headerlink" title="10. nslookup"></a>10. nslookup</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令nslookup baidu.com，执行后查看对百度的输出结果。</p>
+<p>（2）分析：</p>
+<p>该指令用于测试或解决DNS服务器问题，该命令用两种模式:(1)非交互式模式；(2)交互式模式。可以看出百度的服务器给出了应答，地址为39.156.67.79和220.181.38.148。</p>
+<p><img src="/images/compuer_net/image-20210211125744439.png" alt=""></p>
+<h3 id="11-ftp"><a href="#11-ftp" class="headerlink" title="11. ftp"></a>11. ftp</h3><p>（1）实验步骤：</p>
+<p>①打开电脑的cmd；</p>
+<p>②在cmd中输入命令ftp。</p>
+<p>③输入open 192.168.0.1建立ftp连接。</p>
+<p>④但是连接被拒绝，建立连接失败。<img src="/images/compuer_net/image-20210211125830855.png" alt=""></p>
+<h2 id="二、wireshark实验"><a href="#二、wireshark实验" class="headerlink" title="二、wireshark实验"></a>二、wireshark实验</h2><h3 id="1-TCP-IP格式"><a href="#1-TCP-IP格式" class="headerlink" title="1.TCP/IP格式"></a>1.TCP/IP格式</h3><h4 id="1-1-TCP报文格式"><a href="#1-1-TCP报文格式" class="headerlink" title="1.1 TCP报文格式"></a>1.1 TCP报文格式</h4><p>（1）实验步骤：</p>
+<p>①开启 Wireshark Network Analyzer；</p>
+<p>②选择WiFi进行捕获；</p>
+<p><img src="/images/compuer_net/image-20210211125915286.png" alt=""></p>
+<p>③过滤栏选择tcp进行过滤，停止捕获。</p>
+<p>④选择第11条报文来分析TCP的报文格式。</p>
+<p><img src="/images/compuer_net/image-20210211125933134.png" alt=""></p>
+<p><img src="/images/compuer_net/image-20210211125943206.png" alt=""></p>
+<p>（2）分析：</p>
+<p><img src="/images/compuer_net/image-20210211130000192.png" alt=""></p>
+<p>以这幅图的TCP报文格式对Wireshark捕获的分组11进行分析）</p>
+<p>①这条TCP报文的源端口号为443，目的端口为5176。</p>
+<p><img src="/images/compuer_net/image-20210211130027102.png" alt=""></p>
+<p>②由图可得现32位序列号，即Sequence number对应为67fa8430。</p>
+<p><img src="/images/compuer_net/image-20210211130050736.png" alt=""></p>
+<p>③由图可得现32位确认号，即Acknowledgment number对应为13faa7be。</p>
+<p><img src="/images/compuer_net/image-20210211130108839.png" alt=""></p>
+<p>④ 由抓包图可以看到4位首部长度位0101，偏移量是 0101=5，TCP报文首部长度为5* 4 = 20字节。</p>
+<p><img src="/images/compuer_net/image-20210211130126854.png" alt=""></p>
+<p>⑤保留位（6位）由跟在数据偏移字段后的 6 位构成。</p>
+<p><img src="/images/compuer_net/image-20210211130144918.png" alt=""></p>
+<p>⑥这条报文的URG为0，ACK为1，PSH为0，RST为0，SYN为0，FIN为0。</p>
+<p><img src="/images/compuer_net/image-20210211130204911.png" alt=""></p>
+<p>⑦窗口大小为30492。</p>
+<p><img src="/images/compuer_net/image-20210211130220613.png" alt=""></p>
+<p>⑧ 校验和（16位）为c6df。</p>
+<p><img src="/images/compuer_net/image-20210211130241641.png" alt=""></p>
+<p>⑨紧急指针（16位）为0000。</p>
+<p><img src="/images/compuer_net/image-20210211130303001.png" alt=""></p>
+<h4 id="1-2-IP报文格式"><a href="#1-2-IP报文格式" class="headerlink" title="1.2 IP报文格式"></a>1.2 IP报文格式</h4><p>（1）实验步骤：</p>
+<p>①开启 Wireshark Network Analyzer；</p>
+<p>②选择WiFi进行捕获；</p>
+<p><img src="/images/compuer_net/image-20210211130334560.png" alt=""></p>
+<p>③过滤栏选择ip进行过滤，停止捕获。</p>
+<p>④选择第5条报文来分析TCP的报文格式。</p>
+<p><img src="/images/compuer_net/image-20210211130355079.png" alt=""></p>
+<p>（2）分析：</p>
+<p><img src="/images/compuer_net/image-20210211130414502.png" alt=""></p>
+<p>（以这幅图的IP报文格式对Wireshark捕获的分组5进行分析）</p>
+<p>① 版本：从图中可以看出目前的IP协议版本号为4。</p>
+<p><img src="/images/compuer_net/image-20210211130428927.png" alt=""></p>
+<p>② 首部长度：由图可以看出首部长度为为0101，偏移量为0101=5，首部长度为20字节。</p>
+<p><img src="/images/compuer_net/image-20210211130503117.png" alt=""></p>
+<p>③ 总长度：由图可以看出IP报文的总长度为90。</p>
+<p><img src="/images/compuer_net/image-20210211130520359.png" alt=""></p>
+<p>④ 标识：由图得出这是第8818个分片。</p>
+<p><img src="/images/compuer_net/image-20210211130541678.png" alt=""></p>
+<p>⑤ 标志：共3位。R、DF、MF三位。这个报文中三位都为0，DF位：为1表示不分片，为0表示分片。MF：为1表示“更多的片”，为0表示这是最后一片。</p>
+<p><img src="/images/compuer_net/image-20210211130559903.png" alt=""></p>
+<p>⑥ 片位移：这个报文显示片偏移为0。</p>
+<p><img src="/images/compuer_net/image-20210211130615879.png" alt=""></p>
+<p>⑦ 生存时间：该报文显示生存时间为128。</p>
+<p><img src="/images/compuer_net/image-20210211130631966.png" alt=""></p>
+<p>⑧ 协议：该报文显示使用的协议为UDP，代号为17。</p>
+<p><img src="/images/compuer_net/image-20210211130655677.png" alt=""></p>
+<p>⑨ 首部校验和：该报文显示的首部校验和为0000。</p>
+<p><img src="/images/compuer_net/image-20210211130715278.png" alt=""></p>
+<p>⑩ 源IP地址：该报文显示的源IP地址为192.168.0.104，即本机的IP地址。</p>
+<p>  目的IP地址：该报文显示的目的IP地址为40.81.185.240。</p>
+<p><img src="/images/compuer_net/image-20210211130736678.png" alt=""></p>
+<h3 id="2-三次握手分析"><a href="#2-三次握手分析" class="headerlink" title="2. 三次握手分析"></a>2. 三次握手分析</h3><p>（1）TCP三次握手原理</p>
+<p>三次握手，是指建立一个 TCP 连接时，需要客户端和服务器总共发送3个包。</p>
+<p>第一次握手(SYN=1, seq=x):客户端发送一个 TCP 的 SYN 标志位置1的包，指明客户端打算连接的服务器的端口，以及初始序号X,保存在包头的序列号字段里。发送完毕后，客户端进入SYN_SEND 状态。</p>
+<p>第二次握手(SYN=1,ACK=1,seq=y,ACKnum=x+1):服务器发回确认包(ACK)应答。即SYN 标志位和ACK标志位均为1。服务器端选择自己ISN序列号，放到Seq中，同时将确认序号(ACK)设置为客户的 ISN 加1，即X+1。发送完毕后，服务器端进入SYN_RCVD状态。</p>
+<p>第三次握手(ACK=1，ACKnum=y+1)：客户端再次发送确认包(ACK)，SYN 标志位为0，ACK 标志位为1，并且把服务器发来 ACK 的序号字段+1，放在确定字段中发送给对方，并且在数据段放写ISN的+1。发送完毕后，客户端进入 ESTABLISHED 状态，当服务器端接收到这个包时，也进入 ESTABLISHED 状态，TCP 握手结束。</p>
+<p><img src="/images/compuer_net/image-20210211130802942.png" alt=""></p>
+<p>（2）TCP三次握手wireshark分析</p>
+<p>打开wireshark，选择本地连接接口并开始抓包。打开浏览器，自动打开浏览器首页，页面加载完毕，停止抓包。观察封包列表，可以得到三次握手的数据，输入http进行过滤，wireshark抓到包：</p>
+<p><img src="/images/compuer_net/image-20210211130819006.png" alt=""></p>
+<p>目的地址为218.25.208.218，在通过过滤找到三次握手的信息。</p>
+<p><img src="/images/compuer_net/image-20210211130830670.png" alt=""></p>
+<p>由此我们可以验证HTTP的确是通过TCP建立连接的。</p>
+<p>选中TCP封包，分别查看其封包详细信息，可以得到其端口信息、报文段长度、头部长度、校验和、ACK等。</p>
+<p>第一次握手数据包，可以看到客户端发送一个TCP，标志位为SYN，序列号为Seq=0， 代表客户端请求建立连接。如下图：</p>
+<p><img src="/images/compuer_net/image-20210211130846798.png" alt=""></p>
+<p>第二次握手数据包，可以看到服务器发回确认包, 标志位为 SYN,ACK. 将确认序号ACK设置为1.（Seq=0，Ack=1）如下图：</p>
+<p><img src="/images/compuer_net/image-20210211130902879.png" alt=""></p>
+<p>第三次握手数据包，可以看到客户端再次发送确认包(ACK) ，标志位为ACK，将sequence number+1（Seq=1，Ack=1）.如下图：</p>
+<p><img src="/images/compuer_net/image-20210211130917302.png" alt=""></p>
+<p>使用wireshark的工具统计-&gt;流量图生成TCP连接的图像，根据时间找到这次连接的位置，此次三次握手正如下图红框中所示。</p>
+<p><img src="/images/compuer_net/image-20210211130931558.png" alt=""></p>
+<p>经过上述三次握手过程，即建立了HTTP连接。</p>
+<h3 id="3-流量控制分析"><a href="#3-流量控制分析" class="headerlink" title="3. 流量控制分析"></a>3. 流量控制分析</h3><p>（1）TCP流量控制原理</p>
+<p>a.慢开始算法：</p>
+<p>发送方维持一个叫做拥塞窗口cwnd的状态变量。拥塞窗口的大小取决于网络的拥塞程度，并且动态地在变化。发送方让自己的发送窗口等于拥塞窗口，另外考虑到接受方的接收能力，发送窗口可能小于拥塞窗口。</p>
+<p>从图可以看到，一个传输轮次所经历的时间其实就是往返时间RTT，而且每经过一个传输轮次，拥塞窗口cwnd就加倍。</p>
+<p>为了防止cwnd增长过大引起网络拥塞，还需设置一个慢开始门限ssthresh状态变量。ssthresh的用法如下：当cwnd&lt;ssthresh时，使用慢开始算法。</p>
+<p>当cwnd&gt;ssthresh时，改用拥塞避免算法。</p>
+<p>当cwnd=ssthresh时，慢开始与拥塞避免算法任意。</p>
+<p><img src="/images/compuer_net/image-20210211131004440.png" alt=""></p>
+<p>b. 拥塞避免算法：</p>
+<p>拥塞避免算法让拥塞窗口缓慢增长，即每经过一个往返时间RTT就把发送方的拥塞窗口cwnd加1，而不是加倍。这样拥塞窗口按线性规律缓慢增长。</p>
+<p>无论是在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞，就把慢开始门限ssthresh设置为出现拥塞时的发送窗口大小的一半。然后把拥塞窗口cwnd重新设置为1，执行慢开始算法。这样做的目的就是要迅速减少主机发送到网络中的分组数，使得发生拥塞的路由器有足够时间把队列中积压的分组处理完毕。</p>
+<p><img src="/images/compuer_net/image-20210211131016152.png" alt=""></p>
+<p>① 拥塞窗口cwnd初始化为1个报文段，慢开始门限初始值为16</p>
+<p>②执行慢开始算法，指数规律增长到第4轮，即cwnd=16=ssthresh，改为执行拥塞避免算法，拥塞窗口按线性规律增长</p>
+<p>③cwnd=24时，网络出现超时（拥塞），更新后的ssthresh=12，cwnd重新设置为1，并执行慢开始算法。当cwnd=12=ssthresh时，改为执行拥塞避免算法</p>
+<p>c. 快重传算法：</p>
+<p>快重传要求接收方在收到一个失序的报文段后就立即发出重复确认,而不是等到自己发送数据时再确认。快重传算法规定，发送方一旦一次收到三个重复确认就应当立即重传对方尚未收到的报文段，而不必继续等待设置的重传计时器时间到期。如下图：</p>
+<p><img src="/images/compuer_net/image-20210211131044623.png" alt=""></p>
+<p>d. 快恢复算法：</p>
+<p>当发送方连续收到三个重复确认时，就执行“乘法减小”算法，把ssthresh门限减半。但是接下来并不执行慢开始算法。考虑到如果网络出现拥塞的话就不会收到好几个重复的确认，所以发送方现在认为网络可能没有出现拥塞。所以此时不执行慢开始算法，而是将cwnd设置为ssthresh减半后的值，然后执行拥塞避免算法，使cwnd缓慢增大。</p>
+<p><img src="/images/compuer_net/image-20210211131108527.png" alt=""></p>
+<p>（2）TCP流量控制的wireshark分析</p>
+<p>实验步骤：</p>
+<p>①打开你的浏览器。输入：<a href="http://gaia.cs.umass.edu/wiresharklabs/alice.txt" target="_blank" rel="noopener">http://gaia.cs.umass.edu/wiresharklabs/alice.txt</a><br> 将会看到 Alice in Wonderland 的文本版，然后暂时另存到电脑中；<img src="/images/compuer_net/image-20210211131125908.png" alt=""></p>
+<p>②浏览器中输入：<a href="http://gaia.cs.umass.edu/wireshark-labs/TCP-wireshark-file1.html" target="_blank" rel="noopener">http://gaia.cs.umass.edu/wireshark-labs/TCP-wireshark-file1.html</a></p>
+<p>③在屏幕中会显示：</p>
+<p><img src="/images/compuer_net/image-20210211131154397.png" alt=""></p>
+<p>④用“浏览…”按钮选取你刚才保存的文件，先不按“ Upload alice.txt file”按钮；</p>
+<p>⑤打开 Wireshark，开始包的捕获；</p>
+<p>⑥再回到浏览器，按下“ Upload alice.txt file”按钮向 gaia.cs.umass.edu 服务器来上载文件；</p>
+<p><img src="/images/compuer_net/image-20210211131229470.png" alt=""></p>
+<p>⑦停止 Wireshark 的包捕获。</p>
+<p>结果分析：</p>
+<p>使用wireshark自带的绘图工具IO Graph绘图，我们可以窥见一个TCP慢启动的大致模型。</p>
+<p><img src="/images/compuer_net/image-20210211131248688.png" alt=""></p>
+<p>若向邮件服务器上传一个较大的文件，则曲线可能波动较大。</p>
+<p><img src="/images/compuer_net/image-20210211131305678.png" alt=""></p>
+<p>我们可以在上述较大文件上传抓取的数据包中找到慢启动过程：</p>
+<p><img src="/images/compuer_net/image-20210211131319807.png" alt=""></p>
+<p>也可以发现乘法减少过程：</p>
+<p><img src="/images/compuer_net/image-20210211131333304.png" alt=""></p>
+<p><img src="/images/compuer_net/image-20210211131340848.png" alt=""></p>
+<p>TCP window update表明TCP窗口清空了。</p>
+<h2 id="三、编程代码分析"><a href="#三、编程代码分析" class="headerlink" title="三、编程代码分析"></a>三、编程代码分析</h2><h3 id="1-TCP编程实验以及代码分析"><a href="#1-TCP编程实验以及代码分析" class="headerlink" title="1. TCP编程实验以及代码分析"></a>1. TCP编程实验以及代码分析</h3><p>实验环境：</p>
+<p>Python3.8.6</p>
+<p>Pycharm2020.2.2（专业版）</p>
+<p>主机一台（作为用户端）</p>
+<p>服务器一个(作为服务端)</p>
+<p>（1）wireshark来分析TCP编程输出。</p>
+<p>a.服务器端启动并等待连接。</p>
+<p><img src="/images/compuer_net/image-20210211131432726.png" alt=""></p>
+<p>b.用户端请求连接，并且连接成功。</p>
+<p><img src="/images/compuer_net/image-20210211131444912.png" alt=""></p>
+<p><img src="/images/compuer_net/image-20210211131451576.png" alt=""></p>
+<p>c.建立连接前打开wireshark，选择Wi-Fi网卡接口进行抓包，观察封包的列表，可以看到三次握手的数据。</p>
+<p>从报文可以看出用户端使用了随机端口号1971向端口号为1200的服务端发送了一个TCP，标志位为SYN,序列号Seq为0，这条报文说明客户端请求建立连接。</p>
+<p><img src="/images/compuer_net/image-20210211131502816.png" alt=""></p>
+<p>然后服务端发送了确认包，标志位为SYN，ACK，将确认序列号ACK设置为了1。</p>
+<p><img src="/images/compuer_net/image-20210211131513989.png" alt=""></p>
+<p>最后客户端又发送了确认包ACK，标志位为ACK，并且Seq增加了1从0变成了1。</p>
+<p><img src="/images/compuer_net/image-20210211131528558.png" alt=""></p>
+<p>d．客户端发送消息：此消息为客户端发送。</p>
+<p>客户端：</p>
+<p><img src="/images/compuer_net/image-20210211131540503.png" alt=""></p>
+<p>服务端收到信息：</p>
+<p><img src="/images/compuer_net/image-20210211131550822.png" alt=""></p>
+<p>从Wireshark捕捉的TCP数据包，可以看到客户端发送了一条PSH为1的TCP报文段，尽快地交付给了接受应用进程，没有等到整个缓存都填满了后再向上交付。</p>
+<p><img src="/images/compuer_net/image-20210211131602521.png" alt=""></p>
+<p>然后服务端向客户端发送了一个确认TCO数据包，标志位为ACK，由于上一条TCO数据包的长度len为27，所以此时的确认数据包中的ACK为28。</p>
+<p><img src="/images/compuer_net/image-20210211131614893.png" alt=""></p>
+<p>流量图为：</p>
+<p><img src="/images/compuer_net/image-20210211131630080.png" alt=""></p>
+<p>e.服务端回复信息：此消息为服务端发送</p>
+<p>服务端发送信息：</p>
+<p><img src="/images/compuer_net/image-20210211131640991.png" alt=""></p>
+<p>客户端回复信息：</p>
+<p><img src="/images/compuer_net/image-20210211131652656.png" alt=""></p>
+<p>从Wireshark捕捉的TCP数据包，可以看到服务端发送了一条PSH=1的TCP报文段，尽快地交付接受应用进程，而不是等到整个缓存都填满后再向上交付。</p>
+<p><img src="/images/compuer_net/image-20210211131709183.png" alt=""></p>
+<p>然后客户端向服务端发送了一个确认TCO数据包，标志位为ACK，由于上一条TCO数据包的长度len为27，所以此时的确认数据包中的ACK为28。</p>
+<p><img src="/images/compuer_net/image-20210211131719737.png" alt=""></p>
+<p>流量图为：</p>
+<p><img src="/images/compuer_net/image-20210211131733231.png" alt=""></p>
+<p>f.关闭程序后，wireshark捕获1200端口的数据包</p>
+<p>第一次挥手：客户端发送了一个Fin=1，Seq=28，ACK=28的报文，请求关闭客户机到服务器的数据传送。</p>
+<p><img src="/images/compuer_net/image-20210211131747490.png" alt=""></p>
+<p>第二次挥手：服务端收到客户端的Fin，它发回了一个ACK，确认序号为收到得到序号+1，即ACK=28+1=29，Seq=28。</p>
+<p><img src="/images/compuer_net/image-20210211131759330.png" alt=""></p>
+<p>第三次挥手：客户端收到服务端发送的一个Fin=1，用于关闭服务端到客户端的数据传送，Seq=28，Ack=29；</p>
+<p><img src="/images/compuer_net/image-20210211131810239.png" alt=""></p>
+<p>第四次挥手：客户端收到服务端发的Fin报文后，发送一个ACK给服务端，确认序号为收到序号+1，ACK=28+1=29，Seq=29，服务器进入关闭状态，完成了四次挥手。</p>
+<p><img src="/images/compuer_net/image-20210211131826615.png" alt=""></p>
+<p>（2）TCP客户端与服务端的代码分析</p>
+<p><strong>服务器端：</strong></p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> socket<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>程序需要使用到底层网络接口库</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">host <span class="token operator">=</span> <span class="token string">"192.168.0.104"</span> 
+port <span class="token operator">=</span> <span class="token number">1200</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>host中存服务端的主机ip地址192.168.0.104，port中存用于建立连接的端口号；</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">s <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_STREAM<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>这一行创建了服务端的套接字，命名为s，第一个参数是指示底层网络使用的是IPv4，    第二个参数说明了这个套接字是SOCK_STREAM类型。这说明了这是一个TCP套接字；</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">s<span class="token punctuation">.</span>bind<span class="token punctuation">(</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>这行代码将服务器的端口号port与该套接字关联起来。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">s<span class="token punctuation">.</span>listen<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>​      print(‘服务器已经启动’)</p>
+<p><strong>分析：</strong>这行让服务器聆听来自客户的TCO请求，参数1为请求连接的最大数量，启动后输   出“服务器已经启动”，服务端处于侦听状态，等待连接。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">conn<span class="token punctuation">,</span> addr <span class="token operator">=</span> s<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> addr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'已经建立连接'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>执行这行代码说明有客户请求连接，程序为s调用了accept()方法，这在服务器中创  建了一个名为conn的新套接字由这个特定用户专用。客户与服务器完成了握手，在    用户得到套接字与服务器的套接字之间创建了一个TCP连接，借助于创建的TCP连    接，客户端与服务端可以通过这个连接互相发送字节。并且输出建立连接的ip地址      与端口号，输出“已经建立连接”告知用户连接已经建立完成。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+       <span class="token keyword">try</span><span class="token punctuation">:</span>
+         data <span class="token operator">=</span> conn<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>
+         data <span class="token operator">=</span> data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token keyword">if</span> <span class="token operator">not</span> data<span class="token punctuation">:</span>
+           <span class="token keyword">break</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'从客户端接收到信息为：'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+         send <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'给客户端接的回复信息为：'</span><span class="token punctuation">)</span>
+         conn<span class="token punctuation">.</span>sendall<span class="token punctuation">(</span>send<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+       <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这是一个循环，用于服务端与客户端的信息传输与交流，用recv（）捕获客户端发送  的信息并存在data中，先将data解码为字符串，如果data为空就退出循环，不为空     就输出从客户端接收到的信息内容，接着让用户输入服务端给客户端的回复信息，编    码后发送到客户端，并有一个异常处理的语句。通过这段代码可以实现客户端与服务    端的信息交流。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+s<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>关闭两个套接字，连接被释放。</p>
+<p><strong>客户端：</strong></p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">IP <span class="token operator">=</span> <span class="token string">'119.45.115.128'</span> 
+port <span class="token operator">=</span> <span class="token number">1200</span> 
+ s <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_STREAM<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>ip为服务端的ip地址，端口号与服务端的端口号一致，最后创建了客户的套接字，   称为s。第一个参数说明底层网络使用的是IPv4，第二个参数说明了这个套接字是  SOCK_STREAM类型。这表明了s是一个TCP套接字。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+     s<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">(</span>IP<span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">)</span>
+     <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'服务器没有找到或未打开！'</span><span class="token punctuation">)</span>
+     sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这包含了一个异常处理语句，如果连接没有建立成功就输出“服务器没有找到或未打     开！”），然后关闭。否者连接建立成功，s.connect((IP, port))语句成功执行，这行代码  发起了客户与服务端之间的TCO连接，connect（）的参数是这条连接中服务器的地      址和端口号。这行代码执行后将进行三次握手，最后创建TCP连接。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+ <span class="token keyword">try</span><span class="token punctuation">:</span>
+ trigger <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入待发送的数据：(exit-退出)"</span><span class="token punctuation">)</span>
+ <span class="token keyword">if</span> trigger <span class="token operator">==</span> <span class="token string">'exit'</span><span class="token punctuation">:</span>
+   <span class="token keyword">break</span>
+ s<span class="token punctuation">.</span>sendall<span class="token punctuation">(</span>trigger<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ data <span class="token operator">=</span> s<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>
+ data <span class="token operator">=</span> data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'从服务器接收到的结果为：'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+ <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这仍然是一个循环用于客户端与服务端的信息交流，让用户先输入需要发送的数据，     如果输入为“exit”就退出循环，否则将发送的数据编码后发送到服务端，然后捕捉      服务端发回的信息并解码后输出从服务器端接收到的信息。其中包含一个异常处理语      句，如果捕捉到异常就输出。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">s<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>关闭了套接字，也就是关闭了客户和服务器之间的TCP连接。</p>
+<h3 id="2-UDP编程实验以及代码分析"><a href="#2-UDP编程实验以及代码分析" class="headerlink" title="2. UDP编程实验以及代码分析"></a>2. UDP编程实验以及代码分析</h3><p>实验环境：</p>
+<p>Python3.8.6</p>
+<p>Pycharm2020.2.2（专业版）</p>
+<p>主机一台（作为用户端）</p>
+<p>服务器一个(作为服务端)</p>
+<p>（1）wireshark来分析UDP编程输出。</p>
+<p>a.建立连接，分别启动服务端与客户端建立连接</p>
+<p>服务端：</p>
+<p><img src="/images/compuer_net/image-20210211132351598.png" alt=""></p>
+<p>客户端：</p>
+<p><img src="/images/compuer_net/image-20210211132403497.png" alt=""></p>
+<p>b.客户端向服务端发送信息“此消息为客户端发送”，并收到服务器自动返回的信息</p>
+<p>客户端：</p>
+<p><img src="/images/compuer_net/image-20210211132417248.png" alt=""></p>
+<p>服务端：</p>
+<p><img src="/images/compuer_net/image-20210211132431664.png" alt=""></p>
+<p>whireshark抓到的包：</p>
+<p><img src="/images/compuer_net/image-20210211132443039.png" alt=""></p>
+<p>第一条为客户端向服务端发送的信息，第二条为服务端返回的信息。</p>
+<p>（2）UDP客户端与服务端的代码分析</p>
+<p><strong>服务器端：</strong></p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">HOST <span class="token operator">=</span> <span class="token string">''</span>
+PORT <span class="token operator">=</span> <span class="token number">3555</span>
+BUFSIZ <span class="token operator">=</span> <span class="token number">1024</span>
+ADDR <span class="token operator">=</span> <span class="token punctuation">(</span>HOST<span class="token punctuation">,</span> PORT<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>HOST为主机的ip地址即119.45.115.128，使用的端口号为3555，给BUFSIZ赋值1024      是将BUFSIZ作为一个常量后面控制单次传输的最大字节数，ADDR是将ip地址与端口    号封装起来。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">udpServerSocket <span class="token operator">=</span> socket<span class="token punctuation">(</span>AF_INET<span class="token punctuation">,</span> SOCK_DGRAM<span class="token punctuation">)</span>
+udpServerSocket<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>ADDR<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>第一行创建了服务端的套接字，命名为udpServerSocket，第一个参数说明了地址簇，      AF_INET说明了底层网络使用了IPv4，第二个参数指示了该套接字是SOCK_DGRAM类   型的，这意味着他是一个UDP套接字。第二行将端口号3555与该服务器的套接字绑   定在一起。所以在UDP的服务端中代码显式地为该套接字分配了一个端口号，这样    任何人都可以向位于该服务器的IP地址的端口3555发送一个分组，这个分组会导向  这个套接字。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+      data<span class="token punctuation">,</span> addr <span class="token operator">=</span> udpServerSocket<span class="token punctuation">.</span>recvfrom<span class="token punctuation">(</span>BUFSIZ<span class="token punctuation">)</span>
+      <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'来自主机 %s，端口: %s.'</span> <span class="token operator">%</span> addr<span class="token punctuation">)</span>
+      <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      reply <span class="token operator">=</span> <span class="token string">'Hello, this is udpserver!'</span>
+      udpServerSocket<span class="token punctuation">.</span>sendto<span class="token punctuation">(</span>reply<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> addr<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+      <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这是一个循环，这个循环让UDP的服务端无限接收处理来自客户的分组。一直等待   分组的到来。当分组到达这个服务器的套接字时，传输的数据信息存在了变量data      中，分组的源地址被存在了变量addr中。接受到信息后程序会先输出信息来自哪个    主机哪个端口，然后再输出信息。由于变量addr中包含了客户的IP地址和客户的端    口号，即为信息的返回地址，利用这个地址，服务器向源地址发送了一条reply信息   给源地址的主机。还有一句异常处理语句，如果发现异常就输出。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">udpServerSocket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>这行命令时关闭套接字，服务端关闭不在收到信息。</p>
+<p><strong>客户端：</strong></p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">HOST <span class="token operator">=</span> <span class="token string">'119.45.115.128'</span>
+PORT <span class="token operator">=</span> <span class="token number">3555</span>
+BUFSIZ <span class="token operator">=</span> <span class="token number">1024</span>
+ADDR <span class="token operator">=</span> <span class="token punctuation">(</span>HOST<span class="token punctuation">,</span> PORT<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>HOST为服务器端的目的地址119.45.115.128，PORT为服务端开放用于信息交流的端  口号，给BUFSIZ赋值1024      是将BUFSIZ作为一个常量后面控制单次传输的最大    字节数，ADDR是将服务端ip地址与端口号封装起来。</p>
+<p><strong>代码：</strong>udpClientSocket = socket(AF_INET, SOCK_DGRAM)</p>
+<p><strong>分析：</strong>这一行创建了客户的套接字，命名为udpClientSocket，第一个参数表明了地址簇，    AF_INET说明了底层网络用的是IPv4，第二个参数表明了这个套接字是SOCK_DGRAM    类型的，意味着这是一个UDP的套接字。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+   <span class="token keyword">try</span><span class="token punctuation">:</span>
+       data <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'>'</span><span class="token punctuation">)</span>
+       <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'send the data: '</span> <span class="token operator">+</span> data<span class="token punctuation">)</span>
+       msg <span class="token operator">=</span> data<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+      <span class="token comment" spellcheck="true"># 发送数据:</span>
+       udpClientSocket<span class="token punctuation">.</span>sendto<span class="token punctuation">(</span>msg<span class="token punctuation">,</span> ADDR<span class="token punctuation">)</span>
+      <span class="token comment" spellcheck="true"># 接收数据:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'receive the reply: '</span> <span class="token operator">+</span> udpClientSocket<span class="token punctuation">.</span>recv<span class="token punctuation">(</span>BUFSIZ<span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+       <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个循环用于客户端与服务端的通讯，客户端要求用户先输入需要传输的数据内容，     然后编码后向服务器端发送这些数据，发送后服务器会回复，将服务端发送的信息解     码后输出出来。同样有一个异常处理语句，如果发现异常就将异常打印出来。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">udpClientSocket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>分析：</strong>改行关闭了套接字，关闭了这个进程。</p>
+<h3 id="3-OSPF编程实验以及代码分析"><a href="#3-OSPF编程实验以及代码分析" class="headerlink" title="3. OSPF编程实验以及代码分析"></a>3. OSPF编程实验以及代码分析</h3><p>（1）OSFP原理</p>
+<p>a.每台路由器学习激活的直接相连的网络。</p>
+<p>b.每台路由器和直接相连的路由器互交，发送Hello报文，建立邻居关系。</p>
+<p>c.每台路由器构建包含直接相连的链路状态的LSA（Link-State Advertisement，链路状态通告）。链路状态通告(LSA)中记录了所有相关的路由器，包括邻路由器的标识、链路类型、带宽等。</p>
+<p>d.每台路由器泛洪链路状态通告（LSA）给所有的邻路由器，并且自己也在本地储存邻路由发过来的LSA，然后再将收到的LSA泛洪给自己的所有邻居，直到在同一区域中的所有路由器收到了所有的LSA。每台路由器在本地数据库中保存所有收到的LSA副本，这个数据库被称作”链路状态数据库（LSDB，Link-State Database）”</p>
+<p>e.每台路由器基于本地的”链路状态数据库(LSDB)”执行”最短路径优先（SPF）”算法，并以本路由器为根，生成一个SPF树，基于这个SPF树计算去往每个网络的最短路径，也就得到了最终的路由表。</p>
+<p><img src="/images/compuer_net/image-20210211132835616.png" alt=""></p>
+<p>(2)OSPF Python 模拟实现</p>
+<p>a.运行程序，向程序输入5个路由，为A,B,C,D,E这5个路由。</p>
+<p>A的路由信息：</p>
+<p><img src="/images/compuer_net/image-20210211132846335.png" alt=""></p>
+<p>B的路由信息:</p>
+<p><img src="/images/compuer_net/image-20210211132856536.png" alt=""></p>
+<p>C的路由信息：<img src="/images/compuer_net/image-20210211132909447.png" alt=""></p>
+<p>D的路由信息：<img src="/images/compuer_net/image-20210211132923680.png" alt=""></p>
+<p>E的路由信息：</p>
+<p><img src="/images/compuer_net/image-20210211132935111.png" alt=""></p>
+<p>b.查看A,B,C,D,E的路由表：</p>
+<p>A的路由表：</p>
+<p><img src="/images/compuer_net/image-20210211132948022.png" alt=""></p>
+<p>B的路由表：</p>
+<p><img src="/images/compuer_net/image-20210211132957527.png" alt=""></p>
+<p>C的路由表：</p>
+<p><img src="/images/compuer_net/image-20210211133009383.png" alt=""></p>
+<p>D的路由表：</p>
+<p><img src="/images/compuer_net/image-20210211133019250.png" alt=""></p>
+<p>E的路由表：</p>
+<p><img src="/images/compuer_net/image-20210211133030159.png" alt=""></p>
+<p><strong>(3)**</strong>代码分析**</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span>packets<span class="token punctuation">,</span>node_route<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true">#Dijkstra算法</span>
+    table <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">#节点node_route的路由表</span>
+    <span class="token keyword">for</span> key <span class="token keyword">in</span> packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true">#初始化table</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">!=</span>float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            row<span class="token operator">=</span><span class="token punctuation">[</span>key<span class="token punctuation">,</span>packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span>key<span class="token punctuation">,</span><span class="token boolean">False</span><span class="token punctuation">]</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            row<span class="token operator">=</span><span class="token punctuation">[</span>key<span class="token punctuation">,</span>packets<span class="token punctuation">[</span>node_route<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'无'</span><span class="token punctuation">,</span><span class="token boolean">False</span><span class="token punctuation">]</span>
+        table<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+    count<span class="token operator">=</span><span class="token number">0</span>
+    <span class="token keyword">while</span> count<span class="token operator">&lt;</span>len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        temp<span class="token operator">=</span><span class="token number">0</span>  <span class="token comment" spellcheck="true">#temp用于保存当前table中距离最小的下标</span>
+        min<span class="token operator">=</span>float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#min用于记录当前的距离最小值</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token boolean">False</span> <span class="token operator">and</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>min<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                min<span class="token operator">=</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+                temp<span class="token operator">=</span>i
+        table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">True</span>  <span class="token comment" spellcheck="true">#把temp对应的节点加入到已经找到的最短路径的集合中</span>
+        count<span class="token operator">=</span>count<span class="token operator">+</span><span class="token number">1</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token boolean">False</span> <span class="token operator">and</span> packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">!=</span>float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment" spellcheck="true">#如果新得到的边可能影响其它未访问的节点，那就更新它的最短距离和下一跳路由器</span>
+                table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>packets<span class="token punctuation">[</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                table<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>table<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+    table<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span>x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> table<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>   这为OSPF的核心算法，即Dijkstra算法，先定义一个空表table用于存储结点      的路由表，先对table进行初始化，对packets进行遍历，如果packets中存储的不是    +∞，那么临时变量row为一个列表信息（包括结点位置key，packets中存的跳数，    结点位置key，false）；否则就是+∞，说明不可达，那么临时变量row的列表信息中存储的是（节点位置key，+∞，“无”（即没有信息），false），判断结束后将row存入      table列表的尾部。</p>
+<p>​        先是一个大的循环，循环次数为列表的长度，先默认table中距离最小位置的下标      temp为0，默认最小值为+∞。接着进入一个小的循环，循环次数为列表的长度，如     果table中对应元素的第四个存储信息为false并且该元素的第二个存储信息（即跳数）      小于最小值min，那么更新最小值min为新的跳数，下标temp也更新为该元素的位      置。循环结束后把temp对应的节点加到已经找到的最短路径的集合中。控制最外层   循环的count增加1。</p>
+<p>​           紧接着进入第二个小的循环，循环次数仍然为table列表的长度，如果同时满足     ①table中该该元素的第四个存储信息为false②packets中对应位置的跳数不为+∞ ③   table的temp位置存储的跳数与packets中存储的跳数相加后的和小于table该位置    （i）的跳数三个条件，就更新它的最短路径与下一条路由器。更新结束后结束循环。</p>
+<p>​      最后对table进行排序，排序结束后返回存储路由表信息的table。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    packets<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">#所有的链路状态分组</span>
+    nodes<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">#所有的节点</span>
+    node<span class="token operator">=</span>input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> node<span class="token operator">!=</span><span class="token string">'#'</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">not</span> <span class="token keyword">in</span> nodes<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            nodes<span class="token punctuation">.</span>append<span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的链路状态分组已存在！'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+            node <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+            <span class="token keyword">continue</span>
+        per<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+        row<span class="token operator">=</span>input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+        <span class="token keyword">while</span> row<span class="token operator">!=</span><span class="token string">'*'</span><span class="token punctuation">:</span>
+            row<span class="token operator">=</span>row<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#以空格分割输入的字符串</span>
+            row<span class="token operator">=</span><span class="token punctuation">[</span>int<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">if</span> x<span class="token punctuation">.</span>isdigit<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">True</span> <span class="token keyword">else</span> x <span class="token keyword">for</span> x <span class="token keyword">in</span> row<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">#把度量置为整型</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true">#检查输入是否合理</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'输入违规！'</span><span class="token punctuation">)</span>
+                row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                <span class="token keyword">continue</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">in</span> per<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true">#避免重复</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的链路状态分组中已有此项！'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+                <span class="token keyword">continue</span>
+            per<span class="token punctuation">[</span>row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">=</span>row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">#向节点node的链路状态分组中添加表项</span>
+            row <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点%s的链路状态分组(相邻路由器，度量)，以空格隔开，以*结束：'</span> <span class="token operator">%</span> node<span class="token punctuation">)</span>
+        packets<span class="token punctuation">[</span>node<span class="token punctuation">]</span><span class="token operator">=</span>per  <span class="token comment" spellcheck="true">#向所有的链路状态分组中添加节点node的链路状态分组</span>
+        node <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入节点，以#结束：'</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">#将与每一节点未直接相邻的节点的度量置为无穷大（自身除外）</span>
+    <span class="token keyword">for</span> key <span class="token keyword">in</span> packets<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> nodes<span class="token punctuation">:</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">!=</span>key <span class="token operator">and</span> <span class="token punctuation">(</span>i <span class="token operator">not</span> <span class="token keyword">in</span> packets<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                packets<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>float<span class="token punctuation">(</span><span class="token string">'Inf'</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        node_route <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入你想查看路由表的节点：'</span><span class="token punctuation">)</span>
+        table<span class="token operator">=</span>dijkstra<span class="token punctuation">(</span>packets<span class="token punctuation">,</span>node_route<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'节点%s的路由表如下:'</span> <span class="token operator">%</span> node_route<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'目的网络  距离  下一跳路由器'</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> row <span class="token keyword">in</span> table<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'   '</span><span class="token operator">+</span>row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">'      '</span><span class="token operator">+</span>str<span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'       '</span><span class="token operator">+</span>row<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>   此为执行的主函数，先定义一个空字典packets存储所有的链路状态分组，定义一      个nodes空列表存储所有的结点。先让用户输入一个结点，如果输入的是“#”，代表    输入节点已经结束。否则输入的不是“#”，判断这个节点是否在nodes列表中，如果    不在就加入nodes的尾部，如果在列表中就告诉用户列表中已存在，继续输入其他节    点。节点输入后再让用户输入这个结点的链路状态分组，如果输入的为“<em>”就说明输      入完毕退出循环，否则不为“</em>”，获取用户的非“*”输入的字符串后，将字符串以空  格进行切割，再把切割后的第二个元素的数据类型调整为整形。调整后判断输入是否    合法，如果跳数为≤0的数，告诉用户输入不合法请重新输入，合法后检查是否在per     中，如果存在就告诉用户状态分组已经有了请重新输入。确定合法且不重复后向节点  node的链路状态添加这一个表项。循环继续执行，执行相同的操作，知道用户输入“#”     后退出循环，结束输入。</p>
+<p>​           遍历字典packets中每个节点，如果节点位置不等于key并且这个位置不是    packets的key列表的键，就将跳数设置为无穷大。这步操作是扫描每个结点的链路状      态分组，确保链路状态分组中有所有的其他节点，如果的链路状态分组中没有就加上    去并将跳数设置为+∞表示不可达。</p>
+<p>​           接下来是输出路由表，这是一个循环，一次让用户获取一个节点的路由表。先执      行dijkstra算法确定最短路径并存储在table中，然后依次输出这个节点路由表的所有  信息，包括目的网络、距离和下一条路由器这些信息。</p>
+<h3 id="4-RIP编程实验以及代码分析"><a href="#4-RIP编程实验以及代码分析" class="headerlink" title="4. RIP编程实验以及代码分析"></a>4. RIP编程实验以及代码分析</h3><p>（1）RIP原理</p>
+<p>RPI协议是一种内部网关协议（IGP），是一种动态路由选择协议，用于自治系统（AS）内的路由信息的传递。RIP协议基于距离矢量算法（DistanceVectorAlgorithms），使用“跳数”来衡量到达目标地址的路由距离。这种协议的路由器只关心自己周围的世界，只与自己相邻的路由器交换信息，范围限制在15跳(15度)之内。获取新的路由信息时：</p>
+<p>a.  对本路由表中已有的路由项，当发送报文的网关相同时，不论跳数增大还是减少，都更新该路由表项的跳数。</p>
+<p>b.  对本路由表中已有的路由项，当发送报文的网关不同时，只有在跳数减少时才更新该路由表项。</p>
+<p>c.   对本路由表中不存在的路由项，在度量小于不可达的跳数时，在路由表中增加该路由项目。</p>
+<p>（2）RIP Python 模拟实现</p>
+<p>a.输入当前路由表行数为5.</p>
+<p><img src="/images/compuer_net/image-20210211140331577.png" alt=""></p>
+<p>b.输入路由表的内容（格式为【目的网络，距离，下一条】</p>
+<p><img src="/images/compuer_net/image-20210211140345072.png" alt=""></p>
+<p>c.输入新路由表来自的路由器A以及新路由表（格式为【目的网络，跳数】）</p>
+<p><img src="/images/compuer_net/image-20210211140357897.png" alt=""></p>
+<p>d.  获取更新后的路由表</p>
+<p><img src="/images/compuer_net/image-20210211140413689.png" alt=""></p>
+<p><strong>(3)**</strong>代码分析**</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Net</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>DesNet<span class="token punctuation">,</span>Dis<span class="token punctuation">,</span>NextHoop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>DesNet <span class="token operator">=</span> DesNet     <span class="token comment" spellcheck="true">#目的网络</span>
+        self<span class="token punctuation">.</span>Dis <span class="token operator">=</span> Dis       <span class="token comment" spellcheck="true">#距离</span>
+        self<span class="token punctuation">.</span>NextHoop <span class="token operator">=</span> NextHoop     <span class="token comment" spellcheck="true">#下一跳</span>
+        self<span class="token punctuation">.</span>next <span class="token operator">=</span> None<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这是一个节点类，数据元素包括目的网络、距离、下一条的网络和下一个节点的位置。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Link</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 构造函数</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>head <span class="token operator">=</span> Net<span class="token punctuation">(</span>None<span class="token punctuation">,</span>None<span class="token punctuation">,</span>None<span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 头节点为空</span>
+        self<span class="token punctuation">.</span>tail <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+        self<span class="token punctuation">.</span>size <span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>为链路link类的构造函数，使用了带附加头节点链表的数据结构，初始头结点为空，     尾节点指向头结点，节点数为1（空的头结点）。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">      <span class="token comment" spellcheck="true"># 添加节点</span>
+    <span class="token keyword">def</span> <span class="token function">add</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>DesNet<span class="token punctuation">,</span>Dis<span class="token punctuation">,</span>NextHoop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        net <span class="token operator">=</span> Net<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span>Dis<span class="token punctuation">,</span>NextHoop<span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 创建新节点</span>
+        self<span class="token punctuation">.</span>tail<span class="token punctuation">.</span>next <span class="token operator">=</span> net                    <span class="token comment" spellcheck="true"># 尾节点的下一个节点为新节点</span>
+        self<span class="token punctuation">.</span>tail <span class="token operator">=</span> net                         <span class="token comment" spellcheck="true"># 尾节点为新节点</span>
+        self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">+</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个函数的作用为添加节点，先创建一个新节点（参数DesNet为目的网络，Dis为  距离，NextHoop为下一跳），让尾节点的下一个节点为这个新节点，此时尾节点为这  个新节点，节点个个数增加1。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 插入节点（此节点作为第index个节点）</span>
+    <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            insert_net <span class="token operator">=</span> Net<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next  <span class="token comment" spellcheck="true"># 推进到要插入的位置</span>
+            insert_net<span class="token punctuation">.</span>next <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>next <span class="token operator">=</span> insert_net
+            self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">+</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个函数的作用为在index位置插入节点，如果插入位置index大于节点个数，那么  无法插入，小于节点个数时，让“指针”net指向头结点，根据信息创建需要插入的    节点insert_net，再通过循环将net推进到需要插入的位置，此时插入节点insert_net  的下一个节点为net的下一个节点，net的下一个节点变为插入节点insert_net，节   点的个数增加1个。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 删除节点（索引为index）</span>
+    <span class="token keyword">def</span> <span class="token function">delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            temp <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">.</span>next
+            self<span class="token punctuation">.</span>size <span class="token operator">=</span> self<span class="token punctuation">.</span>size <span class="token operator">-</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个函数的功能为删除位置index的节点，如果位置index大于链表长度无法删除，  小于链表长度时，让“指针”net指向链表的头结点，然后通过循环将net推进到需  要删除的位置，用临时变量temp存储net的下一个节点，然后net的下一个节点改   编为temp的下一个节点，节点的个数减少1，删除完成。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 改变指定节点的数据</span>
+    <span class="token keyword">def</span> <span class="token function">change</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 推进到要改变节点的位置</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            net<span class="token punctuation">.</span>DesNet <span class="token operator">=</span> DesNet
+            net<span class="token punctuation">.</span>Dis <span class="token operator">=</span> Dis
+            net<span class="token punctuation">.</span>NextHoop <span class="token operator">=</span> NextHoop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个函数的作用为改变指定节点位置inedx的数据，如果位置index大于链表长度无  法删除。小于链表长度时，让“指针”net指向链表的头结点，然后通过循环将net    推进到需要改变节点的位置，将该节点的目的地址换为新的目的地址，距离换为新的   距离，下一跳地址更新为新的下一条地址。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 返回节点的数据</span>
+    <span class="token keyword">def</span> <span class="token function">getData</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> self<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 判断是否超过链表的长度</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'链表还没有这么长哟！请输入小一点的整数......'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            net <span class="token operator">=</span> self<span class="token punctuation">.</span>head
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                net <span class="token operator">=</span> net<span class="token punctuation">.</span>next
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>net<span class="token punctuation">.</span>DesNet<span class="token punctuation">,</span> net<span class="token punctuation">.</span>Dis<span class="token punctuation">,</span> net<span class="token punctuation">.</span>NextHoop<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>该函数的作用为返回位置为index的数据，如果果位置index大于链表长度无法返回。   小于链表长度时，让“指针”net指向链表的头结点，然后通过循环将net推进到需要  返回节点的位置，然后返回该节点的目的网络，距离和下一跳网络的信息。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 返回节点的长度</span>
+    <span class="token keyword">def</span> <span class="token function">getSize</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>size<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>该函数的作用为返回节点的长度，直接返回节点的个数即可。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">    <span class="token keyword">def</span> <span class="token function">length</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 获取这个链表的长度</span>
+        count <span class="token operator">=</span> <span class="token number">0</span>
+        cur <span class="token operator">=</span> self<span class="token punctuation">.</span>_head
+        <span class="token keyword">while</span> cur <span class="token operator">!=</span> None<span class="token punctuation">:</span>
+            count <span class="token operator">+=</span> <span class="token number">1</span>
+            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next
+        <span class="token keyword">return</span> count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>这个函数的作用为获取链表的长度，初始计数的长度count为0，指针cur指向头结  点，然后遍历指针，每遍历一个节点count增加1，遍历结束后返回count值就是返    回链表的长度。</p>
+<p><strong>代码：</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    table <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 初始路由表</span>
+    NewTable <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 来自某个路由器的路由表</span>
+    FinalTable <span class="token operator">=</span> Link<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 最终形成的路由表</span>
+    temptable1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    temptable2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    a <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'请输入初始路由表行数：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入整个路由表：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        table<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+        FinalTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> NextHoop<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'路由表初始化完成'</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'新路由表来自的路由器：'</span><span class="token punctuation">)</span>
+    c <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'新路由表的行数：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入新路由表的信息：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        DesNet<span class="token punctuation">,</span> Dis <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        Dis <span class="token operator">=</span> int<span class="token punctuation">(</span>Dis<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+        NewTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>DesNet<span class="token punctuation">,</span> Dis<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+        count <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+            temptable1 <span class="token operator">=</span> NewTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+            temptable2 <span class="token operator">=</span> FinalTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>j<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> temptable2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络相同</span>
+                <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> temptable2<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络和下一跳均相同</span>
+                    FinalTable<span class="token punctuation">.</span>change<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> j<span class="token punctuation">)</span>
+                <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">!=</span> temptable2<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 如果目标网络一致，下一跳不同</span>
+                    <span class="token keyword">if</span> int<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> int<span class="token punctuation">(</span>temptable2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        FinalTable<span class="token punctuation">.</span>change<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> j<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">continue</span>
+            <span class="token keyword">if</span> temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> temptable2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">if</span> int<span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token operator">==</span> int<span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span>
+            FinalTable<span class="token punctuation">.</span>add<span class="token punctuation">(</span>temptable1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> temptable1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'新的路由表为：'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'目的网络    距离    下一跳路由器'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>FinalTable<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">continue</span>
+        data <span class="token operator">=</span> FinalTable<span class="token punctuation">.</span>getData<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'        '</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'         '</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>分析：</strong>   这位函数执行的主体，先初始化一个路由表，新路由表（来自某个路由器的路   表），最终形成的路由表这三个Link类型的变量，创建两个临时列表temptable1和  temptable2。然后让用户输入初始路由表的行数，再让用户输入整个路由表，遍历用   户输入的整个路由表，将每行进行切片处理，第一个数据为目的网络DesNet，第二个   数据为距离Dis，第三个数据为NextHoop下一条网络，切片处理一组数据，就将处理     完成的数据加入到初始路由表table和最终路由表FinalTable的尾部。处理完成后输    出路由表的初始化完成。</p>
+<p>​        接着让用户输入新路由表来自的路由器和新路由表的行数，接着输入新路由表的     所有信息，遍历用户输入的整个新路由表，将每行进行切片处理，切片后的第一个数   据为目的网络DesNet，第二个数据为跳数Dis，然后将跳数增加1，在新路由表中加  入新的信息（包含目的网络，跳数，新路由表来自的路由器）。</p>
+<p>​        执行一个循环（i为循环的轮次），循环次数为新路由表的行数，如果i为0就跳  过执行下一次循环，将count初始化为0，再执行一个内层循环（j为循环的轮次），    执行的次数为原来路由表的行数，临时变量temptable1存储新路由表NewTable第I  个位置的数据，临时变量temptable2存储最终路由表FinalTable第j个位置的数据信   息。如果temptable1的目标网络与temptable2的目标网络相同执行，分类后执行两  种操作：如果temptable1的下一条地址与temptable2的下一跳地址相同，最终路由   表的这条信息更新为新路由表中的信息；如果两者的下一跳网络不同并且temptable1   的跳数小于temptable2的跳数，也将最终路由表的这条信息更新为新路由表中的信     息，如果temptable1的跳数大于temptable2的跳数就不需要更新。如果temptable1  与temptable2的目的网络不同，那么count增加1，如果count的值与初始路由表行  数-1的值相等，说明之前的路由表没有这条信息，就在最终路由表的尾部加入这条路   由。</p>
+<p>​        更新完毕后输出新的路由表，依次遍历最终路由表的信息，每条信息都输出目的     网络、距离和下一条路由器，将更新后的路由表呈现给用户。</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://firewolf321.github.io" rel="external nofollow noreferrer">陈细利</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://firewolf321.github.io/2021/02/11/ji-suan-ji-wang-luo-shi-yan/">https://firewolf321.github.io/2021/02/11/ji-suan-ji-wang-luo-shi-yan/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://firewolf321.github.io" target="_blank">陈细利</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                                    <span class="chip bg-color">上机</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: null,
+        id: '2021-02-11T13-13-01',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/02/12/ji-suan-ji-wang-luo-ospf-lu-you-xuan-ze-suan-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.png" class="responsive-img" alt="计算机网络OSPF路由选择算法">
+                        
+                        <span class="card-title">计算机网络OSPF路由选择算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            OSFP原理：a.每台路由器学习激活的直接相连的网络。
+b.每台路由器和直接相连的路由器互交，发送Hello报文，建立邻居关系。
+c.每台路由器构建包含直接相连的链路状态的LSA（Link-State Advertisement，链路状态通
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-12
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    计算机网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/02/02/shu-ju-jie-gou-di-liu-ci-shang-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/56.png" class="responsive-img" alt="数据结构第六次上机实习">
+                        
+                        <span class="card-title">数据结构第六次上机实习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            实习题目：排序算法应用及对比一、 上机实习题目与要求问题描述分别写出快速排序（改进版），归并排序和堆排序的递归和非递归版本以及冒泡/插入排序这些算法来实现排序算法应用及对比。
+基本要求（1）生成三组1000万个数，分别为随机数、基本正序(所
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/" class="post-category">
+                                    数据结构上机实习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
+                        <span class="chip bg-color">上机</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 冲天槊的个人博客<br />'
+            + '文章作者: 陈细利<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="2773473243"
+                   fixed='true'
+                   autoplay='false'
+                   theme:='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="https://firewolf321.github.io" target="_blank">陈细利</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">82.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1239968427@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1239968427" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1239968427" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    </script>
+
+</body>
+
+</html>
