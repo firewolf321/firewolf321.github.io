@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="[每日算法]台阶问题, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]合并果子, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>[每日算法]台阶问题 | 冲天槊的个人博客</title>
+    <title>[每日算法]合并果子 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/41.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">[每日算法]台阶问题</h1>
+                    <h1 class="description center-align post-title">[每日算法]合并果子</h1>
                 </div>
             </div>
         </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-06
+                    2021-03-13
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    849
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    3 分
                 </div>
                 
 
@@ -487,9 +487,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>有<em>N</em>级的台阶，你一开始在底部，每次可以向上迈最多<em>K</em>级台阶（最少11级），问到达第N<em>N</em>级台阶有多少种不同方式。</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>两个正整数N，K。</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个正整数，为不同方式数，由于答案可能很大，你需要输出ans mod 100003后的结果。</p>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。</p>
+<p>每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 <em>n</em>−1 次合并之后， 就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。</p>
+<p>因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为 1 ，并且已知果子的种类 数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。</p>
+<p>例如有 3 种果子，数目依次为 1 ， 2 ， 9 。可以先将 1 、 2 堆合并，新堆数目为 3 ，耗费体力为 3 。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为 1212 ，耗费体力为 12 。所以多多总共耗费体力 =3+12=15 。可以证明15 为最小的体力耗费值。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>共两行。<br>第一行是一个整数 n(1≤<em>n</em>≤10000) ，表示果子的种类数。</p>
+<p>第二行包含 <em>n</em> 个整数，用空格分隔，第 <em>i</em> 个整数a<sub>i</sub>((1≤<em>a**i</em>≤20000) 是第 <em>i</em> 种果子的数目。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 2^31 。</p>
 <h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
 <thead>
 <tr>
@@ -498,136 +502,51 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>5 2</td>
-<td>8</td>
-</tr>
-<tr>
-<td>98765 89</td>
-<td>86214</td>
+<td>3<br />1 2 9</td>
+<td>15</td>
 </tr>
 </tbody></table>
-<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><p>对于20%的数据,有N ≤ 10, K≤3;</p>
-<p>对于40%的数据，有N≤1000;</p>
-<p>对于100%的数据，有N ≤ 100000,K ≤ 100。</p>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>根据N与K的值，列举一些具体的答案。</p>
-<p>横坐标为总台阶数N，纵坐标为每次能走的最大步数K。</p>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">1</th>
-<th align="center">2</th>
-<th align="center">3</th>
-<th align="center">4</th>
-<th align="center">5</th>
-<th align="center">6</th>
-<th align="center">7</th>
-<th align="center">8</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">5</td>
-<td align="center">8</td>
-<td align="center">13</td>
-<td align="center">21</td>
-<td align="center">34</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">7</td>
-<td align="center">13</td>
-<td align="center">24</td>
-<td align="center">44</td>
-<td align="center">81</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">8</td>
-<td align="center">15</td>
-<td align="center">29</td>
-<td align="center">56</td>
-<td align="center">108</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">8</td>
-<td align="center">16</td>
-<td align="center">31</td>
-<td align="center">61</td>
-<td align="center">120</td>
-</tr>
-</tbody></table>
-<p>通过观察可以发现这个问题其实是一个变相的斐波那契数列。</p>
-<h3 id="解法1"><a href="#解法1" class="headerlink" title="解法1"></a>解法1</h3><p>用递归的思想来做，假设因为最大的步数为K，楼梯步数为N时的走法有a<sub>N</sub>种，那么最后走1步时，这步之前的走法有a<sub>N-1</sub>种；最后走2步时，这步之前的走法有a<sub>N-2</sub>种….最后走K步时，这步之前有a这步之前的走法有a<sub>N-K</sub>种，所以说楼梯步数为N时的走法数量为a<sub>N-1</sub>+a<sub>N-2</sub>+…+a<sub>N-K</sub>。<br>因此只需要根据最大的步数K将阶梯数为1，2…K的总数分别写下来，即先初始化斐波那契数列前面的K项，接下来的项数只需要将前K项相加得到该项的总数。经过观察可以发现前面K项是有一个首项为1，公比为2的等比数列。因此程序先使用一个for循环将前K项初始化，由于加数的个数为K是个变量，这时候需要一个双重循环重置K项以后的项，第一重循环为处理的第i项，第二重循环是分别加这项前面的N项。返回最后一项的结果即可，时间复杂度为O(NK)。</p>
-<h3 id="解法2"><a href="#解法2" class="headerlink" title="解法2"></a>解法2</h3><p>解法1虽然思路比较清晰，但是代码实现相对麻烦一点，时间复杂度也比较大，通过整理解法1的数学公式，稍加推导就可以得到简化的公式：<br>当K=1时，无论台阶数有多少，都只能一次走一步，因此只有一种走法。</p>
-<p>当K≠1，发现当i≤K时，有a<sub>i</sub>=2<em>a<sub>i-1</sub>（即当前项为前一项的两倍）;<br>i＞K时，有a<sub>i</sub>=a<sub>N-1</sub>+a<sub>N-2</sub>+…+a<sub>N-K</sub>=2</em>a<sub>i-1</sub>-a<sub>i-1-K</sub><br>与解法1相比，只需要初始化第一项为1，接下来只需要执行循环，如果i≤K，就为前一项的2倍，如果i＞K，就为前一项的倍减去第i-1*-K项。返回最后一步的结果即可，时间复杂度为O(n)。</p>
-<h2 id="解法2源代码"><a href="#解法2源代码" class="headerlink" title="解法2源代码"></a>解法2源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><p>对于30% 的数据，保证有 <em>n</em>≤1000：</p>
+<p>对于50%的数据，保证有 <em>n</em>≤5000；</p>
+<p>对于全部的数据，保证有 <em>n</em>≤10000。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>经过简单的证明可以知道最优解为每次合并两个数目最小的果子，直到合并成一堆。其实就是利用了贪心的算法思想。每次在数组中找两个最小的数的效率是比较低的。这时候可以直接利用STL中的优先级队列priority_queue来进行求解，在优先级队列中数量越少优先级就越高，这样每次只需要弹出优先级队列最前端的两个数进行相加后，将相加后的结果再放回优先级队列，一直处理直到优先级队列只有一个元素为止。最后的这个元素就是结果即体力的最小耗费值。</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;queue></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//获取台阶的级数N和最大的步数K</span>
-    <span class="token keyword">int</span> N<span class="token punctuation">,</span> K<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    cin <span class="token operator">>></span> N <span class="token operator">>></span> K<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//为结果创建一个大小为N的动态数组</span>
-    <span class="token keyword">int</span><span class="token operator">*</span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>N <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> K <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//先检查输入的数是否合法</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入大于0的整数!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">//初始化第0项和第一项为0</span>
-    result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>K <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>如果最大步数为<span class="token number">1</span>，那么级数为多少结果都为<span class="token number">1</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">//注意避免出现负数,结果的数字可能比较大，需要mod100003</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> N<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">//用一个优先级队列，数字越小优先级越高</span>
+    priority_queue<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token punctuation">,</span> greater<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token operator">></span> numbers<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> result<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//获取元素个数n</span>
+    <span class="token comment" spellcheck="true">//将元素存入优先级队列</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> K<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//i&lt;=K时为前一项的两倍</span>
-            result<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> result<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">100003</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> a<span class="token punctuation">;</span>
+        numbers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//每次将最小的两堆相加</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>numbers<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//此时已经得到结果输出结果即可</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
         <span class="token keyword">else</span>
-        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//i>K时为前一项的两倍减去第i-1-K项</span>
-            result<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> result<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>result<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token operator">-</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">100003</span><span class="token punctuation">;</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//将最小的两个数相加后把这两个数弹出，但是将合并后的数加入队列中</span>
+            x <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//最小的数</span>
+            numbers<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            y <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//第二小的数</span>
+            numbers<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            numbers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            result <span class="token operator">=</span> result <span class="token operator">+</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-
-    cout <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span>result<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">100003</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">100003</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-
+    cout <span class="token operator">&lt;&lt;</span> result<span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -653,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2021/03/06/mei-ri-suan-fa-tai-jie-wen-ti/">https://firewolf321.github.io/2021/03/06/mei-ri-suan-fa-tai-jie-wen-ti/</a>
+                    <a href="https://firewolf321.github.io/2021/03/13/mei-ri-suan-fa-he-bing-guo-zi/">https://firewolf321.github.io/2021/03/13/mei-ri-suan-fa-he-bing-guo-zi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -867,7 +786,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-03-06T21-49-10',
+        id: '2021-03-13T10-14-58',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -888,30 +807,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/08/mei-ri-suan-fa-kuai-su-pai-xu/">
+                <a href="/2021/03/13/mei-ri-suan-fa-he-bing-guo-zi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/58.png" class="responsive-img" alt="[每日算法]快速排序">
+                        <img src="/medias/featureimages/41.png" class="responsive-img" alt="[每日算法]合并果子">
                         
-                        <span class="card-title">[每日算法]快速排序</span>
+                        <span class="card-title">[每日算法]合并果子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目描述利用快速排序算法将读入的 N 个数从小到大排序后输出。
-快速排序是信息学竞赛的必备算法之一。对于快速排序不是很了解的同学可以自行上网查询相关资料，掌握后独立完成。（C++ 选手请不要试图使用 STL，虽然你可以使用 sort 一遍过
+                            题目描述在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。
+每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 n−1 次合并之后
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -924,6 +844,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -946,31 +867,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/18/ji-suan-ji-wang-luo-udp-tao-jie-zi-bian-cheng/">
+                <a href="/2021/03/10/mei-ri-suan-fa-gui-bing-pai-xu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/33.png" class="responsive-img" alt="计算机网络UDP套接字编程">
+                        <img src="/medias/featureimages/54.png" class="responsive-img" alt="[每日算法]归并排序">
                         
-                        <span class="card-title">计算机网络UDP套接字编程</span>
+                        <span class="card-title">[每日算法]归并排序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、UDP的服务器编程步骤：①.创建一个socket，用函数socket()②.绑定IP地址、端口等信息到socket上，用函数bind()③.循环接收数据，用函数recvfrom()④.关闭网络连接2、UDP的客户端编程步骤：①.创建一个
+                            题目描述利用归并排序算法将读入的 N 个数从小到大排序后输出。
+快速排序是信息学竞赛的必备算法之一。对于快速排序不是很了解的同学可以自行上网查询相关资料，掌握后独立完成。（C++ 选手请不要试图使用 STL，虽然你可以使用 sort 一遍过
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-category">
-                                    计算机网络
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
@@ -980,16 +902,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8A%E6%9C%BA/">
-                        <span class="chip bg-color">上机</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
-                    </a>
-                    
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
