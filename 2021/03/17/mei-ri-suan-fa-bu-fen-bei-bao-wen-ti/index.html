@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python基础语法4, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]部分背包问题, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python基础语法4 | 冲天槊的个人博客</title>
+    <title>[每日算法]部分背包问题 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/31.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/36.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python基础语法4</h1>
+                    <h1 class="description center-align post-title">[每日算法]部分背包问题</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                <span class="chip bg-color">语法</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                Python基础语法
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                每日算法
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-03-17
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    698
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    2 分
                 </div>
                 
 
@@ -487,479 +487,104 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>参考教材：Python程序设计基础与应用(机械工业出版社/董付国)</p>
-<p>​    由于时间紧迫，故只整理语法，没有写实例，在学习或复习过程中每个语法点都应搭配合适的例子进行练习。</p>
-<h1 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h1><p>1.常用转义字符</p>
-<table>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 <em>N</em>(<em>N</em>≤100) 堆金币，第 <em>i</em> 堆金币的总重量和总价值分别是m<sub>i</sub>,v<sub>i</sub>(1≤m<sub>i</sub>,v<sub>i</sub>≤100)。阿里巴巴有一个承重量为T(<em>T</em>≤1000) 的背包，但并不一定有办法将全部的金币都装进去。他想装走尽可能多价值的金币。所有金币都可以随意分割，分割完的金币重量价值比（也就是单位价格）不变。请问阿里巴巴最多可以拿走多少价值的金币？</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行两个整数 N,<em>T</em>。</p>
+<p>接下来 <em>N</em> 行，每行两个整数 m<sub>i</sub>,v<sub>i</sub>。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个实数表示答案，输出两位小数。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
 <thead>
 <tr>
-<th>转义字符</th>
-<th>含义</th>
+<th>样例#1</th>
+<th>输出#1</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>\b</td>
-<td>退格，把光标移动到前一列位置</td>
-</tr>
-<tr>
-<td>\f</td>
-<td>换页符</td>
-</tr>
-<tr>
-<td>\n</td>
-<td>换行符</td>
-</tr>
-<tr>
-<td>\r</td>
-<td>回车</td>
-</tr>
-<tr>
-<td>\t</td>
-<td>水平制表符</td>
-</tr>
-<tr>
-<td>\v</td>
-<td>垂直制表符</td>
-</tr>
-<tr>
-<td>\\\</td>
-<td>一个斜线\</td>
-</tr>
-<tr>
-<td>\‘</td>
-<td>单引号’</td>
-</tr>
-<tr>
-<td>\’‘</td>
-<td>双引号‘’</td>
-</tr>
-<tr>
-<td>\ooo</td>
-<td>3位八进制数对应的字符</td>
-</tr>
-<tr>
-<td>\xhh</td>
-<td>2位十六进制数对应的字符</td>
-</tr>
-<tr>
-<td>\uhhhh</td>
-<td>4位十六进制数表示的Unicode字符</td>
+<td>4 50<br />10 60 <br />20 100 <br />30 120 <br />15 45</td>
+<td>240.00</td>
 </tr>
 </tbody></table>
-<p>2.格式字符</p>
-<table>
-<thead>
-<tr>
-<th>格式字符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>%s</td>
-<td>格式化字符串</td>
-</tr>
-<tr>
-<td>%c</td>
-<td>单个字符</td>
-</tr>
-<tr>
-<td>%d、%i</td>
-<td>十进制整数</td>
-</tr>
-<tr>
-<td>%o</td>
-<td>八进制整数</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>十六进制整数</td>
-</tr>
-<tr>
-<td>%e</td>
-<td>指数（基底写为e）</td>
-</tr>
-<tr>
-<td>%E</td>
-<td>指数（基底写为E）</td>
-</tr>
-<tr>
-<td>%f、%F</td>
-<td>浮点数</td>
-</tr>
-<tr>
-<td>%g</td>
-<td>指数（e）或浮点数（根据显示长度）</td>
-</tr>
-<tr>
-<td>%G</td>
-<td>指数（E）或浮点数（根据显示长度）</td>
-</tr>
-<tr>
-<td>%%</td>
-<td>格式化为一个%符号</td>
-</tr>
-</tbody></table>
-<p>3.字符串常用方法与操作</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>find()</td>
-<td>返回字符串在另一个字符串指定范围中首次出现的位置，如果没有匹配项则返回-1</td>
-</tr>
-<tr>
-<td>rfind()</td>
-<td>返回字符串在另一个字符串指定范围中最后一次出现的位置，如果没有匹配项则返回-1</td>
-</tr>
-<tr>
-<td>index()</td>
-<td>返回字符串在另一个字符串指定范围中首次出现的位置，如果不存在则抛出异常</td>
-</tr>
-<tr>
-<td>rindex()</td>
-<td>返回字符串在另一个字符串指定范围中最后一次出现的位置，如果不存在则抛出异常</td>
-</tr>
-<tr>
-<td>count()</td>
-<td>返回一个字符串在另一个字符串中出现的次数，如果不存在则返回0</td>
-</tr>
-<tr>
-<td>split()</td>
-<td>以指定字符为分隔符，从字符串左端开始将其分隔成多个字符串，并返回包含分隔结果的列表</td>
-</tr>
-<tr>
-<td>rsplit()</td>
-<td>以指定字符为分隔符，从字符串右端开始将其分隔成多个字符串，并返回包含分隔结果的列表</td>
-</tr>
-<tr>
-<td>partition()</td>
-<td>以指定字符串为分隔符将原字符串分割为3部分，即分隔符之前的字符串、分隔符字符串和分隔符之后的字符串，如果指定的分隔符不在原字符串中，则返回原字符串和两个空字符串。（从左往右遇到的第一个分隔符作为分隔符）</td>
-</tr>
-<tr>
-<td>rpartition()</td>
-<td>以指定字符串为分隔符将原字符串分割为3部分，即分隔符之前的字符串、分隔符字符串和分隔符之后的字符串，如果指定的分隔符不在原字符串中，则返回原字符串和两个空字符串。（从右往左遇到的第一个分隔符作为分隔符）</td>
-</tr>
-<tr>
-<td>join()</td>
-<td>将列表中多个字符串进行连接，并在相邻两个字符串之间插入指定字符，返回新字符串</td>
-</tr>
-<tr>
-<td>lower()</td>
-<td>将字符串转换为小写字符串</td>
-</tr>
-<tr>
-<td>upper()</td>
-<td>将字符串转换为大写字符串</td>
-</tr>
-<tr>
-<td>capitalize()</td>
-<td>将字符串首写字母变为大写</td>
-</tr>
-<tr>
-<td>title()</td>
-<td>将每个单词的首字母变为大写</td>
-</tr>
-<tr>
-<td>swapcase()</td>
-<td>大小写互换</td>
-</tr>
-<tr>
-<td>replace()</td>
-<td>替换字符串中指定或子字符串的所有重复出现，每次只能替换一个字符或一个字符串，把指定的字符串参数作为一个整体对待</td>
-</tr>
-<tr>
-<td>maketrans()</td>
-<td>生成字符映射表</td>
-</tr>
-<tr>
-<td>translate()</td>
-<td>根据映射表中定义的对应关系转换字符串并替换其中的字符</td>
-</tr>
-<tr>
-<td>strip()</td>
-<td>删除两端的空白字符或指定字符</td>
-</tr>
-<tr>
-<td>rstrip()</td>
-<td>删除右端的空白字符或指定字符</td>
-</tr>
-<tr>
-<td>lstrip()</td>
-<td>删除左端的空白字符或指定字符</td>
-</tr>
-<tr>
-<td>startswith()</td>
-<td>判断字符串是否以指定字符串开始（可以接收两个整数参数来限定字符串的检测范围）</td>
-</tr>
-<tr>
-<td>endswith()</td>
-<td>判断字符串是否以指定字符串结束（可以接收两个整数参数来限定字符串的检测范围）</td>
-</tr>
-<tr>
-<td>isalnum()</td>
-<td>测试字符串是否为数字或字母</td>
-</tr>
-<tr>
-<td>isalpha()</td>
-<td>测试字符串是否为字母</td>
-</tr>
-<tr>
-<td>isdigit()</td>
-<td>测试字符串是否为整数字符</td>
-</tr>
-<tr>
-<td>isspace()</td>
-<td>测试字符串是否为空白字符</td>
-</tr>
-<tr>
-<td>isupper()</td>
-<td>测试字符串是否为大写字母</td>
-</tr>
-<tr>
-<td>islower()</td>
-<td>测试字符串是否为小写字母</td>
-</tr>
-<tr>
-<td>center()</td>
-<td>返回指定宽度的新字符串，原字符串居中出现在新字符串中，如果知指定的宽度大于字符串长度，则使用指定的字符（默认是空格）进行填充</td>
-</tr>
-<tr>
-<td>ljust()</td>
-<td>返回指定宽度的新字符串，原字符串左对齐出现在新字符串中，如果知指定的宽度大于字符串长度，则使用指定的字符（默认是空格）进行填充</td>
-</tr>
-<tr>
-<td>rjust()</td>
-<td>返回指定宽度的新字符串，原字符串右对齐出现在新字符串中，如果知指定的宽度大于字符串长度，则使用指定的字符（默认是空格）进行填充</td>
-</tr>
-</tbody></table>
-<h1 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h1><p>1.正则表达式常用元字符</p>
-<table>
-<thead>
-<tr>
-<th align="left">元字符</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">.</td>
-<td>匹配除换行符以外的任意单个字符</td>
-</tr>
-<tr>
-<td align="left">*</td>
-<td>匹配位于*之前的字符或子模式的0次或多次出现</td>
-</tr>
-<tr>
-<td align="left">+</td>
-<td>匹配位于+之前的字符或子模式的1次或多次出现</td>
-</tr>
-<tr>
-<td align="left">-</td>
-<td>用来在[]之内表示范围</td>
-</tr>
-<tr>
-<td align="left">+</td>
-<td>匹配位于|之前或之后的字符</td>
-</tr>
-<tr>
-<td align="left">^</td>
-<td>匹配位于^后面的字符或模式开头的字符串，例如，’^http’只能匹配所有以’http’开头的字符串</td>
-</tr>
-<tr>
-<td align="left">$</td>
-<td>匹配以$前面的字符或模式结束的字符串</td>
-</tr>
-<tr>
-<td align="left">？</td>
-<td>表示问号之前的字符或子模式是可选的。当紧随任何其他限定符（*、+、？、{n}、{n，}、{n，m}）之后时，匹配模式是”非贪心的“。”非贪心的“模式匹配搜索到的、尽可能短的字符串，而默认的”贪心的“模式匹配搜索到的，尽可能长的字符串。例如，在字符串”oooo“中，”o+？“只匹配单个”o”，而“o+”匹配所有“o”</td>
-</tr>
-<tr>
-<td align="left">\</td>
-<td>表示位于\之后的为转义字符</td>
-</tr>
-<tr>
-<td align="left">\num</td>
-<td>此处的num是一个正整数，表示前面子模式的编号。例如，”(.)\1”匹配两个连续的相同字符</td>
-</tr>
-<tr>
-<td align="left">\f</td>
-<td>匹配一个换页符</td>
-</tr>
-<tr>
-<td align="left">\n</td>
-<td>匹配一个换行符</td>
-</tr>
-<tr>
-<td align="left">\r</td>
-<td>匹配一个回车符</td>
-</tr>
-<tr>
-<td align="left">\b</td>
-<td>匹配单词头或单词尾</td>
-</tr>
-<tr>
-<td align="left">\B</td>
-<td>与\b含有相反</td>
-</tr>
-<tr>
-<td align="left">\d</td>
-<td>匹配任何数字，相当于【0-9】</td>
-</tr>
-<tr>
-<td align="left">\D</td>
-<td>与\d含义相反，相当于【^0-9】</td>
-</tr>
-<tr>
-<td align="left">\s</td>
-<td>匹配任何空白字符，包括空格、制表符、换页符，与[\f\n\r\t\v]等效</td>
-</tr>
-<tr>
-<td align="left">\S</td>
-<td>与\s含义相反</td>
-</tr>
-<tr>
-<td align="left">\w</td>
-<td>匹配任何字母、数字以及下划线，相当于[a-zA-Z0-p_]</td>
-</tr>
-<tr>
-<td align="left">\W</td>
-<td>与\w含义相反，与”[^A-Za-z0-9_]等效</td>
-</tr>
-<tr>
-<td align="left">()</td>
-<td>将位于()内的内容作为一个整体对待</td>
-</tr>
-<tr>
-<td align="left">{m,n}</td>
-<td>按{}中指定的次数进行匹配，例如[3,8]表示前面的字符或模式至少重复3次而最多重复8次，注意逗号后面不要有空格</td>
-</tr>
-<tr>
-<td align="left">[]</td>
-<td>匹配位于[]中的任意一个字符，例如，‘【a-zA-Z0-9】可以匹配单个任意大小写字母或数字</td>
-</tr>
-<tr>
-<td align="left">[^xyz]</td>
-<td>^放在[]内表示反向字符集，匹配除x、y、z之外的任何字符</td>
-</tr>
-<tr>
-<td align="left">[a-z]</td>
-<td>字符范围，匹配指定范围内的任何字符</td>
-</tr>
-<tr>
-<td align="left">[^a-z]</td>
-<td>反向范围字符，匹配除小写英文字母之外的任何字符</td>
-</tr>
-</tbody></table>
-<p>2.常用的子模块拓展语法</p>
-<table>
-<thead>
-<tr>
-<th>语法</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>(?P<groupname>)</td>
-<td>为子模块命名</td>
-</tr>
-<tr>
-<td>(?iLmsux)</td>
-<td>设置匹配标志，可以是几个字母的组合 ，每个字母含义与编译标志相同</td>
-</tr>
-<tr>
-<td>(?···)</td>
-<td>匹配但不捕获该匹配的子表达式</td>
-</tr>
-<tr>
-<td>(?P=proupname)</td>
-<td>表示在此之前的命名为groupname的子模式</td>
-</tr>
-<tr>
-<td>(?#···)</td>
-<td>表示注释</td>
-</tr>
-<tr>
-<td>(?&lt;=···)</td>
-<td>用在正则表达式之前，表示如果&lt;=后的内容在字符串中不出现则匹配，但不返回&lt;=之后的内容</td>
-</tr>
-<tr>
-<td>(?=···)</td>
-<td>用在正则表达式之后，表示如果=后的内容在字符串中出现则匹配，但不返回=之后的内容</td>
-</tr>
-<tr>
-<td>(?&lt;!···)</td>
-<td>用在正则表达式之前，表示如果&lt;！后的内容在字符串中不出现则匹配，但不返回&lt;！之后的内容</td>
-</tr>
-<tr>
-<td>(?!···)</td>
-<td>用在正则表达式之后，表示如果！后的内容在字符串中不出现则匹配，但不返回！之后的内容</td>
-</tr>
-</tbody></table>
-<p>3.re模块常用方法</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>findall(pattern,string[,flags])</td>
-<td>列出字符串中模式的所有匹配项</td>
-</tr>
-<tr>
-<td>match(pattern,string[,flags])</td>
-<td>从字符串的开始处模式匹配，返回match对象或None</td>
-</tr>
-<tr>
-<td>search(pattern,string[,flags])</td>
-<td>在整个字符串中寻找模式，返回match对象或None</td>
-</tr>
-<tr>
-<td>split(pattern,string[,maxsplit=0])</td>
-<td>根据模式匹配项分隔字符串</td>
-</tr>
-<tr>
-<td>sub(pat,repl,string[,count=0])</td>
-<td>将字符串中所有pat的匹配项用repl替换，返回新字符串，repl可以是字符串或返回字符串的可调用对象，该可调用对象作用于每个匹配的match对象</td>
-</tr>
-</tbody></table>
-<p>4.match对象的主要方法</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>group()</td>
-<td>返回匹配的一个或多个子模式内容</td>
-</tr>
-<tr>
-<td>groups()</td>
-<td>返回一个包含匹配所有子模式内容的元组</td>
-</tr>
-<tr>
-<td>groupdict()</td>
-<td>返回包含匹配的所有命名子模式内容的字典</td>
-</tr>
-<tr>
-<td>start()</td>
-<td>返回指定子模式内容的起始位置</td>
-</tr>
-<tr>
-<td>end()</td>
-<td>返回指定子模式内容的结束位置的前一个位置</td>
-</tr>
-<tr>
-<td>span()</td>
-<td>返回一个包含指定子模式内容起始位置和结束位置前一个位置的元组</td>
-</tr>
-</tbody></table>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这道题为部分背包问题，金币是可以任意分割的，因此可以用贪心的思想进行求解。首先要计算出每份金币的单位价格，然后将其放入一个优先级队列，单位价格越高的金币堆优先级越高。然后按照优先级队列的顺序取金币即可，直到背包装不下或者所有金币被拿完才停止。当处理最后一份金币时，如果背包不能完全装下，就分割这一堆金币，把背包装满即可。</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;queue></span></span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iomanip></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//计算单位价格</span>
+<span class="token keyword">float</span> <span class="token function">unitPrice</span><span class="token punctuation">(</span><span class="token keyword">int</span> weight<span class="token punctuation">,</span> <span class="token keyword">int</span> value<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">float</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword">float</span><span class="token punctuation">(</span>weight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">struct</span> Gold
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> weight<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//重量</span>
+    <span class="token keyword">int</span> value<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//总价值</span>
+    <span class="token keyword">float</span> uPrice<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//价值比</span>
+
+    <span class="token function">Gold</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token function">Gold</span><span class="token punctuation">(</span><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> v<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        weight <span class="token operator">=</span> w<span class="token punctuation">;</span>
+        value <span class="token operator">=</span> v<span class="token punctuation">;</span>
+        uPrice <span class="token operator">=</span> <span class="token function">unitPrice</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//价值比越高优先级越高</span>
+    <span class="token keyword">friend</span> <span class="token keyword">bool</span> <span class="token keyword">operator</span> <span class="token operator">&lt;</span> <span class="token punctuation">(</span>Gold a<span class="token punctuation">,</span> Gold b<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>  a<span class="token punctuation">.</span>uPrice <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>uPrice<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//第一个参数为金币的堆数，第二参数为背包的承重，第三个参数存有每堆金币的具体信息</span>
+<span class="token keyword">float</span> <span class="token function">maxMoney</span><span class="token punctuation">(</span><span class="token keyword">int</span> N<span class="token punctuation">,</span> <span class="token keyword">int</span> T<span class="token punctuation">,</span> priority_queue<span class="token operator">&lt;</span>Gold<span class="token operator">></span> detail<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//初始状态剩余重量为N，剩余金币堆数为N</span>
+    <span class="token keyword">int</span> remainWeight <span class="token operator">=</span> T<span class="token punctuation">,</span> remainHeap <span class="token operator">=</span> N<span class="token punctuation">;</span>
+    <span class="token keyword">float</span> totalMoney <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    Gold curGold<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//背包未装满并且有剩余金币时</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>remainWeight <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> remainHeap <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//获取价值比最高的金币</span>
+        curGold <span class="token operator">=</span> detail<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>remainWeight <span class="token operator">>=</span> curGold<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//剩余重量大于这堆金币的重量,全部装入</span>
+            detail<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            remainWeight <span class="token operator">-</span><span class="token operator">=</span> curGold<span class="token punctuation">.</span>weight<span class="token punctuation">;</span>
+            remainHeap<span class="token operator">--</span><span class="token punctuation">;</span>
+            totalMoney <span class="token operator">+</span><span class="token operator">=</span> curGold<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//不能完全把这块金币装入需要拆分</span>
+            totalMoney <span class="token operator">+</span><span class="token operator">=</span> curGold<span class="token punctuation">.</span>uPrice <span class="token operator">*</span> remainWeight<span class="token punctuation">;</span>
+            curGold<span class="token punctuation">.</span>weight <span class="token operator">-</span><span class="token operator">=</span> remainWeight<span class="token punctuation">;</span>
+            detail<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            detail<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>curGold<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            remainWeight <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> totalMoney<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    priority_queue<span class="token operator">&lt;</span>Gold<span class="token operator">></span> price<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> N<span class="token punctuation">,</span> T<span class="token punctuation">,</span> m<span class="token punctuation">,</span> v<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> N <span class="token operator">>></span> T<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//n为金币的堆数</span>
+    <span class="token comment" spellcheck="true">//数据装载进优先级队列</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cin <span class="token operator">>></span> m <span class="token operator">>></span> v<span class="token punctuation">;</span>
+        Gold<span class="token operator">*</span> node <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">Gold</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        price<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">*</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//保留两位小数</span>
+    cout <span class="token operator">&lt;&lt;</span> fixed <span class="token operator">&lt;&lt;</span> <span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token function">maxMoney</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> T<span class="token punctuation">,</span> price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -985,7 +610,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-4/">https://firewolf321.github.io/2020/07/12/python-ji-chu-yu-fa-4/</a>
+                    <a href="https://firewolf321.github.io/2021/03/17/mei-ri-suan-fa-bu-fen-bei-bao-wen-ti/">https://firewolf321.github.io/2021/03/17/mei-ri-suan-fa-bu-fen-bei-bao-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1023,12 +648,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                    <span class="chip bg-color">语法</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -1199,7 +824,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-03-17T08-54-50',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1220,50 +845,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-5/">
+                <a href="/2021/03/17/mei-ri-suan-fa-bu-fen-bei-bao-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.png" class="responsive-img" alt="Python编程从入门到实践答案5">
+                        <img src="/medias/featureimages/36.png" class="responsive-img" alt="[每日算法]部分背包问题">
                         
-                        <span class="card-title">Python编程从入门到实践答案5</span>
+                        <span class="card-title">[每日算法]部分背包问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可
+                            题目描述阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 N(N≤100) 堆金币，第 i 堆金币的总重量和总价值分别是mi,vi(1≤mi,vi≤100)。阿里巴巴有一个承重量为T(T≤1000) 的背包，但并不一定有办法将全部的金币都装进去
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -1277,33 +904,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-ji-chu-yu-fa-3/">
+                <a href="/2021/03/13/mei-ri-suan-fa-he-bing-guo-zi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/30.png" class="responsive-img" alt="Python基础语法3">
+                        <img src="/medias/featureimages/41.png" class="responsive-img" alt="[每日算法]合并果子">
                         
-                        <span class="card-title">Python基础语法3</span>
+                        <span class="card-title">[每日算法]合并果子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考教材：Python程序设计基础与应用(机械工业出版社/董付国)
-​    由于时间紧迫，故只整理语法，没有写实例，在学习或复习过程中每个语法点都应搭配合适的例子进行练习。
-由于在编程过程中频繁引用random库，故整理random库的一
+                            题目描述在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。
+每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 n−1 次合并之后
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-13
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    Python基础语法
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
@@ -1313,12 +939,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
