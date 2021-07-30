@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python编程从入门到实践答案3, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]过河卒, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python编程从入门到实践答案3 | 冲天槊的个人博客</title>
+    <title>[每日算法]过河卒 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/45.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python编程从入门到实践答案3</h1>
+                    <h1 class="description center-align post-title">[每日算法]过河卒</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                <span class="chip bg-color">习题答案</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                每日算法
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-03-28
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    839
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    3 分
                 </div>
                 
 
@@ -487,109 +487,86 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。</p>
-<p>参考教材：《Python编程从入门到实践》  【美】  Eric Matthes  著 </p>
-<h1 id="Chapter4"><a href="#Chapter4" class="headerlink" title="Chapter4"></a>Chapter4</h1><p><strong>4-1 比萨：</strong>想出至少三种你喜欢的比萨，将其名称存储在一个列表中，再使用for循环将每种比萨的名称都打印出来。</p>
-<p>□ 修改这个for循环，使其打印包含比萨名称的句子，而不仅仅是比萨的名称。对于每种比萨，都显示一行输出，如“I like pepperoni pizza”。</p>
-<p>□ 在程序末尾添加一行代码，它不在for循环中，指出你有多喜欢比萨。输出应包含针对每种比萨的信息，还有一个总结性句子，如“I really love pizza！”。</p>
-<pre class="line-numbers language-python"><code class="language-python">pizzas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"pepperoni"</span><span class="token punctuation">,</span> <span class="token string">"meat"</span><span class="token punctuation">,</span> <span class="token string">"fruit"</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> pizza <span class="token keyword">in</span> pizzas<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>pizza<span class="token punctuation">)</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I like "</span> <span class="token operator">+</span> pizza <span class="token operator">+</span> <span class="token string">" pizza."</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I really love pizza!"</span><span class="token punctuation">)</span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-2 动物：</strong>想出至少三种有共同特征的动物将这些动物的名称存储在一个列表中，再使用for循环将每种动物的名称都打印出来。</p>
-<p>□ 修改这个程序，使其针对每种动物都打印一个句子，如“A dog would make a great pet”。</p>
-<p>□ 在程序末尾添加一行代码，指出这些动物的共同之处，如打印诸如“Any of these animals would make a grea pet！”这样的句子。</p>
-<pre class="line-numbers language-python"><code class="language-python">animals <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"pig"</span><span class="token punctuation">,</span> <span class="token string">"dog"</span><span class="token punctuation">,</span> <span class="token string">"cat"</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> animal <span class="token keyword">in</span> animals<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>animal<span class="token punctuation">)</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"A "</span> <span class="token operator">+</span> animal <span class="token operator">+</span> <span class="token string">" would make a great pet.\n"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Any of these animals would make a great pet!"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-3  数到20：</strong>使用一个for循环打印数字1~20（含）。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">for</span> value <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><strong>4-4 一百万：</strong>创建一个列表，其中包含数字1~1 000 000，再使用一个for循环将这些数字打印出来（如果输出的时间太长，按Ctrl + C停止输出，或关闭输出窗口）。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1000001</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-   numbers<span class="token punctuation">.</span>append<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-5 计算1~1 000 000的总和：</strong>创建一个列表，其中包含数字1~1 000 000，再使用min()和max()核实该列表确实是从1开始，到1 000 000结束的。另外，对这个列表调用函数sum()，看看Python将一百万个数字相加需要多长时间。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span>value <span class="token keyword">for</span> value <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1000001</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>min<span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>max<span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>sum<span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-6 奇数：</strong>通过给函数range()指定第三个参数来创建一个列表，其中包含1~20的奇数：再使用一个for循环将这些数字都打印出来。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span>number <span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>numbers<span class="token punctuation">)</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> numbers<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-7 3的倍数：</strong>创建一个列表，其中包含3~30内能被3整除的数字：再利用一个for循环将这个列表中的数字都打印出来。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span>number <span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> numbers<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-8 立方：</strong>将同一个数字乘三次称为立方。例如，在Python中，2的立方用2**3表示。请创建一个列表，其中包含前10个整数（即1~10）的立方，再使用一个for循环将这些立方数都打印出来。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span>number<span class="token operator">**</span><span class="token number">3</span> <span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> numbers<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-9 立方解析：</strong>使用列表解析生成一个列表，其中包含前十个整数的立方。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-   numbers<span class="token punctuation">.</span>append<span class="token punctuation">(</span>number<span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-10 切片：</strong>选择你在本章编写的一个程序，在末尾添加几行代码，以完成如下任务。</p>
-<p>□ 打印信息“The first three item in the list are：”再使用切片来打印列表中间的三个元素。</p>
-<p>□ 打印信息“Three items form the middle of the list are：”，再使用切片来打印列表中间的三个元素。</p>
-<p>□ 打印消息“The last three items in the list are：”，再使用切片来打印列表末尾的三个元素。</p>
-<pre class="line-numbers language-python"><code class="language-python">numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> number <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-   numbers<span class="token punctuation">.</span>append<span class="token punctuation">(</span>number<span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>numbers<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The first three items in the list are:"</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>numbers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Three items from the middle of the list are:"</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>numbers<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">:</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The last three items in the list are:"</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>numbers<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-11 你的比萨和我的比萨L：</strong>在你为完成练习4-1而编写的程序中，创建比萨列表的副本，并将其存储到变量friend_pizza中，再完成如下任务。</p>
-<p>□ 在原来的比萨列表中添加另一种比萨。</p>
-<p>□ 在列表friend_pizza中添加一种比萨。</p>
-<p>□ 核实你有两个不同的列表。为此，打印消息“My favorite pizzas are：”，再使用一个for循环来打印第一个列表；打印消息“My friend‘s favorite pizzas are：”，再使用一个for循环来打印第二个列表。核实新增的比萨被添加到了正确的列表中。</p>
-<pre class="line-numbers language-python"><code class="language-python">pizzas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"pepperoni"</span><span class="token punctuation">,</span> <span class="token string">"meat"</span><span class="token punctuation">,</span> <span class="token string">"fruit"</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> pizza <span class="token keyword">in</span> pizzas<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>pizza<span class="token punctuation">)</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I like "</span> <span class="token operator">+</span> pizza <span class="token operator">+</span> <span class="token string">"pizza."</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I really love pizza!"</span><span class="token punctuation">)</span>  
-friend_pizzas <span class="token operator">=</span> pizzas<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
-friend_pizzas<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"bat"</span><span class="token punctuation">)</span>
-pizzas<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"shit"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"My favorite pizzas are:"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> pizza <span class="token keyword">in</span> pizzas<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>pizza<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"My friend's favorite pizzas are:"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> pizza <span class="token keyword">in</span> friend_pizzas<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>pizza<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-12 使用多个循环：</strong>在本节中，为节省篇幅，程序foods.py的每个版本都没有使用for循环来打印列表。请选择一个版本的foods.py，在其中编写两个for循环，将各个食品列表都打印出来。</p>
-<pre class="line-numbers language-python"><code class="language-python">my_foods <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"pizza"</span><span class="token punctuation">,</span> <span class="token string">"falafel"</span><span class="token punctuation">,</span> <span class="token string">"carrot cake"</span><span class="token punctuation">]</span>
-friend_foods <span class="token operator">=</span> my_foods<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
-my_foods<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"cannoil"</span><span class="token punctuation">)</span>
-friend_foods<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"ice cream"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"My favorite foods are:"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>my_foods<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nMy friend's favorite foods are:"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>friend_foods<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"My'foods"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> pizza <span class="token keyword">in</span> my_foods<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>pizza<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Friend'foods"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> food <span class="token keyword">in</span> friend_foods<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>food<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4-13 自助餐：</strong>有一家自助式餐馆，只提供五种简单的食品。请想出五种简单的食品，并将其存储在一个元组中。</p>
-<p>□ 使用一个for循环将该餐馆提供的五种食品都打印出来。</p>
-<p>□ 尝试修改其中的一个元素，核实Python确实会拒绝你这样做。</p>
-<p>□ 餐馆调整了菜单，替换了它提供的其中两种食品。请编写一个这样的代码块：给元组变量赋值，并使用一个for循环将新元组的每个元素都打印出来。</p>
-<pre class="line-numbers language-python"><code class="language-python">foods <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"pizza"</span><span class="token punctuation">,</span> <span class="token string">"fruit"</span><span class="token punctuation">,</span> <span class="token string">"meat"</span><span class="token punctuation">,</span> <span class="token string">"tea"</span><span class="token punctuation">,</span> <span class="token string">"coffee"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> food <span class="token keyword">in</span> foods<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>food<span class="token punctuation">)</span>
-foods <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"pizza"</span><span class="token punctuation">,</span> <span class="token string">"snake"</span><span class="token punctuation">,</span> <span class="token string">"bat"</span><span class="token punctuation">,</span> <span class="token string">"tea"</span><span class="token punctuation">,</span> <span class="token string">"coffee"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> food <span class="token keyword">in</span> foods<span class="token punctuation">:</span>
-   <span class="token keyword">print</span><span class="token punctuation">(</span>food<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>棋盘上 <em>A</em> 点有一个过河卒，需要走到目标 <em>B</em> 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 <em>C</em> 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
+<p>棋盘用坐标表示，<em>A</em> 点 (0, 0)、<em>B</em> 点 (<em>n</em>,<em>m</em>)，同样马的位置坐标是需要给出的。</p>
+<p><img src="/images/river.png" alt=""></p>
+<p>现在要求你计算出卒从 <em>A</em> 点能够到达 <em>B</em> 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一行四个正整数，分别表示 <em>B</em> 点坐标和马的坐标。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数，表示所有的路径条数。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
+<thead>
+<tr>
+<th>样例#1</th>
+<th>输出#1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6 6 3 3</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><p>对于100% 的数据，，1 ≤<em>n</em>,<em>m</em>≤20，0≤ 马的坐标≤20。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>很明显这是个动态规划问题。状态转移方程为a【i】【j】=a【i-1】【j】+a【i】【j-1】。通过分析，发现要到达棋盘上的一个点，只能从左边或上面过来。所以，根据<strong>加法原理</strong>，到达某一点的路径数目，就等于到达其相邻的<strong>上点</strong>和<strong>左点</strong>的路径数目之和，因此我们可以使用<strong>逐列</strong>（或<strong>逐行</strong>）递推的方法来求出从起点到终点的路径数目。<strong>障碍点</strong>（<strong>马的控制点</strong>）也完全适用，只要将到达该店的路径数目设置为<strong>0</strong>即可。</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cmath></span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> Bx<span class="token punctuation">,</span> By<span class="token punctuation">,</span> Hx<span class="token punctuation">,</span> Hy<span class="token punctuation">;</span>              <span class="token comment" spellcheck="true">//分别为B点坐标与马的位置</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">;</span>
+    <span class="token keyword">long</span> <span class="token keyword">long</span> numbers<span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//numbers[i][j]代表从A点到点(i,j)的线路条数</span>
+    <span class="token keyword">bool</span> horse<span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">;</span>              <span class="token comment" spellcheck="true">//确定是不是马的势力范围</span>
+
+    <span class="token comment" spellcheck="true">//获取B点的坐标与马的坐标</span>
+    cin <span class="token operator">>></span> Bx <span class="token operator">>></span> By <span class="token operator">>></span> Hx <span class="token operator">>></span> Hy<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//先全部位置标记为false，路径条数初始化为0</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> Bx<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;=</span> By<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            horse<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//马的势力范围标记为true,最多有8个其他位置</span>
+    horse<span class="token punctuation">[</span>Hx<span class="token punctuation">]</span><span class="token punctuation">[</span>Hy<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> Bx <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> By<span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> Bx <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> By<span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> By<span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> By<span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> Bx <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Hx <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> Bx <span class="token operator">&amp;&amp;</span> Hy <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> horse<span class="token punctuation">[</span>Hx <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span>Hy <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//动态规划求解</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> Bx<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> By<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> 
+        <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//如果有马就不能走</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>horse<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//A点设置为1</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                    numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//第一行的其他点只能从该点左边过来</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span>
+                    numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//第一列的其他点只能从该点的上一个点到达</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                    numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>numbers<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//其他点可从上方和右方到达</span>
+                <span class="token keyword">else</span>
+                    numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>numbers<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    cout <span class="token operator">&lt;&lt;</span> numbers<span class="token punctuation">[</span>Bx<span class="token punctuation">]</span><span class="token punctuation">[</span>By<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -615,7 +592,7 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-3/">https://firewolf321.github.io/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-3/</a>
+                    <a href="https://firewolf321.github.io/2021/03/28/mei-ri-suan-fa-guo-he-zu/">https://firewolf321.github.io/2021/03/28/mei-ri-suan-fa-guo-he-zu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -653,12 +630,12 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                    <span class="chip bg-color">习题答案</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -829,7 +806,7 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-03-28T23-53-46',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -850,50 +827,53 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-2/">
+                <a href="/2021/03/28/mei-ri-suan-fa-guo-he-zu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.png" class="responsive-img" alt="Python编程从入门到实践答案2">
+                        <img src="/medias/featureimages/45.png" class="responsive-img" alt="[每日算法]过河卒">
                         
-                        <span class="card-title">Python编程从入门到实践答案2</span>
+                        <span class="card-title">[每日算法]过河卒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可
+                            题目描述棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。
+棋盘用坐标表示，A 点 (0,
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -907,31 +887,31 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-1/">
+                <a href="/2021/03/25/mei-ri-suan-fa-hua-xue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.png" class="responsive-img" alt="Python编程从入门到实践答案1">
+                        <img src="/medias/featureimages/22.png" class="responsive-img" alt="[每日算法]滑雪">
                         
-                        <span class="card-title">Python编程从入门到实践答案1</span>
+                        <span class="card-title">[每日算法]滑雪</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可
+                            题目描述Michael 喜欢滑雪。这并不奇怪，因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael 想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-25
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
@@ -941,12 +921,12 @@ foods <span class="token operator">=</span> <span class="token punctuation">(</s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
