@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python编程从入门到实践答案6, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]摆花, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python编程从入门到实践答案6 | 冲天槊的个人博客</title>
+    <title>[每日算法]摆花 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python编程从入门到实践答案6</h1>
+                    <h1 class="description center-align post-title">[每日算法]摆花</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                <span class="chip bg-color">习题答案</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                每日算法
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-04-07
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    650
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    2 分
                 </div>
                 
 
@@ -487,123 +487,64 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可能有所不同。</p>
-<p>参考教材：《Python编程从入门到实践》  【美】  Eric Matthes  著 </p>
-<h1 id="Chapter7"><a href="#Chapter7" class="headerlink" title="Chapter7"></a>Chapter7</h1><p><strong>7-1 汽车租赁：</strong>编写一个程序，询问用户要租赁什么样的汽车，并打印一条消息，如“Let me see if I can find you a Subaru”。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-car <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"Hello,what type car is you want to have? "</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Let me see if I can find you a "</span> <span class="token operator">+</span> car <span class="token operator">+</span> <span class="token string">"."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p> <strong>7-2 餐厅订位L:</strong>编写一个程序，询问用户有多少人用餐。如果超过8人，就打印一条消息，指出没有空桌；否则指出有空桌。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-number <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"How many people are in your dinner party tonight? "</span><span class="token punctuation">)</span>
-number <span class="token operator">=</span> int<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
-<span class="token keyword">if</span> number <span class="token operator">></span> <span class="token number">8</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I'm sorry, you'll have to wait for a table."</span><span class="token punctuation">)</span>
-<span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your table is ready."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-3 10的整数倍：</strong>让用户输入一个数字，并指出这个数字是否是10的整数倍。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-number <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"Please enter a number,and I'll tell you if it's a multiple of 10. "</span><span class="token punctuation">)</span>
-number <span class="token operator">=</span> int<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
-<span class="token keyword">if</span> number <span class="token operator">%</span> <span class="token number">10</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"It's a multiple of 10."</span><span class="token punctuation">)</span>
-<span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"It is't a multiple of 10."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-4 比萨配料：</strong>编写一个循环，提示用户输入一系列的比萨配料，并在用户输入’quit’时结束循环。每当用户输入一种配料后，都打印一条消息，说我们会在比萨中添加这种配料。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-prompt <span class="token operator">=</span> <span class="token string">"\nPlease enter the toppings that you want to have."</span>
-prompt <span class="token operator">+=</span> <span class="token string">"\nAnd if you enter 'quit',we will finished. "</span>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小明的花店新开张，为了吸引顾客，他想在花店的门口摆上一排花，共 <em>m</em> 盆。通过调查顾客的喜好，小明列出了顾客最喜欢的 <em>n</em> 种花，从 1 到 <em>n</em> 标号。为了在门口展出更多种花，规定第 <em>i</em> 种花不能超过a<sub>i</sub> 盆，摆花时同一种花放在一起，且不同种类的花需按标号的从小到大的顺序依次摆列。</p>
+<p>试编程计算，一共有多少种不同的摆花方案。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行包含两个正整数<em>n</em> 和<em>m</em>，中间用一个空格隔开。</p>
+<p>第二行有<em>n</em> 个整数，每两个整数之间用一个空格隔开，依次表示a<sub>1</sub>,a<sub>2</sub>,⋯,<em>a<sub>n</sub></em>。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数，表示有多少种方案。注意：因为方案数可能很多，请输出方案数对 10^6+7取模的结果。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
+<thead>
+<tr>
+<th>样例#1</th>
+<th>输出#1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2 4<br />3 2</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><ul>
+<li><p>【数据范围】</p>
+<p>对于20% 数据，有 0&lt;n≤8,0&lt;m≤8,0≤<em>a<sub>i</sub></em>≤8。</p>
+<p>对于50% 数据，有 0&lt;n≤20,0&lt;m≤20,0≤<em>a<sub>i</sub></em>≤20。</p>
+<p>对于100% 数据，有 0&lt;n≤100,0&lt;m≤100,0≤<em>a<sub>i</sub></em>≤100。</p>
+</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这是个典型的动态规划问题，即可以从之前的状态推出后面的状态的最优解。用数组arr表示每种花最多的盆数，用二维数组fx存储i种j盆花的方案数。那么可以从初始状态fx【i】【0】=1（即一盆花都没有时，只有一种方案）出发。状态转移方程为 fx【i】【j】 += fx【i - 1】【k】。核心其实是从上一层的最优解推下一层的最优解，这个题的最优即所有方案加起来的和，所以这个题不需要取max,min。</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-    topping <span class="token operator">=</span> input<span class="token punctuation">(</span>prompt<span class="token punctuation">)</span>
-    <span class="token keyword">if</span> topping <span class="token operator">!=</span> <span class="token string">'quit'</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I'll add "</span> <span class="token operator">+</span> topping <span class="token operator">+</span> <span class="token string">" to your pizza."</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-5 电影票：</strong>有家电影院根据观众的年龄收取不同的票价；不到3岁的观众免费；3~12岁的观众为10美元；超过12岁的观众为15美元。请编写一个循环，在其中询问用户的年龄，并指出其票价。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-prompt <span class="token operator">=</span> <span class="token string">"How old are you?"</span>
-prompt <span class="token operator">+=</span> <span class="token string">"\nEnter 'quit' when you are finished. "</span>
-<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-    age <span class="token operator">=</span> input<span class="token punctuation">(</span>prompt<span class="token punctuation">)</span>
-    <span class="token keyword">if</span> age <span class="token operator">==</span> <span class="token string">"quit"</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span>
-    age <span class="token operator">=</span> int<span class="token punctuation">(</span>age<span class="token punctuation">)</span>
-    <span class="token keyword">if</span> age <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You get in free!"</span><span class="token punctuation">)</span>
-    <span class="token keyword">elif</span> age <span class="token operator">&lt;</span> <span class="token number">13</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your ticket is $10."</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your ticket is $15."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-6 三个入口：</strong>以另一种方式完成练习7-4或练习7-5，在程序中采取如下所有做法。</p>
-<p>□ 在while循环中使用条件测试来结束循环。</p>
-<p>□ 使用变量active来控制循环结束的时机。</p>
-<p>□ 使用break语句在用户输入‘quit’时退出循环。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-prompt <span class="token operator">=</span> <span class="token string">"How old are you?"</span>
-prompt <span class="token operator">+=</span> <span class="token string">"\nEnter 'quit' when you are finished. "</span>
-active <span class="token operator">=</span> <span class="token boolean">True</span>
-<span class="token keyword">while</span> active<span class="token punctuation">:</span>
-    age <span class="token operator">=</span> input<span class="token punctuation">(</span>prompt<span class="token punctuation">)</span>
-    <span class="token keyword">if</span> age <span class="token operator">==</span> <span class="token string">"quit"</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span>
-    age <span class="token operator">=</span> int<span class="token punctuation">(</span>age<span class="token punctuation">)</span>
-    <span class="token keyword">if</span> age <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You get in free!"</span><span class="token punctuation">)</span>
-    <span class="token keyword">elif</span> age <span class="token operator">&lt;</span> <span class="token number">13</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your ticket is $10."</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your ticket is $15."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-7 无限循环：</strong>编写一个没完没了的循环，并运行它（要结束该循环，可按Ctrl+C，也可关闭显示输出的窗口）。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-    number <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"Please enter a number!"</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-8 熟食店：</strong>创建一个名为sandwich_orders的列表，在其中包含各种三明治的名字；再创建一个名为finished_sandwich的空列表，遍历列表sandwich_orders，对于其中的每种三明治，都打印一条消息，如I made your tuna sandwich，并将其移到列表finished_sandwich。所有三明治都制作好后，打印一条消息，将这些三明治列出来。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-sandwich_orders <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'meat'</span><span class="token punctuation">,</span> <span class="token string">'eggplant'</span><span class="token punctuation">,</span> <span class="token string">'fruit'</span><span class="token punctuation">]</span>
-finished_sandwiches <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">while</span> sandwich_orders<span class="token punctuation">:</span>
-    current_sandwich <span class="token operator">=</span> sandwich_orders<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I made your "</span> <span class="token operator">+</span> current_sandwich <span class="token operator">+</span> <span class="token string">" sandwich."</span><span class="token punctuation">)</span>
-    finished_sandwiches<span class="token punctuation">.</span>append<span class="token punctuation">(</span>current_sandwich<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nThe following sandwich have been finished"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> finished_sandwiched <span class="token keyword">in</span> finished_sandwiches<span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>finished_sandwiched<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-9 五项烟熏牛肉（pastrami）卖完了：</strong>使用为练习7-8而创建的列表sandwich_orders，并确保’pastrami’在其中至少出现了三次。在程序开头附近添加这样的代码；打印一条消息，指出熟食店的五香烟熏牛肉卖完了；再使用一个while循环将列表sandwich_orders中的’pastrami’都删除。确保最终的列表finished_sandwiches中不包含’pastrami’。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-sandwich_orders <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'meat'</span><span class="token punctuation">,</span> <span class="token string">'pastrami'</span><span class="token punctuation">,</span> <span class="token string">'eggplant'</span><span class="token punctuation">,</span> <span class="token string">'pastrami'</span><span class="token punctuation">,</span> <span class="token string">'fruit'</span><span class="token punctuation">,</span> <span class="token string">'pastrami'</span><span class="token punctuation">]</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Sorry,pastrami has been sold."</span><span class="token punctuation">)</span>
-<span class="token keyword">while</span> <span class="token string">'pastrami'</span> <span class="token keyword">in</span> sandwich_orders<span class="token punctuation">:</span>
-    sandwich_orders<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">'pastrami'</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>sandwich_orders<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>7-10 梦想的度假胜地：</strong>编写一个程序，调查用户梦想的度假胜地。使用类似于’If you could visit one place in the world，where would you go？’的提示，并编写一个打印调查结果的代码块。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-responses <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true"># 先设置一个标记</span>
-active <span class="token operator">=</span> <span class="token boolean">True</span>
-<span class="token keyword">while</span> active<span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 先采集用户的姓名</span>
-    name <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"What is your name! "</span><span class="token punctuation">)</span>
-    response <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"which places would you like to visit in the world. "</span><span class="token punctuation">)</span>
-    responses<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> response
-    repeat <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"Would you like to let another person respond?(yes/no)"</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> repeat <span class="token operator">==</span> <span class="token string">'no'</span><span class="token punctuation">:</span>
-        active <span class="token operator">=</span> <span class="token boolean">False</span>
-<span class="token comment" spellcheck="true"># 展示采集的信息</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n--- Poll Results ---"</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> name<span class="token punctuation">,</span>response <span class="token keyword">in</span> responses<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" want to visit "</span> <span class="token operator">+</span> response <span class="token operator">+</span> <span class="token string">"."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">,</span> fx<span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//arr为每种花最多的盆数，fx存储放i种j盆花的方案数</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> k<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> mod <span class="token operator">=</span> <span class="token number">1000007</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">//获取花的总数和盆数</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cin <span class="token operator">>></span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//进行初始化，一盆花都没有时，就只有一种方案</span>
+        fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//花的种类</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>j <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//这种花的盆数</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span>k <span class="token operator">=</span> j<span class="token punctuation">;</span>k <span class="token operator">>=</span> j <span class="token operator">-</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>k<span class="token operator">--</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//k为这种花的盆数,状态转移方程</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>k <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//及时终止循环</span>
+                fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> fx<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">%</span> mod<span class="token punctuation">;</span>
+                fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">%</span><span class="token operator">=</span> mod<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> fx<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//输出总数</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -629,7 +570,7 @@ active <span class="token operator">=</span> <span class="token boolean">True</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-6/">https://firewolf321.github.io/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-6/</a>
+                    <a href="https://firewolf321.github.io/2021/04/07/mei-ri-suan-fa-bai-hua/">https://firewolf321.github.io/2021/04/07/mei-ri-suan-fa-bai-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -667,12 +608,12 @@ active <span class="token operator">=</span> <span class="token boolean">True</s
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                                    <span class="chip bg-color">习题答案</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -843,7 +784,7 @@ active <span class="token operator">=</span> <span class="token boolean">True</s
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-04-07T03-15-25',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -864,91 +805,36 @@ active <span class="token operator">=</span> <span class="token boolean">True</s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/12/python-ji-chu-yu-fa-1/">
+                <a href="/2021/04/07/mei-ri-suan-fa-bai-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.png" class="responsive-img" alt="Python基础语法1">
+                        <img src="/medias/featureimages/8.png" class="responsive-img" alt="[每日算法]摆花">
                         
-                        <span class="card-title">Python基础语法1</span>
+                        <span class="card-title">[每日算法]摆花</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考教材：Python程序设计基础与应用(机械工业出版社/董付国)
-​        本复习资料中语法出现顺序与参考教材保持一致，为巩固记忆，全程手打，没有复制粘贴。（因此可能会出现错别字请见谅）
-由于内容过多，将逐步发布。
-第一章1.标准
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    Python基础语法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-6/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.png" class="responsive-img" alt="Python编程从入门到实践答案6">
-                        
-                        <span class="card-title">Python编程从入门到实践答案6</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可
+                            题目描述小明的花店新开张，为了吸引顾客，他想在花店的门口摆上一排花，共 m 盆。通过调查顾客的喜好，小明列出了顾客最喜欢的 n 种花，从 1 到 n 标号。为了在门口展出更多种花，规定第 i 种花不能超过ai 盆，摆花时同一种花放在一起，且
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
@@ -959,12 +845,66 @@ active <span class="token operator">=</span> <span class="token boolean">True</s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.png" class="responsive-img" alt="[每日算法]尼克的任务">
+                        
+                        <span class="card-title">[每日算法]尼克的任务</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            题目描述尼克每天上班之前都连接上英特网，接收他的上司发来的邮件，这些邮件包含了尼克主管的部门当天要完成的全部任务，每个任务由一个开始时刻与一个持续时间构成。
+尼克的一个工作日为 n 分钟，从第 1 分钟开始到第 n 分钟结束。当尼克到达单位
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
