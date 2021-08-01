@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python第三次上机实习, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]尼克的任务, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python第三次上机实习 | 冲天槊的个人博客</title>
+    <title>[每日算法]尼克的任务 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/31.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python第三次上机实习</h1>
+                    <h1 class="description center-align post-title">[每日算法]尼克的任务</h1>
                 </div>
             </div>
         </div>
@@ -426,12 +426,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                                <span class="chip bg-color">上机实习</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/" class="post-category">
-                                Python上机实习
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                每日算法
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-12
+                    2021-04-02
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    779
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
 
@@ -487,90 +487,65 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、 已知“score”文件夹下 score.txt 中保存有 10 个评委对 3 个候选人的打分情况，示例如 下 Judge1,75,85,81 Judge2,84,87,76 ……<br>从左到右各个字段的含义分别为：评委号，1 号候选人得分，2 号候选人得分，3 号候选 人得分，各字段之间用逗号分隔。 要求设计 Python 程序，（1）读取该 txt 文件，将每个候选人的得分去掉一个最高分和一 个最低分，（2）计算剩余得分的平均数作为该候选人最终成绩，（3）找出最终成绩最高 的候选人的编号及最终成绩，分别输出到 socre 文件夹下 score.xlsx 文件的 score 工作簿 中A1 和 B1 单元格，如下图所示。<img src="C:%5CUsers%5C12399%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200624182711260.png" alt="image-20200624182711260"></p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#!/usr/bin/env python</span>
-<span class="token comment" spellcheck="true"># -*- coding:utf-8 -*-</span>
-<span class="token keyword">import</span> openpyxl
-<span class="token keyword">from</span> openpyxl <span class="token keyword">import</span> Workbook
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>尼克每天上班之前都连接上英特网，接收他的上司发来的邮件，这些邮件包含了尼克主管的部门当天要完成的全部任务，每个任务由一个开始时刻与一个持续时间构成。</p>
+<p>尼克的一个工作日为 <em>n</em> 分钟，从第 1 分钟开始到第 <em>n</em> 分钟结束。当尼克到达单位后他就开始干活，公司一共有 <em>k</em> 个任务需要完成。如果在同一时刻有多个任务需要完成，尼克可以任选其中的一个来做，而其余的则由他的同事完成，反之如果只有一个任务，则该任务必需由尼克去完成，假如某些任务开始时刻尼克正在工作，则这些任务也由尼克的同事完成。如果某任务于第 <em>p</em> 分钟开始，持续时间为 <em>t</em> 分钟，则该任务将在第 (<em>p</em>+<em>t</em>−1) 分钟结束。</p>
+<p>写一个程序计算尼克应该如何选取任务，才能获得最大的空暇时间。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入数据第一行含两个用空格隔开的整数 <em>n</em> 和 <em>k</em>。</p>
+<p>接下来共有 <em>k</em> 行，每一行有两个用空格隔开的整数 <em>p</em> 和 <em>t</em>，表示该任务从第 <em>p</em> 分钟开始，持续时间为 <em>t</em> 分钟。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出文件仅一行，包含一个整数，表示尼克可能获得的最大空暇时间。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
+<thead>
+<tr>
+<th>样例#1</th>
+<th>输出#1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>15 6<br />1 2<br />1 6 <br />4 11<br />8 5<br />8 1 <br />11 5</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><ul>
+<li>对于 100% 的数据，保证 1≤n≤10^4,1≤k≤10^4,1≤p≤n,1≤p+t-1≤n。</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这个题是一个线性的动态规划问题，第i时刻的最大空闲时间是和后面i+选择任务的持续时间的时刻有关系的，如果正着找是不那么容易的，但是如果倒着查找就会容易很多，可以得到相应的状态转移方程：</p>
+<p>如果本时刻无任务时，那么这个时刻的空闲时间为上一个时刻的最大空闲时间+1：<strong>f[i]=f[i+1]+1</strong>；</p>
+<p>如果本时刻有任务，begins表示这个时刻的任务的持续时间，那么状态转移方程为：<strong>fx[i] = max(fx[i], fx【i + begins【i】【j】】)</strong>。</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;vector></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-<span class="token comment" spellcheck="true"># 创建三个空列表来存储每个候选人的分数s</span>
-player1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-player2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-player3 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-play <span class="token operator">=</span> <span class="token punctuation">[</span>player1<span class="token punctuation">,</span> player2<span class="token punctuation">,</span> player3<span class="token punctuation">]</span>
-j <span class="token operator">=</span> <span class="token number">1</span>
-<span class="token comment" spellcheck="true"># 创建一个字典存储每个人的最终得分</span>
-result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">"score.txt"</span><span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> fp<span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 先打开文本将所有的分数存入每个人的列表</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        scores <span class="token operator">=</span> fp<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
-        player1<span class="token punctuation">.</span>append<span class="token punctuation">(</span>int<span class="token punctuation">(</span>scores<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        player2<span class="token punctuation">.</span>append<span class="token punctuation">(</span>int<span class="token punctuation">(</span>scores<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        player3<span class="token punctuation">.</span>append<span class="token punctuation">(</span>int<span class="token punctuation">(</span>scores<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> begins<span class="token punctuation">[</span><span class="token number">10002</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//begin存在时刻i开始的任务结束的时间</span>
+<span class="token keyword">int</span> fx<span class="token punctuation">[</span><span class="token number">10002</span><span class="token punctuation">]</span><span class="token punctuation">;</span>                   <span class="token comment" spellcheck="true">//存储每个时间点的最大空闲值</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> k<span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">//n为工作日的持续时间,k为任务数</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> k<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> be<span class="token punctuation">,</span> co<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cin <span class="token operator">>></span> be <span class="token operator">>></span> co<span class="token punctuation">;</span>
+        begins<span class="token punctuation">[</span>be<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>co<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-<span class="token comment" spellcheck="true"># 去掉每个人的最高分并计算平均分</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> play<span class="token punctuation">:</span>
-    maxScore <span class="token operator">=</span> max<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    i<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>maxScore<span class="token punctuation">)</span>
-    minScore <span class="token operator">=</span> min<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    i<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>minScore<span class="token punctuation">)</span>
-    averageScore <span class="token operator">=</span> sum<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">/</span>len<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 将每个候选人的序号及其对应分数放入字典</span>
-    player <span class="token operator">=</span> <span class="token string">'player'</span> <span class="token operator">+</span>str<span class="token punctuation">(</span>j<span class="token punctuation">)</span>
-    j <span class="token operator">+=</span> <span class="token number">1</span>
-    result<span class="token punctuation">[</span>player<span class="token punctuation">]</span> <span class="token operator">=</span> averageScore
-
-<span class="token comment" spellcheck="true"># 获取得分最高的候选人及其分数</span>
-winner <span class="token operator">=</span> max<span class="token punctuation">(</span>result<span class="token punctuation">,</span> key<span class="token operator">=</span>result<span class="token punctuation">.</span>get<span class="token punctuation">)</span>
-winnerScore <span class="token operator">=</span> result<span class="token punctuation">[</span>max<span class="token punctuation">(</span>result<span class="token punctuation">,</span> key<span class="token operator">=</span>result<span class="token punctuation">.</span>get<span class="token punctuation">)</span><span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 将成绩最高的候选人的编号及其最终成绩输出到score文件夹</span>
-fn <span class="token operator">=</span> <span class="token string">'score.xlsx'</span>
-wb <span class="token operator">=</span> Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>
-ws <span class="token operator">=</span> wb<span class="token punctuation">.</span>create_sheet<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'score'</span><span class="token punctuation">)</span>
-ws<span class="token punctuation">[</span><span class="token string">'A1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> winner
-ws<span class="token punctuation">[</span><span class="token string">'B1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> winnerScore
-wb<span class="token punctuation">.</span>save<span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>2、 sensor 文件夹下存在两个 Python 源文件，分别对应两个问题。请按照文件内说明修改 代码，实现以下功能： 下面所示为一套由公司职员随身佩戴的位置传感器采集的数据,文件名称为 “sensor.txt”,其内容示例如下 2016/5/31 0:05, vawelon001,1,1 2016/5/31 0:20, arpa001,1,1 2016/5/31 2:26, arpa001,1,6 … (略) 第一列是传感器获取数据的时间,第二列是传感器的编号,第三列是传感器所在的楼层, 第四列是传感器所在的位置区域编号，各字段之间用逗号分隔。<br>问题 1：在 PY301_1.py 文件中修改代码，读入 sensor.txt 文件中的数据,提取出传感器 编号为 arpa001 的所有数据，将结果输出保存到“arpa001.txt”文件。 输出文件格式要求：原数据文件中的每行记录写入新文件中,行尾无空格,无空行。参考 格式如下：<br>2016/5/31 7:11, arpa001,2,4 2016/5/31 8:02, arpa001,3,4 2016/5/31 9:22, arpa001,3,4 …(略)</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 以下代码为提示框架</span>
-<span class="token comment" spellcheck="true"># 请在...处使用一行或多行代码替换</span>
-<span class="token comment" spellcheck="true"># 请在______处使用一行代码替换</span>
-
-<span class="token comment" spellcheck="true"># 打开sensor.txt来读取数据</span>
-<span class="token comment" spellcheck="true"># 创建earpa001.txt来写入数据</span>
-<span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'sensor.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span><span class="token keyword">as</span> fn<span class="token punctuation">:</span>
-    <span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'earpa001.txt'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span><span class="token keyword">as</span> fo<span class="token punctuation">:</span>
-        <span class="token keyword">for</span> line <span class="token keyword">in</span> fn<span class="token punctuation">:</span>
-            <span class="token comment" spellcheck="true"># 一行的内容写入一个列表，每个元素对应每一列的内容</span>
-            lst <span class="token operator">=</span> line<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">" \n"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
-            <span class="token comment" spellcheck="true"># 验证第二个元素是不是earpa001，若是，则将该行写入文本</span>
-            <span class="token keyword">if</span> lst<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">" earpa001"</span><span class="token punctuation">:</span>
-                fo<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'{},{},{},{}\n'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>lst<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> lst<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> lst<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> lst<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>（选做）问题 2：在 PY301_2.py 文件中修改代码，读入“arpa001.txt”文件中的数据， 统计 arpa001 对应的职员在各楼层和区域出现的次数,保存到“earpa001_count.txt” 文件,每条记录一行,位置信息和出现的次数之间用英文半角逗号隔开，行尾无空格，无 空行。<br>参考格式如下 1-1,5 1-4,3 …(略) 含义如下：第 1 行“1-1,5”中 1-1 表示 1 楼 1 号区域,5 表示出现 5 次；第 2 行“14,3”中 1-4 表示 1 楼 4 号区域，3 表示出现 3 次。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 以下代码为提示框架</span>
-<span class="token comment" spellcheck="true"># 请在...处使用一行或多行代码替换</span>
-<span class="token comment" spellcheck="true"># 请在______处使用一行代码替换</span>
-
-
-<span class="token comment" spellcheck="true"># 打开sensor.txt来读取数据</span>
-<span class="token comment" spellcheck="true"># 创建earpa001.txt来写入数据</span>
-<span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'earpa001.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span><span class="token keyword">as</span> fn<span class="token punctuation">:</span>
-    <span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'earpa001_count.txt'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span><span class="token keyword">as</span> fo<span class="token punctuation">:</span>
-        <span class="token comment" spellcheck="true"># 创建一个空字典用来存储哪个区域出现了几次</span>
-        d <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-        <span class="token keyword">for</span> line <span class="token keyword">in</span> fn<span class="token punctuation">:</span>
-            <span class="token comment" spellcheck="true"># 一行的内容写入一个列表，每个元素对应每一列的内容</span>
-            ls <span class="token operator">=</span> line<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">" \n"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
-            <span class="token comment" spellcheck="true"># 用site（键）表示几楼几号区域</span>
-            site<span class="token operator">=</span> ls<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> ls<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>
-            <span class="token comment" spellcheck="true"># 值为出现的次数</span>
-            d<span class="token punctuation">[</span>site<span class="token punctuation">]</span> <span class="token operator">=</span> d<span class="token punctuation">.</span>get<span class="token punctuation">(</span>site<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
-        ls <span class="token operator">=</span> list<span class="token punctuation">(</span>d<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        ls<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># ¸ÃÓï¾äÓÃÓÚÅÅÐò</span>
-        <span class="token comment" spellcheck="true"># 将相关内容写入文件</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            fo<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'{},{}\n'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>ls<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ls<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> n<span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//倒序处理每个时刻</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//说明有任务需要做</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//获取时间最长的那一个</span>
+                fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> fx<span class="token punctuation">[</span>i <span class="token operator">+</span> begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> 
+        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//否则就是没有任务，为空闲时间</span>
+            fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> fx<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> fx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -596,7 +571,7 @@ wb<span class="token punctuation">.</span>save<span class="token punctuation">(<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2020/07/12/python-di-san-ci-shang-ji-shi-xi/">https://firewolf321.github.io/2020/07/12/python-di-san-ci-shang-ji-shi-xi/</a>
+                    <a href="https://firewolf321.github.io/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/">https://firewolf321.github.io/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,12 +609,12 @@ wb<span class="token punctuation">.</span>save<span class="token punctuation">(<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                                    <span class="chip bg-color">上机实习</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -810,7 +785,7 @@ wb<span class="token punctuation">.</span>save<span class="token punctuation">(<
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-07-12T12-46-01',
+        id: '2021-04-02T13-45-25',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -831,47 +806,44 @@ wb<span class="token punctuation">.</span>save<span class="token punctuation">(<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/08/01/c-bian-cheng-xun-lian-1/">
+                <a href="/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/50.png" class="responsive-img" alt="C++编程训练1">
+                        <img src="/medias/featureimages/18.png" class="responsive-img" alt="[每日算法]尼克的任务">
                         
-                        <span class="card-title">C++编程训练1</span>
+                        <span class="card-title">[每日算法]尼克的任务</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.输入任意 3 个数，然后按照从小到大的顺序进行输出。
-#include &lt;iostream>
-
-int main()
-{
-    using namespace std;
-    //a,b,c用于存储用户输入的数据，temp用于
+                            题目描述尼克每天上班之前都连接上英特网，接收他的上司发来的邮件，这些邮件包含了尼克主管的部门当天要完成的全部任务，每个任务由一个开始时刻与一个持续时间构成。
+尼克的一个工作日为 n 分钟，从第 1 分钟开始到第 n 分钟结束。当尼克到达单位
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/C-%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/" class="post-category">
-                                    C++编程训练
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -879,8 +851,8 @@ int main()
                         <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B8%8A%E6%9C%BA%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">上机实习</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -894,31 +866,32 @@ int main()
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/python-bian-cheng-cong-ru-men-dao-shi-jian-da-an-9/">
+                <a href="/2021/03/28/mei-ri-suan-fa-guo-he-zu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="Python编程从入门到实践答案9">
+                        <img src="/medias/featureimages/45.png" class="responsive-img" alt="[每日算法]过河卒">
                         
-                        <span class="card-title">Python编程从入门到实践答案9</span>
+                        <span class="card-title">[每日算法]过河卒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这本书是我自学Python的第一本书，里面的习题都在寒假已经完成，由于当时博客尚未搭建，故里面题目的答案并未发表。现在在开发项目博客没有新内容更新，因此这段实践会陆续上传原来的习题答案。每个题目均为自己设计的代码，优化与重构方面与标准答案可
+                            题目描述棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。
+棋盘用坐标表示，A 点 (0,
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AD%94%E6%A1%88/" class="post-category">
-                                    Python编程从入门到实践答案
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95/" class="post-category">
+                                    每日算法
                                 </a>
                             
                             
@@ -928,12 +901,12 @@ int main()
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">习题答案</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
