@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="[每日算法]尼克的任务, 冲天槊的个人博客">
+    <meta name="keywords" content="[每日算法]关路灯, 冲天槊的个人博客">
     <meta name="description" content="记录学习编程过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>[每日算法]尼克的任务 | 冲天槊的个人博客</title>
+    <title>[每日算法]关路灯 | 冲天槊的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/40.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">[每日算法]尼克的任务</h1>
+                    <h1 class="description center-align post-title">[每日算法]关路灯</h1>
                 </div>
             </div>
         </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-02
+                    2021-04-11
                 </div>
                 
 
@@ -464,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    779
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -487,12 +487,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>尼克每天上班之前都连接上英特网，接收他的上司发来的邮件，这些邮件包含了尼克主管的部门当天要完成的全部任务，每个任务由一个开始时刻与一个持续时间构成。</p>
-<p>尼克的一个工作日为 <em>n</em> 分钟，从第 1 分钟开始到第 <em>n</em> 分钟结束。当尼克到达单位后他就开始干活，公司一共有 <em>k</em> 个任务需要完成。如果在同一时刻有多个任务需要完成，尼克可以任选其中的一个来做，而其余的则由他的同事完成，反之如果只有一个任务，则该任务必需由尼克去完成，假如某些任务开始时刻尼克正在工作，则这些任务也由尼克的同事完成。如果某任务于第 <em>p</em> 分钟开始，持续时间为 <em>t</em> 分钟，则该任务将在第 (<em>p</em>+<em>t</em>−1) 分钟结束。</p>
-<p>写一个程序计算尼克应该如何选取任务，才能获得最大的空暇时间。</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入数据第一行含两个用空格隔开的整数 <em>n</em> 和 <em>k</em>。</p>
-<p>接下来共有 <em>k</em> 行，每一行有两个用空格隔开的整数 <em>p</em> 和 <em>t</em>，表示该任务从第 <em>p</em> 分钟开始，持续时间为 <em>t</em> 分钟。</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出文件仅一行，包含一个整数，表示尼克可能获得的最大空暇时间。</p>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>某一村庄在一条路线上安装了 <em>n</em> 盏路灯，每盏灯的功率有大有小（即同一段时间内消耗的电量有多有少）。老张就住在这条路中间某一路灯旁，他有一项工作就是每天早上天亮时一盏一盏地关掉这些路灯。</p>
+<p>为了给村里节省电费，老张记录下了每盏路灯的位置和功率，他每次关灯时也都是尽快地去关，但是老张不知道怎样去关灯才能够最节省电。他每天都是在天亮时首先关掉自己所处位置的路灯，然后可以向左也可以向右去关灯。开始他以为先算一下左边路灯的总功率再算一下右边路灯的总功率，然后选择先关掉功率大的一边，再回过头来关掉另一边的路灯，而事实并非如此，因为在关的过程中适当地调头有可能会更省一些。</p>
+<p>现在已知老张走的速度为 1m/s，每个路灯的位置（是一个整数，即距路线起点的距离，单位：<em>m</em>）、功率（<em>W</em>），老张关灯所用的时间很短而可以忽略不计。</p>
+<p>请你为老张编一程序来安排关灯的顺序，使从老张开始关灯时刻算起所有灯消耗电最少（灯关掉后便不再消耗电了）。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行是两个数字<em>n</em>（表示路灯的总数）和 <em>c</em>（老张所处位置的路灯号）；</p>
+<p>接下来 <em>n</em> 行，每行两个数据，表示第 1 盏到第 <em>n</em> 盏路灯的位置和功率。数据保证路灯位置单调递增。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个数据，即最少的功耗（单位：<em>J</em>，<em>1J</em>=1<em>W</em>×<em>s</em>）。</p>
 <h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><table>
 <thead>
 <tr>
@@ -501,51 +502,81 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>15 6<br />1 2<br />1 6 <br />4 11<br />8 5<br />8 1 <br />11 5</td>
-<td>4</td>
+<td>5 3 <br />2 10 <br />3 20 <br />5 20 <br />6 30 <br />8 10</td>
+<td>270</td>
 </tr>
 </tbody></table>
-<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><ul>
-<li>对于 100% 的数据，保证 1≤n≤10^4,1≤k≤10^4,1≤p≤n,1≤p+t-1≤n。</li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这个题是一个线性的动态规划问题，第i时刻的最大空闲时间是和后面i+选择任务的持续时间的时刻有关系的，如果正着找是不那么容易的，但是如果倒着查找就会容易很多，可以得到相应的状态转移方程：</p>
-<p>如果本时刻无任务时，那么这个时刻的空闲时间为上一个时刻的最大空闲时间+1：<strong>f[i]=f[i+1]+1</strong>；</p>
-<p>如果本时刻有任务，begins表示这个时刻的任务的持续时间，那么状态转移方程为：<strong>fx[i] = max(fx[i], fx【i + begins【i】【j】】)</strong>。</p>
-<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;vector></span></span>
+<p>此时关灯顺序为 <code>3 4 2 1 5</code>。</p>
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><p>1≤n≤50,1≤c≤n。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这是个区间形的动态规划问题。老张起始位置的路灯可以被直接关闭，可以作为初始状态，即fx【c】【c】【0】 = 0，fx【c】【c】【1】 = 0;然后就可以进行填表，从每个时刻开始，都有向左和向右两种方案，那么这时候就需要采取功耗较低的方案，即状态转移方程为：</p>
+<p>第一种情况是往左边走，根据状态转移方程获取消耗较小值fx【j】【k】【0】 = min(fx【j + 1】【k】【0】 + (lamps【j + 1】.pos - lamps【j】.pos) <em> (sum【j】 + sum【n】 - sum【k】),fx【j + 1】【k】【1】 + (lamps【k】.pos - lamps【j】.pos) </em> (sum【j】 + sum【n】 - sum【k】));</p>
+<p>第二种情况为往右边走到尽头，根据耗散再次取最小值fx【j】【k】【1】 = min(fx【j】【k - 1】【0】 + (lamps【k】.pos - lamps【j】.pos) <em> (sum【j - 1】 + sum【n】 - sum【k - 1】), fx【j】【k - 1】【1】 + (lamps【k】.pos - lamps【k - 1】.pos) </em> (sum【j - 1】 + sum【n】 - sum【k - 1】));</p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> begins<span class="token punctuation">[</span><span class="token number">10002</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//begin存在时刻i开始的任务结束的时间</span>
-<span class="token keyword">int</span> fx<span class="token punctuation">[</span><span class="token number">10002</span><span class="token punctuation">]</span><span class="token punctuation">;</span>                   <span class="token comment" spellcheck="true">//存储每个时间点的最大空闲值</span>
+<span class="token keyword">struct</span> Lamp
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> pos<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//位置</span>
+    <span class="token keyword">int</span> w<span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">//功率</span>
+    <span class="token function">Lamp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token function">Lamp</span><span class="token punctuation">(</span><span class="token keyword">int</span> p<span class="token punctuation">,</span> <span class="token keyword">int</span> _w<span class="token punctuation">)</span> <span class="token operator">:</span><span class="token function">pos</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">w</span><span class="token punctuation">(</span>_w<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> sum<span class="token punctuation">[</span><span class="token number">51</span><span class="token punctuation">]</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">//sum存的是关闭从0~i盏路灯的消耗值</span>
+<span class="token keyword">int</span> fx<span class="token punctuation">[</span><span class="token number">51</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">51</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//fx[i][j][k]表示i~j盏路灯均被点亮，且当前处于k位置的最小功耗（k表示老张在左端点或者右端点）</span>
+Lamp lamps<span class="token punctuation">[</span><span class="token number">51</span><span class="token punctuation">]</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//lamps存储每盏路灯的位置及功率</span>
+
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> n<span class="token punctuation">,</span> k<span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">//n为工作日的持续时间,k为任务数</span>
-    cin <span class="token operator">>></span> n <span class="token operator">>></span> k<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> be<span class="token punctuation">,</span> co<span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> k<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> c<span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//n为路灯总数，c为老张所处的路灯位置</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> c<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> p<span class="token punctuation">,</span> w<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//数据读入内存</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        cin <span class="token operator">>></span> be <span class="token operator">>></span> co<span class="token punctuation">;</span>
-        begins<span class="token punctuation">[</span>be<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>co<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> p <span class="token operator">>></span> w<span class="token punctuation">;</span>
+        Lamp <span class="token function">node</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        lamps<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> node<span class="token punctuation">;</span>
+        sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> node<span class="token punctuation">.</span>w<span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//默认为顺序关闭</span>
     <span class="token punctuation">}</span>
 
-    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> n<span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> 
-    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//倒序处理每个时刻</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//说明有任务需要做</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
-            <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//获取时间最长的那一个</span>
-                fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> fx<span class="token punctuation">[</span>i <span class="token operator">+</span> begins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//初始状态消耗均设置为10000(近似＋∞)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> <span class="token number">51</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;</span> <span class="token number">51</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span>k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>k <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span>k<span class="token operator">++</span> <span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">10000</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
-        <span class="token keyword">else</span> 
-        <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//否则就是没有任务，为空闲时间</span>
-            fx<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> fx<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//老张起始位置的路灯可以被直接关闭，为初始状态</span>
+    fx<span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    fx<span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>j <span class="token operator">+</span> i <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            k <span class="token operator">=</span> j <span class="token operator">+</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//第一种情况，是往左边走，根据状态转移方程获取消耗较小值</span>
+            fx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>fx<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">(</span>lamps<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>pos <span class="token operator">-</span> lamps<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>pos<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>sum<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> sum<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                fx<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">(</span>lamps<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">.</span>pos <span class="token operator">-</span> lamps<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>pos<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>sum<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> sum<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//第二种情况，往右边走到尽头，根据耗散再次取最小值</span>
+            fx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>fx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">(</span>lamps<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">.</span>pos <span class="token operator">-</span> lamps<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>pos<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>sum<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> sum<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                fx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">(</span>lamps<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">.</span>pos <span class="token operator">-</span> lamps<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>pos<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>sum<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> sum<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-    cout <span class="token operator">&lt;&lt;</span> fx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//最后一次选择左边或者右边较小的那一个</span>
+    <span class="token keyword">int</span> ressult <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>fx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> fx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cout <span class="token operator">&lt;&lt;</span> ressult<span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -571,7 +602,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://firewolf321.github.io/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/">https://firewolf321.github.io/2021/04/02/mei-ri-suan-fa-ni-ke-de-ren-wu/</a>
+                    <a href="https://firewolf321.github.io/2021/04/11/mei-ri-suan-fa-guan-lu-deng/">https://firewolf321.github.io/2021/04/11/mei-ri-suan-fa-guan-lu-deng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -785,7 +816,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-04-02T13-45-25',
+        id: '2021-04-11T18-05-25',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -806,29 +837,31 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/04/07/mei-ri-suan-fa-bai-hua/">
+                <a href="/2021/04/11/mei-ri-suan-fa-guan-lu-deng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.png" class="responsive-img" alt="[每日算法]摆花">
+                        <img src="/medias/featureimages/40.png" class="responsive-img" alt="[每日算法]关路灯">
                         
-                        <span class="card-title">[每日算法]摆花</span>
+                        <span class="card-title">[每日算法]关路灯</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目描述小明的花店新开张，为了吸引顾客，他想在花店的门口摆上一排花，共 m 盆。通过调查顾客的喜好，小明列出了顾客最喜欢的 n 种花，从 1 到 n 标号。为了在门口展出更多种花，规定第 i 种花不能超过ai 盆，摆花时同一种花放在一起，且
+                            题目描述某一村庄在一条路线上安装了 n 盏路灯，每盏灯的功率有大有小（即同一段时间内消耗的电量有多有少）。老张就住在这条路中间某一路灯旁，他有一项工作就是每天早上天亮时一盏一盏地关掉这些路灯。
+为了给村里节省电费，老张记录下了每盏路灯的位置
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -841,6 +874,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -863,25 +897,24 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/28/mei-ri-suan-fa-guo-he-zu/">
+                <a href="/2021/04/07/mei-ri-suan-fa-bai-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/45.png" class="responsive-img" alt="[每日算法]过河卒">
+                        <img src="/medias/featureimages/8.png" class="responsive-img" alt="[每日算法]摆花">
                         
-                        <span class="card-title">[每日算法]过河卒</span>
+                        <span class="card-title">[每日算法]摆花</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目描述棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。
-棋盘用坐标表示，A 点 (0,
+                            题目描述小明的花店新开张，为了吸引顾客，他想在花店的门口摆上一排花，共 m 盆。通过调查顾客的喜好，小明列出了顾客最喜欢的 n 种花，从 1 到 n 标号。为了在门口展出更多种花，规定第 i 种花不能超过ai 盆，摆花时同一种花放在一起，且
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
                             </span>
                         <span class="publish-author">
                             
